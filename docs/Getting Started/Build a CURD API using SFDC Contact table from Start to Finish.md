@@ -2,6 +2,8 @@
 sidebar_position: 3
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Build a CURD API using SFDC Contact table from Start to Finish
 
 ## Problem Statement
@@ -26,12 +28,12 @@ Develop a **SFDC Contact API** on quickintegrate platform which will support **C
  DELETE :  http://run.quickintegrate.io/dev/sfdc_contact_api/contact/{Id}
 
    
-![Quick Integration Platform](../img/SFDC/1services.png)
+<img src={useBaseUrl('/img/SFDC/1services.png')} />;
 
 
 ## SFDC CONTACT API Flow 
 
-![Quick Integration Platform](../img/SFDC/2ui.png)
+<img src={useBaseUrl('/img/SFDC/2ui.png')} />;
 
 #### POST:
 
@@ -39,7 +41,7 @@ Develop a **SFDC Contact API** on quickintegrate platform which will support **C
 
 **POST** endpoint will be used to create records in **Contact object** salesforce
 
-![Quick Integration Platform](../img/SFDC/POST.png)
+<img src={useBaseUrl('/img/SFDC/POST.png')} />;
     
  `End-Points:`
 
@@ -50,7 +52,7 @@ https://atdevcom-dev-ed.my.salesforce.com/services/data/v55.0/sobjects/Contact
  `Description:`
 **DELETE** endpoint will be used to delete records from **Contact object** salesforce.
 
-![Quick Integration Platform](../img/SFDC/DELETE.png)
+<img src={useBaseUrl('/img/SFDC/DELETE.png')} />;
 
  `End-Points:`
 
@@ -60,9 +62,9 @@ https://atdevcom-dev-ed.my.salesforce.com/services/data/v55.0/sobjects/Contact/{
  `Description:`
 **GET** endpoint will be used to retrieve records from **Contact object** salesforce.
 
-![Quick Integration Platform](../img/SFDC/GET.png)
+<img src={useBaseUrl('/img/SFDC/GET.png')} />;
 
-![Quick Integration Platform](../img/SFDC/GET%20All.png)
+<img src={useBaseUrl('/img/SFDC/GET%20All.png')} />;
 
  `End-Points:`
 
@@ -76,7 +78,7 @@ https://atdevcom-dev-ed.my.salesforce.com/services/data/v55.0/sobjects/Contact/{
  `Description:`
 **PATCH** endpoint will be used to update records in **Contact object** salesforce.
 
-![Quick Integration Platform](../img/SFDC/PATCH.png)
+<img src={useBaseUrl('/img/SFDC/PATCH.png')} />;
 
  `End-Points:`
 

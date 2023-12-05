@@ -2,6 +2,8 @@
 sidebar_position: 4
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Postal details Rest API Design Document
 ## Problem Statement 
 Create a **REST API** which will accept **customer Id** as **query parameter**. 
@@ -44,48 +46,49 @@ Customer’s table column name
 #### SETP 1:
 Login to Quick Integration Platform to get started.
 
-![Quick Integration Platform](../img/DB_Rest_API/1.png)
+<img src={useBaseUrl('/img/DB_Rest_API/1.png')} />;
 
 #### STEP 2:
 Click on **Manage** Option >> **Projects** >> **Create** to create the new project
 
-![Quick Integration Platform](../img/DB_Rest_API/2.png)
-![Quick Integration Platform](../img/DB_Rest_API/3.png)
+<img src={useBaseUrl('/img/DB_Rest_API/2.png')} />;
+<img src={useBaseUrl('/img/DB_Rest_API/3.png')} />;
 
 `Once project is created, below popup shows up.`
 
-![Quick Integration Platform](../img/DB_Rest_API/4.png)
+<img src={useBaseUrl('/img/DB_Rest_API/4.png')} />;
 
 
 #### STEP 3:
 Go to **DEVELOP** >> **Functionality** API
 
-![Quick Integration Platform](../img/DB_Rest_API/5.png)
+<img src={useBaseUrl('/img/DB_Rest_API/5.png')} />;
 
 Select relevant project and create services in that project
-![Quick Integration Platform](../img/DB_Rest_API/6.png)
-![Quick Integration Platform](../img/DB_Rest_API/7.png)
+<img src={useBaseUrl('/img/DB_Rest_API/6.png')} />;
+<img src={useBaseUrl('/img/DB_Rest_API/7.png')} />;
 
 Once service name is provided, canvas will show up:
 
-![Quick Integration Platform](../img/DB_Rest_API/8.png)
+<img src={useBaseUrl('/img/DB_Rest_API/8.png')} />;
 
 Drag utility component to add start and end logger for you service.
 
 
-![Quick Integration Platform](../img/DB_Rest_API/9.2.png)
+<img src={useBaseUrl('/img/DB_Rest_API/9.2.png')} />;
 
-![Quick Integration Platform](../img/DB_Rest_API/9.png)
+![Quick Integration Platform](/img/DB_Rest_API/9.png)
+<img src={useBaseUrl('/img/DB_Rest_API/9.png')} />;
 
 Drag URIVALIDATOR to validate the URL.
 
-![Quick Integration Platform](../img/DB_Rest_API/10.2.png)
+<img src={useBaseUrl('/img/DB_Rest_API/10.2.png')} />;
 
-![Quick Integration Platform](../img/DB_Rest_API/10.png)
+<img src={useBaseUrl('/img/DB_Rest_API/10.png')} />;
 
 Drag DB connector to make DB call in the service.
 
-![Quick Integration Platform](../img/DB_Rest_API/11.2.png)
+<img src={useBaseUrl('/img/DB_Rest_API/11.2.png')} />;
 
 Add DB connectivity details in configuration:
 
@@ -95,7 +98,7 @@ Add DB connectivity details in configuration:
 
 Select the database configuration created to configure DB component:
 
-![Quick Integration Platform](../img/DB_Rest_API/11.png)
+<img src={useBaseUrl('/img/DB_Rest_API/11.png')} />;
 
 Define Global variables to be used in the service:
 
@@ -115,6 +118,6 @@ Define Global variables to be used in the service:
 
 Drag REST component to make India Post REST API call to get postal details based on PIN code.
 
-![Quick Integration Platform](../img/DB_Rest_API/12.2.png)
+<img src={useBaseUrl('/img/DB_Rest_API/12.2.png')} />;
 
-![Quick Integration Platform](../img/DB_Rest_API/12.png)                              
+<img src={useBaseUrl('/img/DB_Rest_API/12.pn')} />;                             
