@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # REST Connect Connector
@@ -32,6 +36,40 @@ Drag and drop the **REST Connector**
 
 <img src={useBaseUrl('/img/Connectors/Rest/Rest_conector.png')} />;
 
-<img src={useBaseUrl('/img/Connectors/Rest/Rest_config.png')} />;
+### Configuring REST Connector
+left click on connector, you can define the **REST Connector** configration
 
 <img src={useBaseUrl('/img/Connectors/Rest/Rest_config.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Http URL</td>
+<td></td>
+</tr>
+<tr>
+<td>Method</td>
+<td></td>
+</tr>
+<tr>
+<td>Base Path</td>
+<td></td>
+</tr>
+<tr>
+<td>Security</td>
+<td></td>
+</tr>
+<tr>
+<td>Output Variable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<img src={useBaseUrl('/img/Connectors/Rest_PostConfig.png')} />;

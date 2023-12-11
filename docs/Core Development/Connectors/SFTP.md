@@ -1,8 +1,12 @@
+---
+sidebar_position: 5
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# SFTP (SFTP Connector) 
+# SFTP Connector 
 
-****SFTP**** Connector provides access to files and folders on an ******SFTP****** server. ******SFTP****** connector operations manage file transfers over the ****SFTP**** (Secure File Transfer Protocol) protocol. The connector’s main features include
+****SFTP**** Connector provides access to files and folders on an ******SFTP****** server. ******SFTP****** Connector operations manage file transfers over the ****SFTP**** (Secure File Transfer Protocol) protocol. The Connector’s main features include
 
 The ability to read files or list directory contents on demand
 
@@ -14,6 +18,6 @@ File matching functionality
 
 A design that is consistent with that of File Connector and FTP Connector
 
-The same set of operations is available on these connectors, and they behave similarly.
+The same set of operations is available on these Connectors, and they behave similarly.
 
-<img src={useBaseUrl('/img/Core Development/.png')} />;
+<img src={useBaseUrl('/img/Connectors/SFTP_connector.png')} />;

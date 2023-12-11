@@ -23,3 +23,22 @@ Quickintegrate platform supports **REST API** development using HTTP trigger whe
 <img src={useBaseUrl('/img/Core Development/Trigger_config/Rest_config.png')} />;
 
 In REST configurations uri and type needs to be defined. Query and Uri parameters can be defined with Uri as below:
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uri</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td></td>
+</tr>
+</tbody>
+</table>

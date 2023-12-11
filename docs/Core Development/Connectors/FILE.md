@@ -1,8 +1,14 @@
+---
+sidebar_position: 3
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-**File** connector is used to handle **File**s folders on a local **File** systems
+# File Connector
 
-#### File-connector features:
+**File** Connector is used to handle **File**s folders on a local **File** systems
+
+#### File-Connector features:
 
 Ability to read Files
 Writing Files to directory
@@ -24,6 +30,7 @@ Write
 
 <img src={useBaseUrl('/img/Connectors/FILE_Connector.png')} />;
 
-### Configuring **File** Connector
+### Configuring File Connector
+left click on connector, you can define the **File Connector** configration
 
-Follow these steps to set up and test a connection to your **File** by creating a reusable global variable for the **File** connector to reference.
+

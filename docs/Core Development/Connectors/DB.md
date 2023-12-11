@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Database Connector
@@ -30,11 +34,108 @@ Drag and drop the **DB Connector**
 
 <img src={useBaseUrl('/img/Core Development/DB/DB_connector.png')} />;
 
-### Configuring **Database** Connector
+### Configuring Database Connector
+left click on connector, you can define the **DB Connector** configration
 
+## Read DB Operation
 
-<img src={useBaseUrl('/img/Connectors/DB/DB_config.png')} />;
+<img src={useBaseUrl('/img/Connectors/Read_DB_query4.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DB Operation</td>
+<td></td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Return Roe(s)</td>
+<td></td>
+</tr>
+<tr>
+<td>Output Variable</td>
+<td></td>
+</tr>
+<tr>
+<td>Query</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<img src={useBaseUrl('/img/Connectors/Read_DB_query1.png')} />;
+
+<img src={useBaseUrl('/img/Connectors/Read_DB_query2.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Table Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Your Generated Query is</td>
+<td></td>
+</tr>
+<tr>
+<td>Filters(Fields)</td>
+<td></td>
+</tr>
+<tr>
+<td>Filters(Operation)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+## Write DB Operation
+
+<img src={useBaseUrl('/img/Connectors/Write_DB_config.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DB Operation</td>
+<td>Write</td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td>Classicmodels to be defined in properties file</td>
+</tr>
+<tr>
+<td>Query Type(s)</td>
+<td></td>
+</tr>
+<tr>
+<td>Parent</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+# DB Properties
 
 <img src={useBaseUrl('/img/Connectors/DB/DB_properties.png')} />;
 
-<img src={useBaseUrl('/img/CConnectors/DB/DB_properties1.png')} />;
+<img src={useBaseUrl('/img/Connectors/DB/DB_properties1.png')} />;

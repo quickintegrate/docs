@@ -22,3 +22,22 @@ For **Scheduler** based APIs quickintegrate development kit has **Scheduler Trig
 <img src={useBaseUrl('/img/Core Development/Trigger_config/SCH_config.png')} />;
 
 In Scheduler configurations initialDelay and scheduleDelay needs to be defined. 
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>initialDelay</td>
+<td></td>
+</tr>
+<tr>
+<td>scheduleDelay</td>
+<td></td>
+</tr>
+</tbody>
+</table>

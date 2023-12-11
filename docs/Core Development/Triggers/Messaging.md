@@ -23,5 +23,32 @@ In order to transform messages quickintegrate platform provides component to mak
 <img src={useBaseUrl('/img/Core Development/Trigger_config/msg_config.png')} />;
 
 In Messaging configurations queueName, channelName, listenerDelay and datasource-name needs to be defined. 
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>queueName</td>
+<td></td>
+</tr>
+<tr>
+<td>channelName</td>
+<td></td>
+</tr>
+<tr>
+<td>listenerDelay</td>
+<td></td>
+</tr>
+<tr>
+<td>datasource-name</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/File_properties1.png')} />;
+

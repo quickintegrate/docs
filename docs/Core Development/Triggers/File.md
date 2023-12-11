@@ -25,5 +25,40 @@ In File configurations operation, sourcePath, channelName, filePattern(drop-down
 
 <img src={useBaseUrl('/img/Core Development/file pattern.png')}/>;
 
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>operation</td>
+<td></td>
+</tr>
+<tr>
+<td>sourcePath</td>
+<td></td>
+</tr>
+<tr>
+<td>channelName</td>
+<td></td>
+</tr>
+<tr>
+<td>filePattern</td>
+<td></td>
+</tr>
+<tr>
+<td>listenerDelay</td>
+<td></td>
+</tr>
+<tr>
+<td>destinationPath</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/File_properties1.png')} />;

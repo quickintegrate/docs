@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # MQ Connector
@@ -10,11 +14,77 @@ Listen and reply pattern support on any given destination
 
 Publish and consume pattern support on any given destination, with a fixed or temporary reply queue
 
-#### MQ Connector 
+Drag and drop the **MQ Connector**
 
 <img src={useBaseUrl('/img/Connectors/JMS_connector.png')} />;
 
+### Configuring MQ Connector
+left click on connector, you can define the **MQ Connector** configration
+
+## Write MQ Operation
 <img src={useBaseUrl('/img/Connectors/JMS/JMS_config.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Write</td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td>sampleds to be defined in properties file</td>
+</tr>
+<tr>
+<td>Queue Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Input</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+## Read MQ Operation
+<img src={useBaseUrl('/img/Connectors/MQ_Read_config.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td></td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Queue Name</td>
+<td></td>
+</tr>
+<tr>
+<td>Output</td>
+<td></td>
+</tr>
+<tr>
+<td>Operation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 <img src={useBaseUrl('/img/Connectors/JMS/JMS_properties.png')} />;
 

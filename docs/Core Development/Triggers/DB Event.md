@@ -22,3 +22,30 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 In DB configurations channelName, listenerDelay, listnerTable and datasource-name needs to be defined. 
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/DC_event_config1.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Descripation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>channelName</td>
+<td></td>
+</tr>
+<tr>
+<td>listenerDelay</td>
+<td></td>
+</tr>
+<tr>
+<td>listnerTable</td>
+<td></td>
+</tr>
+<tr>
+<td>datasource-name</td>
+<td></td>
+</tr>
+</tbody>
+</table>
