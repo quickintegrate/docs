@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Build a CURD API using SFDC Contact table from Start to Finish
 
-## Problem Statement
+
 Develop a **SFDC Contact API** on quickintegrate platform which will support **Create/Retrieve/Update/Delete** operation on Contact object in **Salesforce**.
 
 ### Methods:  

@@ -5,7 +5,7 @@ sidebar_position: 4
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Postal details Rest API Design Document
-## Problem Statement 
+
 Create a **REST API** which will accept **customer Id** as **query parameter**. 
 Use that **customer Id** to fetch the data from **Customer Database** in order to get **PIN** code for that customer. Use this **PIN** code to get postal address details from India Post **Rest API**. 
 Transform the response in the desired format to generate final response

@@ -6,7 +6,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import CodeBlock from '@theme/CodeBlock';
 
 # Create Your first hello world API
-## Problem Statement
 
 Develop a **Hello World** REST API on quick integration platform which will accept a GET request and return below message as a response:
 
