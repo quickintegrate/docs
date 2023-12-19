@@ -27,17 +27,20 @@ In Scheduler configurations initialDelay and scheduleDelay needs to be defined.
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>initialDelay</td>
-<td></td>
+<td>Duration after which Polling will start once API Started</td>
+<td>1000</td>
 </tr>
 <tr>
 <td>scheduleDelay</td>
-<td></td>
+<td>Plooing Frequency</td>
+<td>5000</td>
 </tr>
 </tbody>
 </table>

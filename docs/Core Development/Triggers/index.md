@@ -20,15 +20,17 @@ Go to **DEVELOP** >> **Functionality** API
 
 <img src={useBaseUrl('/img/Core Development/Trigger/Develop_fun.png')} />;
 
+#### STEP 4:
 Select relevant project and create services in that project
-
 
 <img src={useBaseUrl('/img/Core Development/Trigger/Service.png')} />; 
 
+#### STEP 5:
 You will find all the triggers in drowndown while creating the flow
 
-<img src={useBaseUrl('/img/Core Development/Triggers.png')} />;
+<img src={useBaseUrl('/img/Core Development/Trigger/Triggers.png')} />;
 
+#### STEP 6:
 Once service name is provided, canvas will show up with selected Trigger
 
 <img src={useBaseUrl('/img/Core Development/Trigger/Rest_trigger.png')} />;

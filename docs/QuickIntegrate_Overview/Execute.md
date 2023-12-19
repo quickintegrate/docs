@@ -5,18 +5,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img src={useBaseUrl('/img/overwiew/Execute.png')} />;
 
-#### Deploy
-This module , one can deploy and run the projects. Multiple options available  to suit to deployment arch. styles. One can download the project which give source code zip file. Run the project on certain port and test it.Deploy to configured instance .Docker Container configuration for the project 
-
-Deploy spring boot jar as per your architecture styles MicroServices , ESB, P2P, Integration Service , Public api , ,Standalone service 
-
 #### Build
+This module creates the gradle project structure  based on the project created on the UI and finally creates executeable jar.
 
+#### Deploy
+This module , one can deploy and run the projects. Multiple options available  to suit to deployment arch. styles. The  project Runs on ATDev Cloud and can be tested using Postman once we start the project.
 
 #### Test Cases
-
-#### rest Cases
+For every Services we can configure the Various test cases with positive and negative seniro
 
 #### Tracebility
+This module , one can see Traceability visually and impact of change in any component in the entire  Requirement Matrix. Traceability from EPIC ->FEATURE ->STORY ->SERICE ->SERVICE DESIGN ->TESTCASE
 
 #### System
+This tabs shows the running designer.quickintegrate Application logs 

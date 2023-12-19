@@ -39,37 +39,49 @@ Drag and drop the **REST Connector**
 ### Configuring REST Connector
 left click on connector, you can define the **REST Connector** configration
 
+Click on the add button to add queryparam, pathparam and headers as key and values respectively.
+
 <img src={useBaseUrl('/img/Connectors/Rest/Rest_config.png')} />;
 
 <table>
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Http URL</td>
-<td></td>
+<td>URL by which the API will be called</td>
+<td>sfdcconnect</td>
 </tr>
 <tr>
 <td>Method</td>
-<td></td>
+<td>Formats like GET, POST, DELETE, etc</td>
+<td>DELETE</td>
 </tr>
 <tr>
 <td>Base Path</td>
-<td></td>
+<td>Resouece Path</td>
+<td>services/data/v55.0/sobjects/Contact/:Id</td>
 </tr>
 <tr>
 <td>Security</td>
-<td></td>
+<td>To be Defined in the propertioes like Basic Authentication, OAuth token, Authorization Code, etc </td>
+<td>sfdcoauth</td>
 </tr>
 <tr>
 <td>Output Variable</td>
-<td></td>
+<td>Stores output of connections operations</td>
+<td>Rest_output</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Input paylad has to be provided for all the methods except GET and DELETE.
+
 
 <img src={useBaseUrl('/img/Connectors/Rest_PostConfig.png')} />;

@@ -19,7 +19,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img src={useBaseUrl('/img/Core Development/DB_event_trigger.png')} />;
 
-In DB configurations channelName, listenerDelay, listnerTable and datasource-name needs to be defined. 
+In DB configurations channelName, listenerDelay, listnerTable and datasource-name needs to be defined.
+
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/DC_event_config1.png')} />;
 
@@ -27,25 +28,30 @@ In DB configurations channelName, listenerDelay, listnerTable and datasource-nam
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>channelName</td>
-<td></td>
+<td>Name of Configration define as Global element</td>
+<td>customerlistnereventchannel</td>
 </tr>
 <tr>
-<td>listenerDelay</td>
-<td></td>
+<td>listenerDelay(ms)</td>
+<td>Duration after which Polling will start once API Started</td>
+<td>50000</td>
 </tr>
 <tr>
 <td>listnerTable</td>
-<td></td>
+<td>DB Table Name</td>
+<td>customer_update</td>
 </tr>
 <tr>
 <td>datasource-name</td>
-<td></td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>customerds</td>
 </tr>
 </tbody>
 </table>

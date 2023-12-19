@@ -27,25 +27,30 @@ In Messaging configurations queueName, channelName, listenerDelay and datasource
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>queueName</td>
-<td></td>
+<td>Name of the queue</td>
+<td>sample</td>
 </tr>
 <tr>
 <td>channelName</td>
-<td></td>
+<td>Name of Configration define as Global element</td>
+<td>orderschannel</td>
 </tr>
 <tr>
 <td>listenerDelay</td>
-<td></td>
+<td>Duration after which Polling will start once API Started</td>
+<td>5000</td>
 </tr>
 <tr>
 <td>datasource-name</td>
-<td></td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>msgds</td>
 </tr>
 </tbody>
 </table>

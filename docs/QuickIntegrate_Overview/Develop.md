@@ -14,3 +14,5 @@ Trigger’s , Transformer’s , Connector’s ,Processor’s , data mappings.Flo
 Data API are the CURD api’s of the existing DB tables. Developer can connect to the DB , fetch the tables and create the CURD api at click of button which is available  as integration flow
 
 #### Data Maping
+
+     `Comming Soon..`

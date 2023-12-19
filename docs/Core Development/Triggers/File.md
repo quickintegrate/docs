@@ -29,33 +29,40 @@ In File configurations operation, sourcePath, channelName, filePattern(drop-down
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>operation</td>
-<td></td>
+<td>What Operations we want to perform using File connectors</td>
+<td>Move</td>
 </tr>
 <tr>
 <td>sourcePath</td>
-<td></td>
+<td>Source path of the file</td>
+<td>/home/dev/git/integration.io/Source/Customers</td>
 </tr>
 <tr>
 <td>channelName</td>
-<td></td>
+<td>Name of Configration define as Global element</td>
+<td>ReadFileChannel</td>
 </tr>
 <tr>
 <td>filePattern</td>
-<td></td>
+<td>Format of the file like Json,XML,CSV,etc</td>
+<td>CSV</td>
 </tr>
 <tr>
 <td>listenerDelay</td>
-<td></td>
+<td>Duration after which Polling will start once API Started</td>
+<td>5000</td>
 </tr>
 <tr>
 <td>destinationPath</td>
-<td></td>
+<td>The Path where Processed file will be stored</td>
+<td>destination</td>
 </tr>
 </tbody>
 </table>

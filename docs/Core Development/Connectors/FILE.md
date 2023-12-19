@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -32,5 +32,22 @@ Write
 
 ### Configuring File Connector
 left click on connector, you can define the **File Connector** configration
+
+## Read File Operation
+Define configuration for file connector to read a file by selecting operation as Read. Add destination in properties to poll the file.
+Provide the file name and select operation(MOVE or DELETE) to define further course of action for the file read from the destination. 
+
+<img src={useBaseUrl('/img/Connectors/MQ/ReadMQ.png')} />;
+
+
+## Write File Operation
+Define configuration for file connector to write a file by selecting operation as Write. Add destination in properties to write the file.
+Provide the file name and file type(XML, JSON etc.). Please select Append to continue write operation in the same file or select OverWrite to overwrite the file every time operation is performed.
+
+
+<img src={useBaseUrl('/img/Connectors/MQ/WriteMQ.png')} />;
+
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -22,65 +22,76 @@ Drag and drop the **MQ Connector**
 left click on connector, you can define the **MQ Connector** configration
 
 ## Write MQ Operation
+To perform write operation on MQ, provide queue name and input payload.
+
 <img src={useBaseUrl('/img/Connectors/JMS/JMS_config.png')} />;
 
 <table>
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Type</td>
-<td>Write</td>
+<td>Read/Write</td>
 </tr>
 <tr>
 <td>Datasource Name</td>
-<td>sampleds to be defined in properties file</td>
+<td>Datasource Name which is configured in connections properties</td>
 </tr>
 <tr>
 <td>Queue Name</td>
-<td></td>
+<td>Name of the queue</td>
 </tr>
 <tr>
 <td>Input</td>
-<td></td>
+<td>Input to the connectors</td>
 </tr>
 </tbody>
 </table>
 
 
 ## Read MQ Operation
+To perform read operation on MQ, provide queue name and output payload. Please select operation(MOVE or DELETE) to define further course of action for the message read from the queue.
+
 <img src={useBaseUrl('/img/Connectors/MQ_Read_config.png')} />;
 
 <table>
 <thead>
 <tr>
 <th>Fields</th>
-<th>Descripation</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Type</td>
+<td>Read/Write</td>
 <td></td>
 </tr>
 <tr>
 <td>Datasource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
 <td></td>
 </tr>
 <tr>
 <td>Queue Name</td>
+<td>Name of the Queue</td>
 <td></td>
 </tr>
 <tr>
+<td>Output</td>
 <td>Output</td>
 <td></td>
 </tr>
 <tr>
 <td>Operation</td>
+<td>What Operations we want to perform using MQ connectors</td>
 <td></td>
 </tr>
 </tbody>
