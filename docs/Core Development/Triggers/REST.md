@@ -36,7 +36,7 @@ In REST configurations uri and type needs to be defined. Query and Uri parameter
 <tr>
 <td>uri</td>
 <td>Resource Path</td>
-<td>contact/{ContactId}</td>
+<td>`contact/{ContactId}`</td>
 </tr>
 <tr>
 <td>type</td>
