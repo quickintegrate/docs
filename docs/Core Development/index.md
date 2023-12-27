@@ -3,7 +3,9 @@ import DocCardList from '@theme/DocCardList';
 
 # Core Development
 Integrate apps and data instantly using connectors — **with clicks, not code.**
-Development to deployment The Core part of the API Creation
-> **Triggers, Connectors, Components, Transformers, Property Config, Execute API, Define, Develop, Manage, Execute, Quicintegrate Samples**
+
+
+"From development to deployment, the pivotal phase of API creation involves the Core elements:
+Triggers, Connectors, Components, Transformers, Property Configuration, API Execution, Definition, Development, Management, Execution, and Quickintegrate Samples"
 
 <DocCardList />

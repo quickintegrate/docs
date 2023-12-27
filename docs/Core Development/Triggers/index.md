@@ -2,7 +2,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocCardList from '@theme/DocCardList';
 
 # Triggers
-Trigger is source component of a flow and it is responsible for initiating the flow processing. There are different type of triggers available in quickintegrate platform  to serve different functionalities
+
+The Trigger acts as the initial component within a flow, instigating the flow processing. Within the quickintegrate platform, various types of triggers are available, each catering to distinct functionalities.
 
 #### SETP 1:
 Once we Login to Quick Integration Platform to get started.

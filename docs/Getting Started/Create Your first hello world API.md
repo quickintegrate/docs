@@ -99,17 +99,19 @@ Save the application.
 <img src={useBaseUrl('/img/hello/4save.png')} />;
 
 #### Step 13:
-Build the application.
+
+Go to **EXECUTE** >> **BUILD** 
+to Build the application.
 
 <img src={useBaseUrl('/img/hello/5build api.png')} />;
 
 #### Step 14:
-Deploy the application after build. Click on the project and pass the security key in application. Click on deploy application.
+Deploy the application after build. Select the Application Name From Drop down, and pass the security key in Properties. Click on deploy application.
 
 <img src={useBaseUrl('/img/hello/6deploy application .png')} />;
 
 #### Step 15: 
-Bring **UP** the application by clicking on project.
+Go to application and Bring **UP** the application by clicking on project.
 
 <img src={useBaseUrl('/img/hello/7application .png')} />;
 
@@ -124,7 +126,7 @@ Once you Successfully started your API, you will find Development URL in Details
 <img src={useBaseUrl('/img/hello/addedsteps/details.png')} />;
 
 #### Step 18:
-You can Test your API using Postman Collection
+Using the QuickIntegrate deployed URL You can Test your API using Postman Collection
 
 <img src={useBaseUrl('/img/hello/9output response.png')} />;
 

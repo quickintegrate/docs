@@ -39,7 +39,7 @@ In Scheduler configurations initialDelay and scheduleDelay needs to be defined.
 </tr>
 <tr>
 <td>scheduleDelay</td>
-<td>Plooing Frequency</td>
+<td>Polling Frequency</td>
 <td>5000</td>
 </tr>
 </tbody>

@@ -6,21 +6,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Database Connector
 
-The **Database** connector can connect to almost any Java **Database** Connectivity (JDBC) relational **Database** and run SQL operations. You can specify MEL expressions in connector fields and configure attributes dynamically, depending on the **Database** configuration you use. An application can support multi-tenant scenarios using the same configuration element, changing the connection attributes based on, for example, information coming from each request.
+The Database connector establishes connectivity with a wide range of Java Database Connectivity (JDBC) relational Databases, enabling the execution of SQL operations. It allows the utilization of MEL expressions within connector fields and the dynamic configuration of attributes based on the specific Database configuration employed. This flexibility facilitates multi-tenant scenarios by adjusting connection attributes according to the information received from individual requests.
 
-You can perform predefined queries, dynamically constructed queries, and template queries that are self-sufficient and customizable. You can perform multiple SQL requests in a single bulk update and make Data Definition Language (DDL) requests that alter the data structure rather than the data itself. The **Database** connector is available with QuickIntegration.
+Various query types are supported, including predefined, dynamically constructed, and customizable template queries. Batch updates enable the execution of multiple SQL requests in a single operation, while Data Definition Language (DDL) requests modify the data structure without altering the data itself. The Database connector is an integral part of QuickIntegration.
 
-### Basic Setup Steps
+To configure the Database connector:
 
-1) Configure a **Database** connector where you define:
-2) Your **Database**’s location and connection details
-3) You may need to add your **Database** driver as a dependency to your app for the connector to work.
-4) Advanced connection parameters such as connection pooling
-5) Configure the operation:
-6) Contains the query to perform on the **Database**
+Define your Database’s location and connection details.
+Configure the operation you wish to perform.
+Include the query to execute on the Database.
 
-### Supported Operations
-The **Database** connector supports the following operations:
+## Supported Operations:
+The Database connector offers support for the following operations:
 
 1) Select
 
@@ -79,7 +76,11 @@ left click on connector, you can define the **DB Connector** configration
 </table>
 
 #### Let see how to write the query using quickintegration with few clicks
- 
+Click on the Querry Generator icon
+
+<img src={useBaseUrl('/img/Connectors/DB/querryIcon.png')} />;
+
+
 Select the table Name from the Droup down list, we can limit the number of records To be retrieved
 In filters add the condition for fields use in the query with the help of operation like NULL, NOT NULL, =, !=, etc
 Your Generated Query will get Created.

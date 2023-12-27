@@ -171,12 +171,12 @@ Left click on **URIVALIDATOR** Connector and Configure as given below.
 <tbody>
 <tr>
 <td>Scenario-Name</td>
-<td> </td>
+<td>Name of the scenario to be performed in case the validation failed.</td>
 <td>Validate_request</td>
 </tr>
 <tr>
 <td>Request Params</td>
-<td> </td>
+<td>Names of the param keys passed in query parameters.</td>
 <td>ID</td>
 </tr>
 </tbody>
@@ -202,6 +202,43 @@ Left click on **DB** Connector and Configure as given below.
 Select the database configuration created in properties to **DB** connectivity in datasource name:
 
 <img src={useBaseUrl('/img/DB_Rest_API/11.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DB Operation</td>
+<td>Read/Write</td>
+<td>Read</td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>dbds</td>
+</tr>
+<tr>
+<td>Return Row(s)</td>
+<td>Single, Multiple</td>
+<td>Single</td>
+</tr>
+<tr>
+<td>Output Variable</td>
+<td>This field is the variable name for which the output of the following step is store in the pipeline </td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Query</td>
+<td>This is the Database commands</td>
+<td>SELECT pin FROM crm_customers WHERE id=:id</td>
+</tr>
+</tbody>
+</table>
 
 #### Let see how to write the query using quickintegration with few clicks
  
@@ -238,17 +275,17 @@ Your Generated Query will get Created.
 <tr>
 <td>Table Name</td>
 <td>Data Base Table Name</td>
-<td></td>
+<td>crm_customers</td>
 </tr>
 <tr>
 <td>Your Generated Query is</td>
 <td>Data Base Query</td>
-<td></td>
+<td>SELECT pin FROM crm_customers WHERE id:id</td>
 </tr>
 <tr>
 <td>Filters(Fields)</td>
 <td>Perticular field where DB will Operate</td>
-<td></td>
+<td>id</td>
 </tr>
 <tr>
 <td>Filters(Operation)</td>
@@ -258,42 +295,6 @@ Your Generated Query will get Created.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DB Operation</td>
-<td>Read/Write</td>
-<td></td>
-</tr>
-<tr>
-<td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties</td>
-<td></td>
-</tr>
-<tr>
-<td>Return Row(s)</td>
-<td>Single, Multiple</td>
-<td></td>
-</tr>
-<tr>
-<td>Output Variable</td>
-<td>This field is the variable name for which the output of the following step is store in the pipeline </td>
-<td></td>
-</tr>
-<tr>
-<td>Query</td>
-<td>This is the Database commands</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 
 #### STEP 14:
 
@@ -339,7 +340,7 @@ Left click on **REST** Connector and Configure as given below.
 </tr>
 <tr>
 <td>Base Path</td>
-<td>Resouece Path</td>
+<td>Resource Path</td>
 <td>/pincode/;pincode</td>
 </tr>
 <tr>
@@ -569,3 +570,15 @@ PFB the final service screenshot below :
 
 
 <img src={useBaseUrl('/img/DB_Rest_API/18.png')} />; 
+
+#### STEP 23: 
+Step to Test the API Deployed on QuickIntegration.
+
+1) Save the application.
+2) Go to **EXECUTE** >> **BUILD** 
+to Build the application.
+3) Deploy the application after build. Select the Application Name From Drop down, and pass the security key in Properties. Click on deploy application.
+4) Go to application and Bring **UP** the application by clicking on project.
+5) Provide the security key and start the API.
+6) Once you Successfully started your API, you will find Development URL in Details Coloumn
+7) Using the QuickIntegrate deployed URL You can Test your API using Postman Collection

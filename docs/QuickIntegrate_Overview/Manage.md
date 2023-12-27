@@ -1,15 +1,15 @@
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
-#### QuickIntegrate platform also provides **API management** capabilities after deployment where we can scale the API, apply policies etc.
+#### QuickIntegrate platform also provides API management capabilities after deployment where we can scale the API, apply policies etc.
 
 <img src={useBaseUrl('/img/overwiew/Manage.png')} />;
 
 #### Projects
-This module, one can mange Projects, Services and Test Cases .  These are linked to each other for tracing.Each Projects groups services which are deployed as spring Boot jar/microservices. Projects can be created & managed e.g Service versioning and duplication of services
+This module facilitates the management of Projects, Services, and Test Cases, interconnected for traceability. Projects categorize services, deployed as Spring Boot JARs or microservices. It allows for project creation and management, including service versioning and duplication.
 
 #### Requirements
-This module, one can mange all Requirements related artifacts like EPIC , Features and Stories. One can define the same in required details and provide the link to external system where its detailed. These are linked to each other for tracing.
+This module serves as a hub for managing all artifacts related to requirements, such as EPICs, Features, and Stories. It allows detailed definition and linkage to external systems for additional information, ensuring interconnectedness for traceability purposes
 
 #### Test Cases
-This module, one can mange all TestCase creation . Technical or Functional test case are detailed for completeness from Designer or Developer perspective. Test Cases can be against the Service or Story .
+This module facilitates comprehensive TestCase creation, detailing both technical and functional aspects from the perspective of Designers or Developers. Test Cases can be created for Services or Stories to ensure thoroughness.

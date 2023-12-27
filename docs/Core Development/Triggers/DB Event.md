@@ -3,7 +3,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **DB trigger** is available to get the records from DB for newly created records.
 
->When we Login to Quick Integration Platform to get started.
+>Login to Quick Integration Platform to get started.
 
 >Click on **Manage** Option >> **Projects** >> **Create** to create the new project
 
@@ -22,7 +22,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 In DB configurations channelName, listenerDelay, listnerTable and datasource-name needs to be defined.
 
 
-<img src={useBaseUrl('/img/Core Development/Trigger_config/DC_event_config1.png')} />;
+<img src={useBaseUrl('/img/Core Development/Trigger_config/DC_event_Config1.png')} />;
 
 <table>
 <thead>

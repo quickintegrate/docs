@@ -46,4 +46,4 @@ In REST configurations uri and type needs to be defined. Query and Uri parameter
 </tbody>
 </table>
 
-`URI parameters are defiened in curly brakets`
+`URI parameters are defiened in curly brackets`
