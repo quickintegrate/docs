@@ -4,7 +4,7 @@ sidebar_position: 2
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# REST Connect Connector
+# REST Connector
 
 The Exchange backend uses REST Connect to transparently convert a REST API specification to a QuickIntegration connector. 
 Security Scheme Support
@@ -69,7 +69,7 @@ Click on the add button to add queryparam, pathparam and headers as key and valu
 </tr>
 <tr>
 <td>Security</td>
-<td>To be Defined in the propertioes like Basic Authentication, OAuth token, Authorization Code, etc </td>
+<td>To be Defined in the properties like Basic Authentication, OAuth token, Authorization Code, etc </td>
 <td>sfdcoauth</td>
 </tr>
 <tr>

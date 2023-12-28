@@ -11,6 +11,7 @@ For **Scheduler** based APIs quickintegrate development kit has **Scheduler Trig
 >Go to **DEVELOP** >> **Functionality** API
 
 >Select relevant project and create services in that project
+by cliking **Service** button.
 
 >Select **Scheduler** triggers in drowndown while creating the flow
 
@@ -21,7 +22,7 @@ For **Scheduler** based APIs quickintegrate development kit has **Scheduler Trig
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/SCH_config.png')} />;
 
-In Scheduler configurations initialDelay and scheduleDelay needs to be defined. 
+Right click the tigger node to add the Scheduler configurations initialDelay and scheduleDelay needs to be defined. 
 
 <table>
 <thead>

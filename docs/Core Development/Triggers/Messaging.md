@@ -10,6 +10,7 @@ In order to transform messages quickintegrate platform provides component to mak
 >Go to **DEVELOP** >> **Functionality** API
 
 >Select relevant project and create services in that project
+by cliking **Service** button.
 
 >Select **Messaging** triggers in drowndown while creating the flow
 
@@ -22,7 +23,8 @@ In order to transform messages quickintegrate platform provides component to mak
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/msg_config.png')} />;
 
-In Messaging configurations queueName, channelName, listenerDelay and datasource-name needs to be defined. 
+Right click the tigger node to add the Messaging configurations queueName, channelName, listenerDelay and datasource-name needs to be defined.
+
 <table>
 <thead>
 <tr>

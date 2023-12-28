@@ -10,6 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 >Go to **DEVELOP** >> **Functionality** API
 
 >Select relevant project and create services in that project
+by cliking **Service** button.
 
 >Select **DB Event** triggers in drowndown while creating the flow
 
@@ -19,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img src={useBaseUrl('/img/Core Development/DB_event_trigger.png')} />;
 
-In DB configurations channelName, listenerDelay, listnerTable and datasource-name needs to be defined.
+Right click the tigger node to add the DB configurations channelName, listenerDelay, listnerTable and datasource-name needs to be defined.
 
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/DC_event_Config1.png')} />;

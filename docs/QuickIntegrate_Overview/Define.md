@@ -15,7 +15,7 @@ Create Swagger definitions for your APIs as required, following a top-down appro
 Develop the virtual model, including database tables and columns, and generate CRUD APIs from it. Alternatively, leverage it as a schema for your integration flow.
 
 #### Schema Design 
-Rephrase from product documentation prospective for am iPass platform.
+Establish the data model schema intended for integration within flows
 
 #### Service Design
 Thoroughly develop the Service Design encompassing detailed information such as feature specifications, data mapping, endpoints, handling exception scenarios, request and response structures, non-functional requirements (NFRs), as well as positive and negative scenarios.

@@ -11,6 +11,7 @@ Quickintegrate platform supports **REST API** development using HTTP trigger whe
 3) Go to **DEVELOP** >> **Functionality** API
 
 4) Select relevant project and create services in that project
+by cliking **Service** button.
 
 5) Select **REST** triggers in drowndown while creating the flow
 
@@ -22,7 +23,7 @@ Quickintegrate platform supports **REST API** development using HTTP trigger whe
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/Rest_config.png')} />;
 
-In REST configurations uri and type needs to be defined. Query and Uri parameters can be defined with Uri as below:
+Right click the tigger node to add the REST configurations uri and type needs to be defined. Query and Uri parameters can be defined with Uri as below:
 
 <table>
 <thead>

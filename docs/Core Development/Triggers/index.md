@@ -23,6 +23,7 @@ Go to **DEVELOP** >> **Functionality** API
 
 #### STEP 4:
 Select relevant project and create services in that project
+by cliking **Service** button.
 
 <img src={useBaseUrl('/img/Core Development/Trigger/Service.png')} />; 
 

@@ -10,6 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 >Go to **DEVELOP** >> **Functionality** API
 
 >Select relevant project and create services in that project
+by cliking **Service** button.
 
 >Select File triggers in drowndown while creating the flow
 
@@ -21,7 +22,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img src={useBaseUrl('/img/Core Development/Trigger_config/File_config.png')} />;
 
-In File configurations operation, sourcePath, channelName, filePattern(drop-down list with patterns such as CSV, JSON etc.), listenerDelay and destinationPath(to be defined in properties file) needs to be defined.
+Right click the tigger node to add the File configurations operation, sourcePath, channelName, filePattern(drop-down list with patterns such as CSV, JSON etc.), listenerDelay and destinationPath(to be defined in properties file) needs to be defined.
 
 <img src={useBaseUrl('/img/Core Development/file pattern.png')}/>;
 
