@@ -39,7 +39,7 @@ A design that aligns consistently with the FTP DataSource and SFTP DataSource.
 <td></td>
 </tr>
 <tr>
-<td> </td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
