@@ -34,24 +34,24 @@ A design that aligns consistently with the FTP DataSource and SFTP DataSource.
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>DataSource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>successrecords</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>DataSource Type</td>
+<td>FILE</td>
+<td>FILE</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Environment</td>
+<td>Provides a production environment where you can deploy applications and APIs publicly</td>
+<td>dev</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>URL</td>
+<td>A URL (Uniform Resource Locator) is a unique identifier used to locate a resource on the FILE</td>
+<td>FILE URL</td>
 </tr>
 </tbody>
 </table>

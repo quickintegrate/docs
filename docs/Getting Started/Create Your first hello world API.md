@@ -45,11 +45,16 @@ Take REST Trigger from the pallet and configure it.
 
 #### Step 6:
 Drag and drop **APIRESPONSE**  Transformer from the pallet.
-Left click on **APIRESPONSE** Transformer and Configure as given below.
-
 <img src={useBaseUrl('/img/hello/addedsteps/apiresponse_Connector.png')} />;
 
-#### Step 7: 
+<img src={useBaseUrl('/img/Core Development/Transformer/drag and drop APIRes.png')} />;
+
+#### Step 7:
+Left click on **APIRESPONSE** Transformer and Configure as given below.
+
+<img src={useBaseUrl('/img/hello/3API_Response.png')} />;
+
+#### Step 8: 
 
 Click on the Drop down and select Content Type application json
 
@@ -57,7 +62,7 @@ Click on the Drop down and select Content Type application json
 
 <img src={useBaseUrl('/img/hello/addedsteps/Contenttype_addbutton.png')} />;
 
-#### Step 8: 
+#### Step 9: 
 
 Click on Add button From Drop down select TRANS
 
@@ -65,13 +70,13 @@ Click on Add button From Drop down select TRANS
 
 <img src={useBaseUrl('/img/hello/addedsteps/trans type.png')} />;
 
-#### Step 9: 
+#### Step 10: 
 
 Click on the add button You will see Inline functions, click on + icon 
 
 <img src={useBaseUrl('/img/hello/addedsteps/addCondition4.png')} />;
 
-#### Step 10: 
+#### Step 11: 
 
 Select Utils and Constant from droup down
 Add Parameters as a hello world and Save
@@ -82,50 +87,50 @@ Add Parameters as a hello world and Save
 
 <img src={useBaseUrl('/img/hello/addedsteps/Constant .png')} />;
 
-#### Step 11:
+#### Step 12:
+
+The configuration of the APIRESPONSE Transformer appears as follows:
 
 <img src={useBaseUrl('/img/hello/addedsteps/save0.6.png')} />;
 
 Target- In target write Status and you will find Key as below
 
-
 Key- Utils.constant(hello world)
 
-<img src={useBaseUrl('/img/hello/3API_Response.png')} />;
 
-#### Step 12: 
+#### Step 13: 
 Save the application.
 
 <img src={useBaseUrl('/img/hello/4save.png')} />;
 
-#### Step 13:
+#### Step 14:
 
 Go to **EXECUTE** >> **BUILD** 
 to Build the application.
 
 <img src={useBaseUrl('/img/hello/5build api.png')} />;
 
-#### Step 14:
+#### Step 15:
 Deploy the application after build. Select the Application Name From Drop down, and pass the security key in Properties. Click on deploy application.
 
 <img src={useBaseUrl('/img/hello/6deploy application .png')} />;
 
-#### Step 15: 
+#### Step 16: 
 Go to application and Bring **UP** the application by clicking on project.
 
 <img src={useBaseUrl('/img/hello/7application .png')} />;
 
-#### Step 16:
+#### Step 17:
 Provide the security key and start the API.
 
 <img src={useBaseUrl('/img/hello/8start application.png')} />;
 
-### Step 17:
+### Step 18:
 Once you Successfully started your API, you will find Development URL in Details Coloumn
 
 <img src={useBaseUrl('/img/hello/addedsteps/details.png')} />;
 
-#### Step 18:
+#### Step 19:
 Using the QuickIntegrate deployed URL You can Test your API using Postman Collection
 
 <img src={useBaseUrl('/img/hello/9output response.png')} />;

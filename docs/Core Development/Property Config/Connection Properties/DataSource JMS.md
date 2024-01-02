@@ -48,7 +48,8 @@ The publish and subscribe model allows a sender to publish messages to a specifi
 1) Click On the Connection Properties
 2) Select the DataSource Type from drop down
 3) Provide the Credentials 
-4) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
+4) Click on Submit to save the Crediantials
+5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
 <img src={useBaseUrl('/img/Core Development/Connection properties/JMS1.png')} />;
 
@@ -64,49 +65,49 @@ The publish and subscribe model allows a sender to publish messages to a specifi
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>DataSource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>schdulemsgds</td>
 </tr>
 <tr>
-<td> </td>
-<td></td>
-<td></td>
+<td>DataSource Type</td>
+<td>JMS</td>
+<td>JMS</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Environment</td>
+<td>Provides a production environment where you can deploy applications and APIs publicly</td>
+<td>dev</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>JMS Type</td>
+<td>RABBITMQ/ACTIVEMQ</td>
+<td>RABBITMQ</td>
 </tr>
 <tr>
+<td>Virtual Host</td>
 <td></td>
-<td></td>
-<td></td>
+<td>/</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Host</td>
+<td>A hostname is a domain name assigned to a host computer</td>
+<td>abcd</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Port</td>
+<td>A port is a virtual point where network connections start and end.</td>
+<td>123</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>User Name</td>
+<td>A name that uses for identification purposes when logging </td>
+<td>integration</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>Password</td>
+<td>A password is a string of characters used to verify the identity of a user during the authentication process</td>
+<td>abcd</td>
 </tr>
 </tbody>
 </table>

@@ -481,6 +481,8 @@ Please refer the configration shown below
 </tbody>
 </table>
 
+#### STEP 20:
+
 <img src={useBaseUrl('/img/DB_Rest_API/16.1.png')} />; 
 
 If **DB** does not return response for a customer Id, error message is created as “No customer found”. PFB the configuration for reference:

@@ -51,8 +51,10 @@ Right click the tigger node to add the DB configurations channelName, listenerDe
 </tr>
 <tr>
 <td>datasource-name</td>
-<td>Datasource Name which is configured in connections properties</td>
+<td><a href="/docs/docs/Core Development/Property Config/Connection Properties/DataSource JDBC">Datasource Name which is configured in connections properties</a></td>
 <td>customerds</td>
 </tr>
 </tbody>
 </table>
+
+

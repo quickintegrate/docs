@@ -10,7 +10,7 @@ The Database connector establishes connectivity with a wide range of Java Databa
 
 Various query types are supported, including predefined, dynamically constructed, and customizable template queries. Batch updates enable the execution of multiple SQL requests in a single operation, while Data Definition Language (DDL) requests modify the data structure without altering the data itself. The Database connector is an integral part of QuickIntegration.
 
-To configure the Database connector:
+**To configure the Database connector:**
 
 Define your Database’s location and connection details.
 Configure the operation you wish to perform.

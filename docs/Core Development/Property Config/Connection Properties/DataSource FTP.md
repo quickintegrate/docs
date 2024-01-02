@@ -41,38 +41,38 @@ The FTP DataSource facilitates access to files and directories hosted on an FTP 
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td> </td>
-<td></td>
+<td>DataSource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
 <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>DataSource Type</td>
+<td>FTP</td>
+<td>FTP</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Provides a production environment where you can deploy applications and APIs publicly</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>A hostname is a domain name assigned to a host computer</td>
+<td>abcd</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>A port is a virtual point where network connections start and end.</td>
+<td>123</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>A name that uses for identification purposes when logging </td>
 <td></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td>Password</td>
+<td>A password is a string of characters used to verify the identity of a user during the authentication process</td>
 <td></td>
 </tr>
 </tbody>

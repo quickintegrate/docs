@@ -15,7 +15,8 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
 1) Click On the Connection Properties
 2) Select the DataSource Type from drop down
 3) Provide the Credentials 
-4) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
+4) Click on Submit to save the Crediantials
+5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
 <img src={useBaseUrl('/img/Core Development/Connection properties/JDBC.png')} />;
 
@@ -32,7 +33,7 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
 <tr>
 <td>DataSource Name</td>
 <td>Datasource Name which is configured in connections properties</td>
-<td></td>
+<td>dbds</td>
 </tr>
 <tr>
 <td>DataSource Type</td>
@@ -41,33 +42,33 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
 </tr>
 <tr>
 <td>Driver ClassName</td>
-<td></td>
-<td></td>
+<td>A string that identifies the primary class for a JDBC driver</td>
+<td>com.mysql.cj.jdbc.Driver</td>
 </tr>
 <tr>
 <td>URL</td>
-<td></td>
-<td></td>
+<td>A URL (Uniform Resource Locator) is a unique identifier used to locate a resource on the Internet</td>
+<td>JDBC URL</td>
 </tr>
 <tr>
 <td>User Name</td>
-<td></td>
-<td></td>
+<td>A name that uses for identification purposes when logging </td>
+<td>root</td>
 </tr>
 <tr>
 <td>Password</td>
-<td></td>
-<td></td>
+<td>A password is a string of characters used to verify the identity of a user during the authentication process</td>
+<td>abcd</td>
 </tr>
 <tr>
 <td>Environment</td>
-<td></td>
-<td></td>
+<td>Provides a production environment where you can deploy applications and APIs publicly</td>
+<td>dev</td>
 </tr>
 <tr>
 <td>DataBase</td>
-<td></td>
-<td></td>
+<td>Database driver</td>
+<td>SQL</td>
 </tr>
 </tbody>
 </table>
