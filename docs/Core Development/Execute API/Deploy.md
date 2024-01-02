@@ -31,7 +31,7 @@ Please access the dropdown menu and choose the appropriate project.
 #### Step 4:
 
 Click on the **Properties**
-Enter the security key, encrypt the value, and proceed by clicking on **Deploy Application.**
+Enter the security key, Encrypt the value, and proceed by clicking on **Deploy Application.**
 
 <img src={useBaseUrl('/img/Core Development/Execute API/deploy application button.png')} />;
 
@@ -40,22 +40,3 @@ Enter the security key, encrypt the value, and proceed by clicking on **Deploy A
 Once the application deployment process finishes, a popup will confirm successful deployment.
 
 <img src={useBaseUrl('/img/Core Development/Execute API/successfully deploy.png')} />;
-
-#### Step 6:
-
-Go to the **Application** Column and select the relevant project to initiate the deployed application.
-
-<img src={useBaseUrl('/img/Core Development/Execute API/application colum deploy.png')} />;
-
-#### Step 7:
-
-Within the **Runtime Properties**, Provide the security key for decryption, then click the **Start** button to deploy your application
-
-<img src={useBaseUrl('/img/Core Development/Execute API/Start deploy .png')} />;
-
-#### Step 8:
-
-Within the Details Column, you'll find all the information about your API, including the deployed URL for testing it.
-
-<img src={useBaseUrl('/img/Core Development/Execute API/details .png')} />;
-

@@ -14,7 +14,7 @@ Use the Global element to apply configuration details to multiple local elements
 2) **Efficiency**
 3) **Flexibility**
 
-## Create a Global Varaible
+## Create a Global Variable
 
 A Global element is a container for keys and values accessible across the entire application. Once defined in the Global Variables section with the 'VARIABLES' prefix, users can invoke the keys to access pre-set values. These values remain static within the flow and are only modifiable during service development or before deployment. Once the application begins, these values become immutable but remain usable. Services within the application can utilize these pre-defined keys as part of their pipeline.
 

@@ -55,10 +55,10 @@ left click on connector, you can define the **DB Connector** configration
 <tr>
 <td>Datasource Name</td>
 <td>Datasource Name which is configured in connections properties</td>
-<td>lassicmodels</td>
+<td>Classicmodels</td>
 </tr>
 <tr>
-<td>Return Roe(s)</td>
+<td>Return Row(s)</td>
 <td>Single/Multiple</td>
 <td>Multiple</td>
 </tr>
@@ -76,14 +76,12 @@ left click on connector, you can define the **DB Connector** configration
 </table>
 
 #### Let see how to write the query using quickintegration with few clicks
-Click on the Querry Generator icon
+Click on the Query Generator icon
 
 <img src={useBaseUrl('/img/Connectors/DB/querryIcon.png')} />;
 
 
-Select the table Name from the Droup down list, we can limit the number of records To be retrieved
-In filters add the condition for fields use in the query with the help of operation like NULL, NOT NULL, =, !=, etc
-Your Generated Query will get Created.
+Choose the table name from the dropdown list to specify the source. We can set a limit on the number of records to retrieve. In the filters section, include conditions for the fields to be used in the query, employing operations such as NULL, NOT NULL, =, !=, etc. Your query will be generated based on these selections
 
 <img src={useBaseUrl('/img/Connectors/Read_DB_query1.png')} />;
 
@@ -126,9 +124,7 @@ Your Generated Query will get Created.
 
 <img src={useBaseUrl('/img/Connectors/Write_DB_config.png')} />;
 
-When we have to perform Operations to modify records in the DB We can select **Write** From DB Operations,
-Let see how to write a delete query.
-Select the query Type **Delete** from the dropdown list, selet bulk operation to delete multiple records using single query and define fields for the delete condition.  
+When we need to modify records in the database, we can choose the **Write** option from the DB Operations menu. Let's explore how to compose a delete query. Choose the query type as **Delete** from the dropdown list, opt for bulk operation to delete multiple records using a single query, and specify the fields for the delete condition. 
 
 <table>
 <thead>
