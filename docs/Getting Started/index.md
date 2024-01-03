@@ -1,3 +1,8 @@
+---
+id: getting-started
+slug: /
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocCardList from '@theme/DocCardList';
 
