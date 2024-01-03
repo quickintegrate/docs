@@ -38,18 +38,22 @@ To perform write operation on MQ, provide queue name and input payload.
 <tr>
 <td>Type</td>
 <td>Read/Write</td>
+<td>Write</td>
 </tr>
 <tr>
 <td>Datasource Name</td>
 <td>Datasource Name which is configured in connections properties</td>
+<td>sampleds</td>
 </tr>
 <tr>
 <td>Queue Name</td>
 <td>Name of the queue</td>
+<td>sample</td>
 </tr>
 <tr>
 <td>Input</td>
 <td>Input to the connectors</td>
+<td>TransformedOutput</td>
 </tr>
 </tbody>
 </table>
@@ -72,17 +76,17 @@ To perform read operation on MQ, provide queue name and output payload. Please s
 <tr>
 <td>Type</td>
 <td>Read/Write</td>
-<td></td>
+<td>Read</td>
 </tr>
 <tr>
 <td>Datasource Name</td>
 <td>Datasource Name which is configured in connections properties</td>
-<td></td>
+<td>sampleds</td>
 </tr>
 <tr>
 <td>Queue Name</td>
 <td>Name of the Queue</td>
-<td></td>
+<td>sample</td>
 </tr>
 <tr>
 <td>Output</td>
@@ -92,7 +96,7 @@ To perform read operation on MQ, provide queue name and output payload. Please s
 <tr>
 <td>Operation</td>
 <td>What Operations we want to perform using MQ connectors</td>
-<td></td>
+<td>Rest_output</td>
 </tr>
 </tbody>
 </table>

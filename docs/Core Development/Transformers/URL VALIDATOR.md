@@ -41,12 +41,12 @@ Configuring **URL Validator**
 <tbody>
 <tr>
 <td>Scenario-Name</td>
-<td></td>
+<td>Name of the scenario to be performed in case the validation failed.</td>
 <td>Validate_request</td>
 </tr>
 <tr>
 <td>Request Params</td>
-<td></td>
+<td>Names of the param keys passed in query parameters.</td>
 <td>ID</td>
 </tr>
 </tbody>

@@ -5,10 +5,11 @@ sidebar_position: 4
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # PAYLOAD
-
 #### Step 1:
 Drag and drop the **PAYLOAD**Components from the pallatte
+
 <img src={useBaseUrl('/img/Core Development/Transformer/payload.png')} />;
+ 
 
 <img src={useBaseUrl('/img/Core Development/Transformer/drag and drop Payload.png')} />;
 
@@ -20,7 +21,8 @@ left click on PAYLOAD Components, you can define the **PAYLOAD** configration as
 <img src={useBaseUrl('/img/Core Development/Transformer/payload config.png')} />;
 
 #### Step 3:
-Provide the Output Variable
+Provide the Output Variable 
+*Stores output of connections operations
 
 #### Step 4:
 Click on Add button and do the mapping as shown 
