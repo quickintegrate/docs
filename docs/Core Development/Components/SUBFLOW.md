@@ -6,7 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Sub-flow 
 
-A sub-flow is a scope that enables you to group event processors in a manner similar to that of a flow, but with certain differences and limitations:
+A Subflow functions as a component block linked to the Decision Box. The Decision Box determines which Subflow to execute based on selected conditions. Multiple Subflows can be associated with each Decision Box. The behavior of the Subflow adapts according to the condition type chosen.
+
+When employing 'if-else-elseif' conditions, the subsequent Subflow execution hinges on the evaluation of these conditions. Meanwhile, with a 'Loop' condition, the input is treated as a list. The Subflow iterates through this list to perform specified tasks. The output of the loop component becomes the final step's output within the Subflow, processing each element from the input list individually.
 
 1) Subflows do not have trigger sources.
 
@@ -15,3 +17,24 @@ A sub-flow is a scope that enables you to group event processors in a manner sim
 3) During design, sub-flows work as macros that replace the connected components that call them.
 
 4) Referencing sub-flows results in better performance than referencing a flow.
+
+Drag and drop the **Subflow**
+
+<img src={useBaseUrl('/img/Core Development/Components/subflow.png')} />;
+
+<img src={useBaseUrl('/img/Core Development/Components/subflow drag and drop.png')} />;
+
+
+#### Configuring Subflow
+
+1. drag the decision box and set the conditions, and define the name of subflow for each condition.
+
+2. drag the subflow and name it the same as mentioned in the above decision box.
+   
+3. Link the subflow with the decision box.
+   
+4. Create the flow inside the subflow, like normal flow.
+   
+5. give the output name for the return value of the subflow (for loop as condition).
+
+<img src={useBaseUrl('/img/Core Development/Components/Condition Senario.png')} />;

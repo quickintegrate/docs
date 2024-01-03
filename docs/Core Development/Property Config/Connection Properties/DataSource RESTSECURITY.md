@@ -15,7 +15,8 @@ The RESTDataSource class simplifies fetching data from REST APIs and helps handl
 1) Click On the Connection Properties
 2) Select the DataSource Type from drop down
 3) Provide the Credentials 
-4) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
+4) Click on Submit to save the Crediantials
+5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
 ## Type OAUTH
 

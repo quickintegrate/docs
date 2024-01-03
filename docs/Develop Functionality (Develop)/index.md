@@ -3,6 +3,13 @@ import DocCardList from '@theme/DocCardList';
 
 # Develop Functionality (Develop)
 
+1) Manually create the service
+
+2) Upload json to create the service automatically. 
+   
+3) This is migration from Cots api like Mulesoft to  quickintegrate
+   
+4) Uplod swagger to craete the service automatically
 
 
 <DocCardList />
