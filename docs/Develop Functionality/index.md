@@ -3,6 +3,8 @@ import DocCardList from '@theme/DocCardList';
 
 # Develop Functionality (Develop)
 
+<img src={useBaseUrl('/img/Develop Functionality/DEVELOP.png')} />
+
 1) Manually create the service
 
 2) Upload json to create the service automatically. 
