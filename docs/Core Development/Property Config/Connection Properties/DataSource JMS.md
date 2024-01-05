@@ -48,7 +48,7 @@ The publish and subscribe model allows a sender to publish messages to a specifi
 1) Click On the Connection Properties
 2) Select the DataSource Type from drop down
 3) Provide the Credentials 
-4) Click on Submit to save the Crediantials
+4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
 <img src={useBaseUrl('/img/Core Development/Connection properties/JMS1.png')} />;

@@ -22,9 +22,49 @@ left click on Condition Components, you can define the **Condition** configratio
 
 <img src={useBaseUrl('/img/Core Development/Components/Condition config.png')} />;
 
+Case:
+
+Operator:
 
 <img src={useBaseUrl('/img/Core Development/Components/Condition case.png')} />;           <img src={useBaseUrl('/img/Core Development/Components/Condition operator.png')} />;
 
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IF</td>
+<td>Use if to execute a sub flow, if a specified condition is true</td>
+</tr>
+<tr>
+<td>ELSE</td>
+<td>Use else to execute a another sub flow, if the same condition is false</td>
+</tr>
+<tr>
+<td>ELSEIF</td>
+<td>Use else if to execute a another sub flow, if the first condition is false</td>
+</tr>
+<tr>
+<td>LOOP</td>
+<td>Use Loop to iterate over nodes /elements inside sub flow </td>
+</tr>
+<tr>
+<td>AND</td>
+<td>Use And to execute a subflow if all statements are true</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>Use Or to execute a subflow if one of the statements is true</td>
+</tr>
+</tbody>
+</table>
+
+
+-
 <table>
 <thead>
 <tr>

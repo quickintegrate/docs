@@ -75,7 +75,7 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 
 **Method - Throw error**
 
-**Log type - Error** 
+**ErrorType - INTBusinessException**
 
 <img src={useBaseUrl('/img/Core Development/Transformer/utility throwerror.png')} />;
 
@@ -103,20 +103,18 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 <tr>
 <td>Exception message</td>
 <td></td>
-<td>$VARIABLES.errorPin</td>
+<td>$VARIABLES.invalidPin</td>
 </tr>
 <tr>
-<td>Variable Name</td>
+<td>Exception code</td>
 <td></td>
-<td>Status,NoRecords</td>
+<td>$VARIABLES.errorPin</td>
 </tr>
 </tbody>
 </table>
 
 ### Example 3:
 **Method - Add variable**
-
-**Log type - Info** 
 
 <img src={useBaseUrl('/img/Core Development/Transformer/Add variable utility.png')} />;
 
@@ -145,8 +143,6 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 ### Example 4:
 
 **Method - Remove variable**
-
-**Log type - Info** 
 
 <img src={useBaseUrl('/img/Core Development/Transformer/remove variable utility.png')} />;
 

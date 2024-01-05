@@ -36,7 +36,13 @@ left click on connector, you can define the **DB Connector** configration
 
 ## Read DB Operation
 
+Return Row(s) Multiple
+
 <img src={useBaseUrl('/img/Connectors/Read_DB_query4.png')} />;
+
+Return Row(s) Single
+
+<img src={useBaseUrl('/img/Connectors/DB/read single db.png')} />;
 
 <table>
 <thead>
@@ -126,6 +132,7 @@ Choose the table name from the dropdown list to specify the source. We can set a
 
 When we need to modify records in the database, we can choose the **Write** option from the DB Operations menu. Let's explore how to compose a delete query. Choose the query type as **Delete** from the dropdown list, opt for bulk operation to delete multiple records using a single query, and specify the fields for the delete condition. 
 
+
 <table>
 <thead>
 <tr>
@@ -157,4 +164,7 @@ When we need to modify records in the database, we can choose the **Write** opti
 </tr>
 </tbody>
 </table>
+
+<img src={useBaseUrl('/img/Connectors/DB/write no bulk.png')} />;
+
 

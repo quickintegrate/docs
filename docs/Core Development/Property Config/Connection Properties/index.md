@@ -2,17 +2,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Connection Properties
 
-1) Create a properties file for each development environment in your application.
-2) Configure a properties placeholder in your app to look for the environment upon launch.
-3) Set an environment variable to point to a specific development environment during application deployment.
+When integrating on the iPass platform, connection setups are consolidated under properties that cover all environments. When deploying to specific environments, initial configuration of the development environment's data is followed by subsequent modifications as needed.
 
 Examples
 
 ## Create a Properties
 
-QuickIntegration application configurations file contains your peoperties which you can refer in your application 
+QuickIntegration application configurations file contains your properties which you can refer in your application 
 Configuring.
-A properties file improves the organization and maintainability of your applications.
+A properties file improves the maintainability of your applications.
 
 ### Create and Configure your Properties File
 

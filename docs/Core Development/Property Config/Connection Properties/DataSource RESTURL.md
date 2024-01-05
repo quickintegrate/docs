@@ -22,4 +22,37 @@ A URL identifies a resource
 3) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
 <img src={useBaseUrl('/img/Core Development/Connection properties/RESTURL.png')} />;
-C:\Users\Svc\Documents\GitHub\docs\static\img\Core Development\Connection properties\RESTURL.png
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DataSource Name</td>
+<td></td>
+<td>rest</td>
+</tr>
+<tr>
+<td>DataSource Typ</td>
+<td>RESTURL</td>
+<td>RESTURL</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Provides a production environment where you can deploy applications and APIs publicly</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>URL</td>
+<td></td>
+<td>xyz..</td>
+</tr>
+</tbody>
+</table>
+
+**If the Swagger is available for the specific REST API, kindly proceed with the upload.**

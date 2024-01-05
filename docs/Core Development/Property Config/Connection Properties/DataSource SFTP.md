@@ -18,7 +18,7 @@ The SFTP DataSource grants access to files and directories housed within an SFTP
    
 5) Maintaining a design that aligns with the File DataSource and FTP DataSource.
    
-`These DataSources offer a consistent set of operations and exhibit similar behaviors.`
+
 
 ## Engaging in Practical Implementation
 
@@ -27,7 +27,7 @@ The SFTP DataSource grants access to files and directories housed within an SFTP
 1) Click On the Connection Properties
 2) Select the DataSource Type from drop down
 3) Provide the Credentials 
-4) Click on Submit to save the Crediantials
+4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 <img src={useBaseUrl('/img/Core Development/Connection properties/SFTP.png')} />;
 

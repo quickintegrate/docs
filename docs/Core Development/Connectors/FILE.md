@@ -30,6 +30,11 @@ Write
 
 <img src={useBaseUrl('/img/Connectors/FILE_Connector.png')} />;
 
+
+Here are different instances demonstrating how to access the information within a file and create a file based on a specific structure. Each illustration includes a quickintegration application utilizing DataWeave for both reading and writing files.
+**Read File Operation**
+**Write File Operation**
+
 ### Configuring File Connector
 left click on connector, you can define the **File Connector** configration
 

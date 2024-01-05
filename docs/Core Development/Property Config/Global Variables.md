@@ -1,6 +1,6 @@
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Global Varaible
+# Global Variable
 
 A Global element serves as a reusable object that holds parameters shared among multiple elements within a flow. QuickIntegration Connectors or components within your QuickIntegrate application can reference these Global elements
 
