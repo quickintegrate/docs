@@ -6,6 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Functionality API
 
+Utilize the drag-and-drop **functionality** to incorporate Core Integration development Components that efficiently manage a wide range of integration scenarios. These components cover triggers, transformers, connectors, processors, and data mappings, enabling flow invocation through REST, Events, Messages, Databases, Schedulers, Files, and Streams.
+
+
 #### Step 1: 
 
 Go to **DEVELOP** >> **functionality API** 
@@ -20,19 +23,19 @@ In Functionality API You can create the service
 
 #### Step 3: 
 
-Choose the project from the dropdown menu column to create a service within it.
+Select a project from the dropdown menu column to generate a service within it
 
 <img src={useBaseUrl('/img/Develop Functionality/Fun Drop down.png')} />
 
 #### Step 4:
 
-Select the service button, proceed to create the service within, specifying the service name, and choosing the trigger from the dropdown menu as given below.
+Click on the 'Service' button, then proceed to create the service within. Specify the service name and select the trigger from the dropdown menu provided below.
 
 <img src={useBaseUrl('/img/Develop Functionality/Service Test.png')} />
 
 #### Step 5:
 
-After creating the service, you'll be able to implement your API. 
+Once the service is created, you'll have the able to implement your API.
 
 <img src={useBaseUrl('/img/Develop Functionality/fun imple.png')} />
 

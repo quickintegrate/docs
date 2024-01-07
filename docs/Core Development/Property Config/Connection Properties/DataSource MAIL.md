@@ -34,7 +34,7 @@ Email (Email DataSource) sends and retrieves email messages over standard email 
 <tr>
 <td>DataSource Name</td>
 <td>Datasource Name which is configured in connections properties</td>
-<td></td>
+<td>officalmail</td>
 </tr>
 <tr>
 <td>DataSource Type</td>
@@ -49,22 +49,22 @@ Email (Email DataSource) sends and retrieves email messages over standard email 
 <tr>
 <td>Host</td>
 <td>A hostname is a domain name assigned to a host computer</td>
-<td>abcd</td>
+<td>atdev123@gmail.com</td>
 </tr>
 <tr>
 <td>Port</td>
 <td>A port is a virtual point where network connections start and end.</td>
-<td>123</td>
+<td>123***</td>
 </tr>
 <tr>
 <td>User Name</td>
 <td>A name that uses for identification purposes when logging </td>
-<td></td>
+<td>AtdevServices</td>
 </tr>
 <tr>
 <td>Password</td>
 <td>A password is a string of characters used to verify the identity of a user during the authentication process</td>
-<td></td>
+<td>123****</td>
 </tr>
 </tbody>
 </table>
