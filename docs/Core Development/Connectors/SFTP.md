@@ -20,4 +20,102 @@ A design that is consistent with that of File Connector and FTP Connector
 
 The same set of operations is available on these Connectors, and they behave similarly.
 
+Drag and drop the **SFTP Connector**
+
 <img src={useBaseUrl('/img/Connectors/SFTP_connector.png')} />;
+
+### Configuring SFTP Connector
+left click on connector, you can define the **SFTP Connector** configration
+
+## Read SFTP Connector
+
+<img src={useBaseUrl('/img/Connectors/sftp_read.png')} />;
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Read/Write</td>
+<td>Read</td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>sftpcall</td>
+</tr>
+<tr>
+<td>File Name</td>
+<td>Name of the file to be processed</td>
+<td>Contacts</td>
+</tr>
+<tr>
+<td>File Type</td>
+<td>Format of File</td>
+<td>CSV</td>
+</tr>
+<tr>
+<td>OutPut</td>
+<td>Output</td>
+<td>Rest_output</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td>Operation of the file</td>
+<td>Move</td>
+</tr>
+</tbody>
+</table>
+
+## Write FTP Connector
+
+<img src={useBaseUrl('/img/Connectors/sftp_write.png')} />;
+
+
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Read/Write</td>
+<td>Write</td>
+</tr>
+<tr>
+<td>Datasource Name</td>
+<td>Datasource Name which is configured in connections properties</td>
+<td>sftpcall</td>
+</tr>
+<tr>
+<td>File Name</td>
+<td>Processed File</td>
+<td>Contacts</td>
+</tr>
+<tr>
+<td>File Type</td>
+<td>Format of File</td>
+<td>CSV</td>
+</tr>
+<tr>
+<td>Input</td>
+<td>Input</td>
+<td>REQUEST_PAYLOAD</td>
+</tr>
+<tr>
+<td>Append/OverWrite</td>
+<td></td>
+<td>OverWrite</td>
+</tr>
+</tbody>
+</table>

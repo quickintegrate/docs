@@ -25,9 +25,9 @@ The same set of operations is available using these two Connectors, and they beh
 
 Follow these steps to set up and test a connection to your **FTP**  by creating a reusable global variable for the **FTP** Connector to reference.
 
-<img src={useBaseUrl('/img/Connectors/FTP_connector.png')} />;
-
 Drag and drop the **FTP Connector**
+
+<img src={useBaseUrl('/img/Connectors/FTP_connector.png')} />;
 
 ### Configuring FTP Connector
 left click on connector, you can define the **FTP Connector** configration
