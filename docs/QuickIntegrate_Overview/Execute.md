@@ -12,7 +12,7 @@ This module generates the Gradle project structure derived from the UI-created p
 This module enables project deployment and execution with multiple options tailored to various deployment architecture styles. The project operates on ATDev Cloud and can be tested using Postman once the project is initiated.
 
 #### Test Cases
-"For each service, it's possible to configure various test cases encompassing both positive and negative scenarios."
+For each service, it's possible to configure various test cases encompassing both positive and negative scenarios.
 
 #### Tracebility
 This module allows visual traceability, illustrating the impact of changes in any component across the entire Requirement Matrix. Traceability spans from EPIC to FEATURE, STORY, SERVICE, SERVICE DESIGN, and TESTCASE.
