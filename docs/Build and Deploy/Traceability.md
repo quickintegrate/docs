@@ -23,5 +23,3 @@ After clicking on the EPIC, the features will become visible.
 Upon clicking the features, the story will be visualized.
 
 <img src={useBaseUrl('/img/Build&Deploy/Epic story Tr.png')} />;
-
-
