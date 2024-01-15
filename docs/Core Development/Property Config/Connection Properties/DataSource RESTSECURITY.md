@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # DataSource RESTSECURITY
 
-The RESTDataSource class simplifies fetching data from REST APIs and helps handle caching, request deduplication, and errors while resolving operations.
+The RESTSecurity DataSource class streamlines the retrieval of data from REST APIs. It assists in managing caching, deduplicating requests, and handling errors during the resolution of operations
 
 ## Engaging in Practical Implementation
 

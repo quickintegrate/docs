@@ -25,7 +25,7 @@ left click on PAYLOAD Components, you can define the **PAYLOAD** configration as
 
 #### Step 3:
 Provide the Output Variable 
-**It Stores output of connections operations**
+**The output variable stores the result of the transformation**
 
 #### Step 4:
 Click on Add button and do the mapping as shown 

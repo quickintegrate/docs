@@ -34,7 +34,7 @@ A URL identifies a resource
 <tbody>
 <tr>
 <td>DataSource Name</td>
-<td></td>
+<td>Datasource Name which is configured in connections properties</td>
 <td>rest</td>
 </tr>
 <tr>
@@ -49,7 +49,7 @@ A URL identifies a resource
 </tr>
 <tr>
 <td>URL</td>
-<td></td>
+<td>Unique identifier used to locate a resource</td>
 <td>xyz..</td>
 </tr>
 </tbody>

@@ -10,7 +10,17 @@ Go to **Manage** >> **Projects** API
 
 <img src={useBaseUrl('/img/Build&Deploy/Manage-Project.png')} />;
 
-When you navigate to the page, you'll find the projects and there services displayed. Where you can **Delete** , **Publish** or **Create** the project Directly.
+When you navigate to the page, you'll find the projects and there services displayed. Where you can **Delete** , **Publish** , **Create** , **Download** the project Directly.
+
+### Delete and download - 
+
+<img src={useBaseUrl('/img/Build&Deploy/delete&download.png')} />;
+
+
+
+### Create and Publish - 
+
+<img src={useBaseUrl('/img/Build&Deploy/create&publish.png')} />;
 
 <img src={useBaseUrl('/img/Build&Deploy/manage project window.png')} />;
 

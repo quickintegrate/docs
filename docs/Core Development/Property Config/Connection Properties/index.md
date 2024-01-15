@@ -2,8 +2,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Connection Properties
 
-When integrating on the iPass platform, connection setups are consolidated under properties that cover all environments. When deploying to specific environments, initial configuration of the development environment's data is followed by subsequent modifications as needed.
-
+In terms of integration within the iPASS platform, the connection configurations are centralized within connection properties across all environments. During deployment to particular environments, the data for the development environment can be configured and subsequently updated
 Examples
 
 ## Create a Properties

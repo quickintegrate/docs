@@ -10,7 +10,7 @@ You can trace the EPIC, FEATURES, and STORY to visually analyze their impact if 
 
 Go to **Execute** >> **Traceability** API
 
-<img src={useBaseUrl('/img/Build&Deploy/Execute-Deploy.png')} />;
+<img src={useBaseUrl('/img/Build&Deploy/Execute-Traceability.png')} />;
 
 When you navigate to the page, you'll find  the visual structure 
 
