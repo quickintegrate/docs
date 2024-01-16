@@ -10,7 +10,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Drag and drop **APIRESPONSE**  Transformer from the pallet.
 
 
-<img src={useBaseUrl('/img/hello/addedsteps/apiresponse_Connector.png')} />;
+<img src={useBaseUrl('/img/hello/addedsteps/apiresponse_connector.png')} />;
+
 
 <img src={useBaseUrl('/img/Core Development/Transformer/drag and drop APIRes.png')} />;
 
