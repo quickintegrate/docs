@@ -165,6 +165,8 @@ When we need to modify records in the database, we can choose the **Write** opti
 </tbody>
 </table>
 
-<img src={useBaseUrl('/img/Connectors/DB/write no bulk.png')} />;
+<img src={useBaseUrl('/img/Connectors/DB/writenobulk.png')} />;
 
+### Description: 
+Keys within the database should always start with the **$** symbol.
 

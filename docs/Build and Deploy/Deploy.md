@@ -32,3 +32,22 @@ Enter the security key, Encrypt the value, and proceed by clicking on **Deploy A
 Once the application deployment process finishes, a popup will confirm successful deployment.
 
 <img src={useBaseUrl('/img/Core Development/Execute API/successfully deploy.png')} />;
+
+Go to the **Application** Column and select the relevant project to initiate the deployed application.
+
+<img src={useBaseUrl('/img/Core Development/Execute API/application colum deploy.png')} />;
+
+
+Within the **Runtime Properties**, Provide the security key for Decryption,Which you have Encrypt then click the **Start** button to deploy your application
+
+<img src={useBaseUrl('/img/Core Development/Execute API/Start deploy .png')} />;
+
+
+Within the Details Column, you'll find all the information about your API, including the deployed URL for testing it.
+
+<img src={useBaseUrl('/img/Core Development/Execute API/details .png')} />;
+
+
+Using the QuickIntegrate deployed URL You can Test your API using Postman Collection
+
+<img src={useBaseUrl('/img/DB_Rest_API/postman.png')} />;

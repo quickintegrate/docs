@@ -17,6 +17,22 @@ When you navigate to the page, you'll find the Schema Design  page with Project 
 
 <img src={useBaseUrl('/img/Define/Schema Design.png')} />;
 
+### New Schema
+
+<img src={useBaseUrl('/img/Define/newschema.png')} />; 
+
+### Save Schema
+
+<img src={useBaseUrl('/img/Define/saveschema.png')} />; 
+
+### Download Schema
+
+<img src={useBaseUrl('/img/Define/downloadschema.png')} />; 
+
+### Delete Schema
+
+<img src={useBaseUrl('/img/Define/deleteschema.png')} />; 
+
 Select the project name and DataSource name from the dropdown menu.
 
 <img src={useBaseUrl('/img/Define/schema project name.png')} />;  

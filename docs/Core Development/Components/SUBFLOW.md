@@ -33,8 +33,8 @@ Drag and drop the **Subflow**
    
 3. Link the subflow with the decision box.
    
-4. Create the flow inside the subflow, like normal flow.
-   
+4. Here, we must outline the process of adding different components to the subflow, similar to the regular flow. The key distinction is that the subflow lacks a trigger or response. The execution of the subflow mirrors that of the main flow, where the same thread proceeds to execute the subflow before returning to the main flow.
+
 5. give the output name for the return value of the subflow (for loop as condition).
 
 <img src={useBaseUrl('/img/Core Development/Components/Condition Senario.png')} />;

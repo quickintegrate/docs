@@ -20,9 +20,13 @@ url: http://designer.quickintegrate.io/login
 
 1) Create an account by signing up
 2) Fill up the user info accordingly
-3) Set the user name and password credentials 
-
+3) Please provide your email address, username, organization name
+4) Set the user name and password credentials 
+   
 `Note: password must contain at least 6 characters, 1 uppercase letter, 1 lower case letter , 1 number with no space`
+
+5) Agree to the Atdservices, and proceed to create your account.
+
 
 <img src={useBaseUrl('/img/Register account/Signup 2.png')} />;
 

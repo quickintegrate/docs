@@ -24,3 +24,12 @@ Within the Service bar, access the dropdown menu of the project name to view all
 Once you've chosen the project name, you'll discover all the services generated within that particular project in the service name dropdown.
 
 <img src={useBaseUrl('/img/Build&Deploy/Test case servicepng.png')} />;
+
+After choosing the service name, you'll encounter the Happy Path scenario, featuring two actions: save and execution history.
+
+<img src={useBaseUrl('/img/Build&Deploy/test case happy path.png')} />;
+
+
+After selecting "Save" in the action, you have the option to save your progress. To view the execution history, click on "UTC history" as indicated below.
+
+<img src={useBaseUrl('/img/Build&Deploy/Test case execution history.png')} />;

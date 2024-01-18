@@ -81,6 +81,31 @@ Click on the add button to add queryparam, pathparam and headers as key and valu
 </table>
 
 
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Key</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pathparams</td>
+<td>Id</td>
+<td>$PATH_PARAMS.ContactId</td>
+<td></td>
+</tr>
+<tr>
+<td>headers</td>
+<td>Content-Type</td>
+<td>application/json</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
 #### Input paylad has to be provided for all the methods except GET and DELETE.
 
 
