@@ -55,17 +55,17 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 <tbody>
 <tr>
 <td>Method</td>
-<td></td>
+<td>Define the patter of methods</td>
 <td>Logging</td>
 </tr>
 <tr>
 <td>Log Type</td>
-<td></td>
+<td>Define the type of log</td>
 <td>Info</td>
 </tr>
 <tr>
 <td>Log Value</td>
-<td></td>
+<td>Content to be logged</td>
 <td>Start_level_log_info</td>
 </tr>
 </tbody>
@@ -92,22 +92,22 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 <tbody>
 <tr>
 <td>Method</td>
-<td></td>
+<td>Define the patter of methods</td>
 <td>Throw error</td>
 </tr>
 <tr>
 <td>Error Type</td>
-<td></td>
+<td>Type of error which you want to catch</td>
 <td>INTBusinessException</td>
 </tr>
 <tr>
 <td>Exception message</td>
-<td></td>
+<td>Description or cause of error</td>
 <td>$VARIABLES.invalidPin</td>
 </tr>
 <tr>
 <td>Exception code</td>
-<td></td>
+<td>Code of Exception</td>
 <td>$VARIABLES.errorPin</td>
 </tr>
 </tbody>
@@ -129,12 +129,12 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 <tbody>
 <tr>
 <td>Method</td>
-<td></td>
+<td>Define the patter of methods</td>
 <td>Add variable</td>
 </tr>
 <tr>
 <td>Variable Name</td>
-<td></td>
+<td>Name of variable</td>
 <td>Status,NoRecords</td>
 </tr>
 </tbody>
@@ -157,12 +157,12 @@ Left click on **UTILITIES** Transformer, you can define the  configration
 <tbody>
 <tr>
 <td>Method</td>
-<td></td>
+<td>Define the patter of methods</td>
 <td>Remove variable</td>
 </tr>
 <tr>
 <td>Variable Name</td>
-<td></td>
+<td>Name of variable</td>
 <td>Status</td>
 </tr>
 </tbody>

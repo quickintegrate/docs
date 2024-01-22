@@ -95,13 +95,13 @@ Click on the add button to add queryparam, pathparam and headers as key and valu
 <td>pathparams</td>
 <td>Id</td>
 <td>$PATH_PARAMS.ContactId</td>
-<td></td>
+<td>Define the parameters which are comming as part of URI</td>
 </tr>
 <tr>
 <td>headers</td>
 <td>Content-Type</td>
 <td>application/json</td>
-<td></td>
+<td>Headers which are comming with the request </td>
 </tr>
 </tbody>
 </table>
