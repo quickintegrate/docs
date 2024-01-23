@@ -152,18 +152,18 @@ The RESTSecurity DataSource class streamlines the retrieval of data from REST AP
 <tbody>
 <tr>
 <td>Type</td>
-<td></td>
-<td></td>
+<td>Basic</td>
+<td>Basic</td>
 </tr>
 <tr>
 <td>Username</td>
-<td></td>
-<td></td>
+<td>The name of the User</td>
+<td>abc..</td>
 </tr>
 <tr>
 <td>Password</td>
-<td></td>
-<td></td>
+<td>Unique secured key </td>
+<td>xyz..</td>
 </tr>
 <tr>
 <td>DataSource Name</td>
