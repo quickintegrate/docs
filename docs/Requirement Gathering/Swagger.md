@@ -20,17 +20,25 @@ It could refer to the action of moving Swagger-related files, like Swagger API s
 
 **Upload Swagger**
 
+You have the option to directly upload the Swagger
+
 <img src={useBaseUrl('/img/Define/upload swagger.png')} />;
 
 **Preview Swagger**
+
+You can access and view all the existing Swagger
 
 <img src={useBaseUrl('/img/Define/preview swagger.png')} />;
 
 **New Swagger** 
 
+You can create a new Swagger
+
 <img src={useBaseUrl('/img/Define/New swagger.png')} />;
 
 **Save Swagger**
+
+After generating the new Swagger, you can save the created Swagger
 
 <img src={useBaseUrl('/img/Define/Save swagger.png')} />;
 

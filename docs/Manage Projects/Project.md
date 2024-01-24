@@ -14,8 +14,9 @@ When you navigate to the page, you'll find the projects and there services displ
 
 ### Delete and download - 
 
-<img src={useBaseUrl('/img/Build&Deploy/delete&download.png')} />;
+After creating the project, you have two available actions: 'Delete,' which allows you to remove either the entire project or specific services, and 'Download,' which enables you to retrieve the Swagger documentation.
 
+<img src={useBaseUrl('/img/Build&Deploy/delete&download.png')} />;
 
 
 ### Create and Publish - 
@@ -27,9 +28,10 @@ When you navigate to the page, you'll find the projects and there services displ
 
 You can create and publish a project—creating allows the development of new projects, while publishing involves releasing existing ones.
 
-<img src={useBaseUrl('/img/DB_Rest_API/3.png')} />;
 
 ### To initiate a new project, select the **Create** button.
+
+<img src={useBaseUrl('/img/DB_Rest_API/3.png')} />;
 
 Input the new project name and description, then proceed to click "Create" to generate your project.
 
@@ -54,3 +56,4 @@ Input the  project name and Service Id from drop down, then proceed to click "Pu
 Once you click on the displayed project, you'll find all the services associated with that specific project.
 
 <img src={useBaseUrl('/img/Build&Deploy/services in search.png')} />;
+

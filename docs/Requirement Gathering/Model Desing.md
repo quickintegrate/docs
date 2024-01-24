@@ -30,3 +30,25 @@ After you click on Show API, all the services relevant to the API will be create
 <img src={useBaseUrl('/img/Define/Services in Entity.png')} />;
 
 After clicking "Create API," services corresponding to the table will be generated. If the services already exist, a text box will appear instead of plain text. This allows you to modify duplicate URLs or service names.
+
+
+<img src={useBaseUrl('/img/Define/createapi-modeldesign.png')} />;
+
+Go to **Develop** >> **Functionality API** 
+When you choose the Project Name from the drop-down menu, you will have access to a comprehensive list of all the end-to-end services outlined in the model design.
+
+
+<img src={useBaseUrl('/img/Define/Modeldesign-flow-inDevelop.png')} />;
+
+### Configuration of the REST Trigger
+
+<img src={useBaseUrl('/img/Define/Rest1-Modeldesign.png')} />;
+
+<img src={useBaseUrl('/img/Define/Rest2-Modeldesign.png')} />;
+
+
+### Configuration of the API Response
+
+<img src={useBaseUrl('/img/Define/Apiresponse1-modeldesign.png')} />;
+
+<img src={useBaseUrl('/img/Define/Apiresponse2-modeldesign.png')} />;
