@@ -63,23 +63,23 @@ After successfully creating the service, you will notice that the project is aut
 <tbody>
 <tr>
 <td>DEF</td>
-<td>What is the intended function of this node</td>
+<td>Describe the specifications of the node</td>
 </tr>
 <tr>
 <td>OUTPUT</td>
-<td>The output that this node will produce for each column in the table</td>
+<td>The output functionality of specific node</td>
 </tr>
 <tr>
 <td>PROCESSING</td>
-<td>How will the node function in the processing of the overall operation</td>
+<td>It describe the logic of specific node will perform</td>
 </tr>
 <tr>
 <td>ONSTEPERROR</td>
-<td>How should we handle errors if they occur</td>
+<td>How should we handle errors if they occur in the specific node</td>
 </tr>
 <tr>
 <td>PREPROCESSOR</td>
-<td>The preprocessor function of the node.</td>
+<td>What will be needed before the processing of node</td>
 </tr>
 </tbody>
 </table>
