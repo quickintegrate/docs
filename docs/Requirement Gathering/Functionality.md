@@ -37,15 +37,15 @@ After successfully creating the service, you will notice that the project is aut
 <tbody>
 <tr>
 <td>URI_FUNCTIONAL</td>
-<td></td>
+<td>A concise functional description of the URI.</td>
 </tr>
 <tr>
 <td>TYPE_FUNCTIONAL</td>
-<td></td>
+<td>The type of function determines the category of people who will be using it</td>
 </tr>
 <tr>
 <td>TRIGGER_FUNCTIONAL</td>
-<td></td>
+<td>Functions related to triggering.</td>
 </tr>
 </tbody>
 </table>
@@ -63,23 +63,23 @@ After successfully creating the service, you will notice that the project is aut
 <tbody>
 <tr>
 <td>DEF</td>
-<td></td>
+<td>What is the intended function of this node</td>
 </tr>
 <tr>
 <td>OUTPUT</td>
-<td></td>
+<td>The output that this node will produce for each column in the table</td>
 </tr>
 <tr>
 <td>PROCESSING</td>
-<td></td>
+<td>How will the node function in the processing of the overall operation</td>
 </tr>
 <tr>
 <td>ONSTEPERROR</td>
-<td> </td>
+<td>How should we handle errors if they occur</td>
 </tr>
 <tr>
 <td>PREPROCESSOR</td>
-<td></td>
+<td>The preprocessor function of the node.</td>
 </tr>
 </tbody>
 </table>
