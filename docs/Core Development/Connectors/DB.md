@@ -60,7 +60,7 @@ Return Row(s) Single
 </tr>
 <tr>
 <td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties</td>
+<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource JDBC"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>Classicmodels</td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ When we need to modify records in the database, we can choose the **Write** opti
 </tr>
 <tr>
 <td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties</td>
+<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource JDBC"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>classicmodels</td>
 </tr>
 <tr>

@@ -23,6 +23,37 @@ left click on PAYLOAD Components, you can define the **PAYLOAD** configration as
 
 <img src={useBaseUrl('/img/Core Development/Transformer/payload config.png')} />;
 
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GEN</td>
+<td>Get one field from the Input and mapped in another field of Output</td>
+</tr>
+<tr>
+<td>TRANS</td>
+<td>Transforms the Input value with the help of transformation functions</td>
+</tr>
+<tr>
+<td>CN</td>
+<td>Mapped the Input as it is Output body</td>
+</tr>
+<tr>
+<td>OBJ</td>
+<td>Mapped the Inputs to Object</td>
+</tr>
+<tr>
+<td>AR</td>
+<td>Mapped the Inputs to Array</td>
+</tr>
+</tbody>
+</table>
+
 #### Step 3:
 Provide the Output Variable 
 **The output variable stores the result of the transformation**

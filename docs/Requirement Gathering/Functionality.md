@@ -71,7 +71,7 @@ After successfully creating the service, you will notice that the project is aut
 </tr>
 <tr>
 <td>PROCESSING</td>
-<td>It describe the logic of specific node will perform</td>
+<td>It describe the logic  specific node will perform</td>
 </tr>
 <tr>
 <td>ONSTEPERROR</td>

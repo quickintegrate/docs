@@ -28,13 +28,45 @@ Click on the Drop down and select Content Type application json
 
 <img src={useBaseUrl('/img/hello/addedsteps/Contenttype_addbutton.png')} />;
 
+<table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GEN</td>
+<td>Get one field from the Input and mapped in another field of Output</td>
+</tr>
+<tr>
+<td>TRANS</td>
+<td>Transforms the Input value with the help of transformation functions</td>
+</tr>
+<tr>
+<td>CN</td>
+<td>Mapped the Input as it is Output body</td>
+</tr>
+<tr>
+<td>OBJ</td>
+<td>Mapped the Inputs to Object</td>
+</tr>
+<tr>
+<td>AR</td>
+<td>Mapped the Inputs to Array</td>
+</tr>
+</tbody>
+</table>
+
 #### Step 4: 
 
-Click on Add button From Drop down select TRANS
+Click on Add button From Drop down select **TRANS** - Transforms the Input value with the help of transformation functions
+
+<img src={useBaseUrl('/img/hello/addedsteps/trans type.png')} />;
 
 <img src={useBaseUrl('/img/hello/addedsteps/transAdd3.png')} />;
 
-<img src={useBaseUrl('/img/hello/addedsteps/trans type.png')} />;
 
 #### Step 5: 
 
@@ -62,3 +94,28 @@ The configuration of the APIRESPONSE Transformer appears as follows:
 Target- In target write Status and you will find Key as below
 
 Key- Utils.constant(hello world)
+
+
+#### Step 8: 
+
+Click on Add button From Drop down select **CN** - Mapped the Input as it is Output body
+
+<img src={useBaseUrl('/img/APIresponse New/cn1.png')} />;
+
+<img src={useBaseUrl('/img/APIresponse New/CN.png')} />;
+
+#### Step 9: 
+
+Click on Add button From Drop down select **AR** - Mapped the Inputs to Array
+
+<img src={useBaseUrl('/img/APIresponse New/ar1.png')} />;
+
+<img src={useBaseUrl('/img/APIresponse New/AR.png')} />;
+
+#### Step 10: 
+
+Click on Add button From Drop down select **GEN** - Get one field from the Input and mapped in another field of Output
+
+<img src={useBaseUrl('/img/APIresponse New/gen1.png')} />;
+
+<img src={useBaseUrl('/img/APIresponse New/GEN.png')} />;

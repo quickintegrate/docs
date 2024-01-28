@@ -18,35 +18,44 @@ When you navigate to the page, you'll find the Swagger Structure  page with Swag
 
 It could refer to the action of moving Swagger-related files, like Swagger API specifications or documents, from a local environment to a server or platform where they can be employed for API development.
 
-**Upload Swagger**
+## Upload Swagger
 
-You have the option to directly upload the Swagger
+#### You have the option to directly upload the Swagger
 
 <img src={useBaseUrl('/img/Define/upload swagger.png')} />;
 
-**Preview Swagger**
 
-You can access and view all the existing Swagger
+Select the **Upload Swagger** option and pick the swagger file from your local location to upload the swagger and preview it,then proceed by clicking on the **Upload** button
+
+<img src={useBaseUrl('/img/Define/swagger upload1.png')} />;
+
+## Preview Swagger
+
+#### You can access and view all the existing Swagger
 
 <img src={useBaseUrl('/img/Define/preview swagger.png')} />;
 
-**New Swagger** 
+## New Swagger 
 
-You can create a new Swagger
+#### You can create a new Swagger
 
 <img src={useBaseUrl('/img/Define/New swagger.png')} />;
 
-**Save Swagger**
+## Save Swagger
 
-After generating the new Swagger, you can save the created Swagger
+#### After generating the new Swagger, you can save the created Swagger
 
 <img src={useBaseUrl('/img/Define/Save swagger.png')} />;
 
-**Download Swagger**
+## Download Swagger
+
+#### Download the latest swagger
 
 <img src={useBaseUrl('/img/Define/Download swagger.png')} />;
 
-**Delete Swagger**
+## Delete Swagger
+
+#### Delete newly generated or existing swagger
 
 <img src={useBaseUrl('/img/Define/Delete swagger.png')} />;
 

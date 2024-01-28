@@ -47,7 +47,7 @@ left click on connector, you can define the **SFTP Connector** configration
 </tr>
 <tr>
 <td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties</td>
+<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource SFTP"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>sftpcall</td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ left click on connector, you can define the **SFTP Connector** configration
 </tr>
 <tr>
 <td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties</td>
+<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource SFTP"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>sftpcall</td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ left click on connector, you can define the **SFTP Connector** configration
 </tr>
 <tr>
 <td>Append/OverWrite</td>
-<td></td>
+<td>Select "append" to add the request or choose "overwrite" to modify the request</td>
 <td>OverWrite</td>
 </tr>
 </tbody>
