@@ -60,7 +60,7 @@ Provide the file name and select operation(MOVE or DELETE) to define further cou
 </tr>
 <tr>
 <td>Connector</td>
-<td>Connector which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource FILE"target="_blank"> Please refer the link for instructions on creating the Connector</a></td>
+<td>Connector which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource FILE"target="_blank"> Please refer the link for instructions on creating the Connector</a></td>
 <td>Successrecord</td>
 </tr>
 <tr>
@@ -109,7 +109,7 @@ Provide the file name and file type(XML, JSON etc.). Please select Append to con
 </tr>
 <tr>
 <td>Connector</td>
-<td>Connector which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource FILE"target="_blank"> Please refer the link for instructions on creating the Connector</a></td>
+<td>Connector which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource FILE"target="_blank"> Please refer the link for instructions on creating the Connector</a></td>
 <td>Successrecords</td>
 </tr>
 <tr>

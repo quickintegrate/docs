@@ -28,7 +28,7 @@ left click on connector, you can define the **Mail Connector** configration
 <tbody>
 <tr>
 <td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource MAIL"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+<td>Datasource Name which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource MAIL"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>officalmail</td>
 </tr>
 <tr>

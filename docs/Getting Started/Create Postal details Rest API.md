@@ -418,7 +418,7 @@ When we want to get a variable, from the pipeline, we use **$** sign as prefix f
 </table>
 
 
-### APIResponse <a href="/docs/Core Development/Transformers/APIRESPONSE"target="_blank"> Please refer the link for instructions on creating the APIResponse</a>
+### APIResponse <a href="/Core Development/Transformers/APIRESPONSE"target="_blank"> Please refer the link for instructions on creating the APIResponse</a>
 
 #### STEP 18:
 

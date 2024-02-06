@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://quickintegrate.github.io',
-  baseUrl: '/docs/',
+  baseUrl: '/',
 
   organizationName: 'quickintegrate',
   projectName: 'docs',

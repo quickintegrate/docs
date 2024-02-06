@@ -80,7 +80,7 @@ To perform read operation on MQ, provide queue name and output payload. Please s
 </tr>
 <tr>
 <td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource JMS"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+<td>Datasource Name which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource JMS"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>sampleds</td>
 </tr>
 <tr>

@@ -62,7 +62,7 @@ Right click the tigger node to add the File configurations operation, sourcePath
 </tr>
 <tr>
 <td>destinationPath</td>
-<td>Datasource Destination which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource FILE"target="_blank"> Please refer the link for instructions on creating the destination path</a></td>
+<td>Datasource Destination which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource FILE"target="_blank"> Please refer the link for instructions on creating the destination path</a></td>
 <td>destination</td>
 </tr>
 </tbody>

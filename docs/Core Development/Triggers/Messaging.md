@@ -51,7 +51,7 @@ Right click the tigger node to add the Messaging configurations queueName, chann
 </tr>
 <tr>
 <td>datasource-name</td>
-<td>Datasource Name which is configured in connections properties<a href="/docs/Core Development/Property Config/Connection Properties/DataSource JMS"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+<td>Datasource Name which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource JMS"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
 <td>msgds</td>
 </tr>
 </tbody>
