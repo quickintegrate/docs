@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://quickintegrate.github.io/blog"/>
     <subtitle>Quickintegrate Blog</subtitle>
-    <icon>https://quickintegrate.github.io/img/favicon.ico</icon>
+    <icon>https://quickintegrate.github.io/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://quickintegrate.github.io/blog/welcome</id>
