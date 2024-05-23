@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Quickintegrate',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   url: 'https://quickintegrate.github.io',
   baseUrl: '/',
@@ -47,8 +47,8 @@ const config: Config = {
     navbar: {
       title: 'Quickintegrate',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Quickintegrate Logo',
+        src: 'img/logo.png',
       },
       items: [
         // {
