@@ -10,6 +10,23 @@ The OneClick API feature allows one to create service with corresponding route a
 
 `Note: This feature is available for Admin only. Normal users need to do configurations manually.`
 
+## Prerequisite
+1. Login to Designer by clicking on the link below:
+   
+   [https://designer.quickintegrate.io/login](https://designer.quickintegrate.io/login)
+
+2. Open: **Execute / Deploy**
+3. Application must be UP and running which contains the services that you want to configure to gateway.
+Here we have taken **sample** project and started it.  
+<img src={useBaseUrl('/img/Configure Gateway/deployedApp.png')} />
+
+4. Login to Monitor by clicking on the link below:
+
+    [https://monitor.quickintegrate.io/login](https://monitor.quickintegrate.io/login)
+
+    or click on **MONITOR** in the sidbar as below:
+<img src={useBaseUrl('/img/Configure Gateway/sidbarMonitor.png')} />
+
 ## Open: Gateway / OneClick API
 Select Project Name, Build Version and Environment. Service list will be display as below:
 <img src={useBaseUrl('/img/Configure Gateway/servicelist.png')} />
