@@ -3,6 +3,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Quickintegrate platform supports **REST API** development using HTTP trigger where configurations can be defined such as host, port, uri/query params etc.														
 
+:::note
+- The flow must contain atleast one APIRESPONSE element in it when this is used. 
+:::
 
 1) When we Login to Quick Integration Platform to get started.
 

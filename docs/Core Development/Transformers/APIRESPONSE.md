@@ -6,6 +6,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # APIRESPONSE
 
+:::note
+- This tranformer can only be used with REST trigger.
+- The flow must contain atleast one APIRESPONSE element in it when REST trigger used. 
+:::
+
 #### Step 1:
 Drag and drop **APIRESPONSE**  Transformer from the pallet.
 
