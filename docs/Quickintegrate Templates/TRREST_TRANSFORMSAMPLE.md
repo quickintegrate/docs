@@ -513,7 +513,7 @@ Trigger REST and Transformer TRANS samples
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
                         <CodeBlock>
-                        {flatText}
+                        {store.flatText}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
@@ -544,7 +544,7 @@ Trigger REST and Transformer TRANS samples
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
                         <CodeBlock>
-                        {flatText}
+                        {store.flatText}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
@@ -575,7 +575,7 @@ Trigger REST and Transformer TRANS samples
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
                         <CodeBlock>
-                        {flatText}
+                        {store.flatText}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
