@@ -1,6 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
+import * as store from '@site/src/store/trans';
 
 # TRREST_TRANSFORMSAMPLE
 
@@ -23,18 +24,14 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        Will,112,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csvSample}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        Will,112,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csvSample}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -52,23 +49,15 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csv1row}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        <?xml version='1.1' encoding='UTF-8'?>
-                        <root>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </root>
-                        ```
+                        <CodeBlock>
+                        {"<?xml version='1.1' encoding='UTF-8'?>\n"}
+                        {store.xmlArray1item.replaceAll('ArrayList', 'root')}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -86,11 +75,9 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        Will,112,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csvSample}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
                         <CodeBlock className="language-json">{JSON.stringify([
@@ -119,20 +106,13 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csv1row}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.json1obj, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -151,29 +131,15 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        <ArrayList>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </ArrayList>
-                        ```
+                        <CodeBlock>
+                        {store.xmlArray1item}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        <?xml version='1.1' encoding='UTF-8'?>
-                        <root>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </root>
-                        ```
+                        <CodeBlock>
+                        {"<?xml version='1.1' encoding='UTF-8'?>\n"}
+                        {store.xmlArray1item.replaceAll('ArrayList', 'root')}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -191,22 +157,14 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        <ArrayList>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </ArrayList>
-                        ```
+                        <CodeBlock>
+                        {store.xmlArray1item}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csv1row}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -224,16 +182,9 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        <ArrayList>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </ArrayList>
-                        ```
+                        <CodeBlock>
+                        {store.xmlArray1item}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
                         <CodeBlock className="language-json">{JSON.stringify({
@@ -257,22 +208,13 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        <details>
-                            <name>John</name>
-                            <id>111</id>
-                            <city>Pune</city>
-                            <country>India</country>
-                        </details>
-                        ```
+                        <CodeBlock>
+                        {store.xmlObj}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "name": "John",
-                            "id": 111,
-                            "city": "Pune",
-                            "country": "India"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.json1obj, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -291,40 +233,15 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            },
-                            {
-                                "name": "Will",
-                                "id": 112,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.jsonArray, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        <?xml version='1.1' encoding='UTF-8'?>
-                        <root>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                            <item>
-                                <name>Will</name>
-                                <id>112</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </root>
-                        ```
+                        <CodeBlock>
+                        {"<?xml version='1.1' encoding='UTF-8'?>\n"}
+                        {store.xmlArray.replaceAll('ArrayList', 'root')}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -342,21 +259,14 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.json1obj, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csv1row}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -374,12 +284,8 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "name": "John",
-                            "id": 111,
-                            "city": "Pune",
-                            "country": "India"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.json1obj, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
@@ -404,37 +310,13 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            },
-                            {
-                                "name": "Will",
-                                "id": 112,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.jsonArray, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            },
-                            {
-                                "name": "Will",
-                                "id": 112,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.jsonArray, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -453,40 +335,15 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            },
-                            {
-                                "name": "Will",
-                                "id": 112,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.jsonArray, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        <?xml version='1.1' encoding='UTF-8'?>
-                        <root>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                            <item>
-                                <name>Will</name>
-                                <id>112</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </root>
-                        ```
+                        <CodeBlock>
+                        {"<?xml version='1.1' encoding='UTF-8'?>\n"}
+                        {store.xmlArray.replaceAll('ArrayList', 'root')}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -504,28 +361,14 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            },
-                            {
-                                "name": "Will",
-                                "id": 112,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.jsonArray, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        Will,112,Pune,India
-                        ```
+                        <CodeBlock>
+                        {store.csvSample}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--success margin-bottom--sm">POST</span>
@@ -543,20 +386,8 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify([
-                            {
-                                "name": "John",
-                                "id": 111,
-                                "city": "Pune",
-                                "country": "India"
-                            },
-                            {
-                                "name": "Will",
-                                "id": 112,
-                                "city": "Pune",
-                                "country": "India"
-                            }
-                        ], null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(store.jsonArray, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
@@ -654,10 +485,9 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        ST*       850*0001
-                        BEG*00*SA*000000006637770**20230818*0001307878
-                        ```
+                        <CodeBlock>
+                        {store.flatText}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
                         ```
@@ -682,10 +512,9 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        ST*       850*0001
-                        BEG*00*SA*000000006637770**20230818*0001307878
-                        ```
+                        <CodeBlock>
+                        {flatText}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
                         <CodeBlock className="language-json">{JSON.stringify([
@@ -714,10 +543,9 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        ST*       850*0001
-                        BEG*00*SA*000000006637770**20230818*0001307878
-                        ```
+                        <CodeBlock>
+                        {flatText}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
                         <CodeBlock className="language-json">{JSON.stringify([
@@ -746,10 +574,9 @@ Trigger REST and Transformer TRANS samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        ST*       850*0001
-                        BEG*00*SA*000000006637770**20230818*0001307878
-                        ```
+                        <CodeBlock>
+                        {flatText}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
                         <CodeBlock className="language-json">{JSON.stringify([

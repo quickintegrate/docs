@@ -1,6 +1,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
+import { csv1row, xmlArray1item, jsonArray, flatText, constResponse } from '@site/src/store/trans';
 
 # TRREST_CNFILE
 
@@ -25,10 +26,9 @@ Trigger REST and Connector FILE samples
                     <TabItem value="Input" label="Input" default>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        name,id,city,country
-                        John,111,Nashik,India
-                        ```
+                        <CodeBlock>
+                        {csv1row}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--info margin-bottom--sm">GET</span>
@@ -48,17 +48,10 @@ Trigger REST and Connector FILE samples
                     <TabItem value="Input" label="Input" default>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        <?xml version='1.1' encoding='UTF-8'?>
-                        <root>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </root>
-                        ```
+                        <CodeBlock>
+                        {"<?xml version='1.1' encoding='UTF-8'?>\n"}
+                        {xmlArray1item.replaceAll('ArrayList', 'root')}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--info margin-bottom--sm">GET</span>
@@ -78,12 +71,8 @@ Trigger REST and Connector FILE samples
                     <TabItem value="Input" label="Input" default>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "name": "John",
-                            "id": 111,
-                            "city": "Pune",
-                            "country": "India"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(jsonArray[0], null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -104,10 +93,9 @@ Trigger REST and Connector FILE samples
                     <TabItem value="Input" label="Input" default>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        ```
-                        ST*       850*0001
-                        BEG*00*SA*000000006637770**20230818*0001307878
-                        ```
+                        <CodeBlock>
+                        {flatText}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
                         <span className="badge badge--info margin-bottom--sm">GET</span>
@@ -127,9 +115,8 @@ Trigger REST and Connector FILE samples
                     <TabItem value="Input" label="Input" default>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -148,15 +135,13 @@ Trigger REST and Connector FILE samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        name,id,city,country
-                        John,111,Pune,India
-                        ```
+                        <CodeBlock>
+                        {csv1row}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -175,15 +160,13 @@ Trigger REST and Connector FILE samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        name,id,city,country
-                        Will,112,Pune,India
-                        ```
+                        <CodeBlock>
+                        {csv1row.replaceAll('John', 'Will').replaceAll('111', '112')}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -202,21 +185,13 @@ Trigger REST and Connector FILE samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        <ArrayList>
-                            <item>
-                                <name>John</name>
-                                <id>111</id>
-                                <city>Pune</city>
-                                <country>India</country>
-                            </item>
-                        </ArrayList>
-                        ```
+                        <CodeBlock>
+                        {xmlArray1item}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -235,18 +210,13 @@ Trigger REST and Connector FILE samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "name": "John",
-                            "id": 111,
-                            "city": "Pune",
-                            "country": "India"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(jsonArray[0], null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -265,18 +235,13 @@ Trigger REST and Connector FILE samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "name": "Will",
-                            "id": 112,
-                            "city": "Pune",
-                            "country": "India"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(jsonArray[1], null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
@@ -295,15 +260,13 @@ Trigger REST and Connector FILE samples
             <td>
                 <Tabs>
                     <TabItem value="Input" label="Input" default>
-                        ```
-                        ST*       850*0001
-                        BEG*00*SA*000000006637770**20230818*0001307878
-                        ```
+                        <CodeBlock>
+                        {flatText}
+                        </CodeBlock>
                     </TabItem>
                     <TabItem value="Output" label="Output">
-                        <CodeBlock className="language-json">{JSON.stringify({
-                            "status": "success"
-                        }, null, 2)}
+                        <CodeBlock className="language-json">
+                        {JSON.stringify(constResponse, null, 2)}
                         </CodeBlock>
                     </TabItem>
                     <TabItem value="Path" label="Path">
