@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Quickintegrate',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Simplifying Integration | Opensource | No Code',
   favicon: 'img/favicon.png',
 
   url: 'https://quickintegrate.github.io',
@@ -30,10 +30,6 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: ({ docPath }) => `https://github.com/quickintegrate/docs/tree/main/${docPath}`,
         },
-        /*blog: {
-          showReadingTime: true,
-          editUrl: ({ blogPath }) => `https://github.com/quickintegrate/docs/tree/main/${blogPath}`,
-        },*/
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -51,13 +47,6 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
-        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/quickintegrate/docs',
           label: 'GitHub',
@@ -67,52 +56,12 @@ const config: Config = {
     },
     docs: {
       sidebar: {
-        autoCollapseCategories: true,
+        hideable: true,
+        autoCollapseCategories: true
       },
     },
     footer: {
       style: 'dark',
-      /*links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/quickintegrate/docs',
-            },
-          ],
-        },
-      ],*/
       copyright: `Copyright © ${new Date().getFullYear()} Quickintegrate Docs.`,
     },
     prism: {

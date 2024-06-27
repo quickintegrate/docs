@@ -30,7 +30,10 @@
 }
 
 .theme-code-block {
-  max-width: 18rem !important;
   max-height: 15rem !important;
   overflow-y: auto;
+}
+
+.templateIO {
+  max-width: 18rem !important;
 }
