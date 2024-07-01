@@ -5,10 +5,18 @@ import CodeBlock from "@theme/CodeBlock";
 
 function linkify(s: string) {
   const urlRegex = /(\bhttps?:\/\/[^\s]+)/g;
-  return s.split(urlRegex).map((part, i) => {
+  const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g;
+
+  return s.split(new RegExp(`(${emailRegex.source})`, "g")).map((part, i) => {
     if (part.match(urlRegex)) {
       return (
         <a key={i} href={part} target="_blank" rel="noopener noreferrer">
+          {part}
+        </a>
+      );
+    } else if (part.match(emailRegex)) {
+      return (
+        <a key={i} href={`mailto:${part}`}>
           {part}
         </a>
       );
