@@ -7,22 +7,26 @@ function linkify(s: string) {
   const urlRegex = /(\bhttps?:\/\/[^\s]+)/g;
   const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g;
 
-  return s.split(new RegExp(`(${emailRegex.source})`, "g")).map((part, i) => {
-    if (part.match(urlRegex)) {
-      return (
-        <a key={i} href={part} target="_blank" rel="noopener noreferrer">
-          {part}
-        </a>
-      );
-    } else if (part.match(emailRegex)) {
-      return (
-        <a key={i} href={`mailto:${part}`}>
-          {part}
-        </a>
-      );
-    }
-    return part;
-  });
+  return s
+    .split(
+      /(\bhttps?:\/\/[^\s]+|\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b)/g
+    )
+    .map((part, i) => {
+      if (urlRegex.test(part)) {
+        return (
+          <a key={i} href={part} target="_blank" rel="noopener noreferrer">
+            {part}
+          </a>
+        );
+      } else if (emailRegex.test(part)) {
+        return (
+          <a key={i} href={`mailto:${part}`}>
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
 }
 
 function moveToNewline(s: string) {
@@ -46,22 +50,24 @@ function TemplateRow({
       <td>{srNo}.</td>
       <td>{serviceName}</td>
       <td>{moveToNewline(description)}</td>
-      <td>
-        <Tabs>
-          <TabItem value="Input" label="Input" default>
-            {input && <CodeBlock className="templateIO">{input}</CodeBlock>}
-          </TabItem>
-          <TabItem value="Output" label="Output">
-            {output && <CodeBlock className="templateIO">{output}</CodeBlock>}
-          </TabItem>
-          <TabItem value="Path" label="Path">
-            <span className={`badge badge--${cls} margin-bottom--sm`}>
-              {method}
-            </span>
-            <CodeBlock className="templateIO">/{basepath}</CodeBlock>
-          </TabItem>
-        </Tabs>
-      </td>
+      {basepath && (
+        <td>
+          <Tabs>
+            <TabItem value="Input" label="Input" default>
+              {input && <CodeBlock className="templateIO">{input}</CodeBlock>}
+            </TabItem>
+            <TabItem value="Output" label="Output">
+              {output && <CodeBlock className="templateIO">{output}</CodeBlock>}
+            </TabItem>
+            <TabItem value="Path" label="Path">
+              <span className={`badge badge--${cls} margin-bottom--sm`}>
+                {method}
+              </span>
+              <CodeBlock className="templateIO">/{basepath}</CodeBlock>
+            </TabItem>
+          </Tabs>
+        </td>
+      )}
     </tr>
   );
 }
@@ -79,7 +85,7 @@ export default function TemplatePage({
             <th>Sr. No</th>
             <th>Service Name</th>
             <th>Description</th>
-            <th>Details</th>
+            {services[0].endpointInfo && <th>Details</th>}
           </tr>
         </thead>
         <tbody>

@@ -1,4 +1,5 @@
 import { type Template } from "@site/src/types";
+import getFormattedDateTime from "@site/src/utils/common";
 
 const sampleJson = {
   ID: 1,
@@ -88,6 +89,14 @@ export const sample: Template = {
       },
     },
     {
+      serviceName: "getFirstObject",
+      description: "Get first record from array using CN",
+      output: JSON.stringify(customers[0], null, 2),
+      endpointInfo: {
+        basepath: "getFirstObject",
+      },
+    },
+    {
       serviceName: "postCNOBJ",
       description:
         "Usage of Transformer where both input and output are JSON in REST POST request (ouput request_payload)  TRansform in Java object. IN APIResponse using CN send data back as with content-type as application/json",
@@ -102,7 +111,7 @@ export const sample: Template = {
     {
       serviceName: "postTransUtils",
       description:
-        "Usage of  utils mapping by using following function - constant",
+        "Use of few inline functions:\n 1. Use `Strings.concat` method to concatenate 2 or more strings with an underscore `-` between them and `Utils.constant` to get a constant value.\n 2. Use `Strings.toUppercase` method to convert string to uppercase.\n 3. Use `Maths.add` method for addition of static and dynamic values with datatype `Number`.\n 4. Use `Strings.isAlphanumeric` to check if given text contains only letters and numbers.\n 5. Use `Maths.add` method for addition of static and dynamic values with datatype `Double`.\n 6. Use `Date.DateTime` method to get the current date and time.",
       input: JSON.stringify(
         {
           name: "John Doe",
@@ -122,7 +131,7 @@ export const sample: Template = {
           Total: 96,
           isAlphanumeric: true,
           "Double Val": 233.0,
-          Date: new Date().toISOString().replace("T", " ").replace(/\..+/g, ""),
+          Date: getFormattedDateTime(),
         },
         null,
         2
