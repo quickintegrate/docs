@@ -4,7 +4,7 @@ export const sample: Template = {
   description: "This project covers all the test cases of Message trigger",
   services: [
     {
-      serviceName: "ReadOrdersMessage",
+      serviceName: "readOrdersMessage",
       description:
         "get the Orders JMS message and write the same to DB and File",
     },
