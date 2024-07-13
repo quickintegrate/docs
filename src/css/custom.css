@@ -37,3 +37,28 @@
 .templateIO {
   max-width: 18rem !important;
 }
+
+.default-container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+.default-container video {
+  width: 100%;
+  height: auto;
+}
+
+.default-container img {
+  display: block;
+  height: auto;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}

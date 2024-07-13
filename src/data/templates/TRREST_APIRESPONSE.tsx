@@ -17,8 +17,18 @@ const sampleJson = {
   creditLimit: 1451.25,
 };
 
+const customer = {
+  customerNumber: 100,
+  customerName: "Rajat Kulkarni",
+  city: "Boston",
+  country: "USA",
+};
+
 const sampleXml =
   "<Customer>\n    <ID>1</ID>\n    <Name>Minal</Name>\n    <LastName>Deshpande</LastName>\n    <FirstName>Minal</FirstName>\n    <phone>40.32.2555</phone>\n    <Address1>Pune</Address1>\n    <Address2/>\n    <city>Pune</city>\n    <state/>\n    <pincode>411007</pincode>\n    <country>India</country>\n    <salesRepEmployeeNumber>1702</salesRepEmployeeNumber>\n    <creditLimit>1451.25</creditLimit>\n</Customer>";
+
+const customerXml =
+  "<root>\n    <item>\n\t<ID>1</ID>\n\t<Name>Minal</Name>\n\t<LastName>Deshpande</LastName>\n\t<FirstName>Minal</FirstName>\n\t<phone>40.32.2555</phone>\n\t<Address1>Pune</Address1>\n\t<Address2/>\n\t<city>Pune</city>\n\t<state/>\n\t<pincode>411007</pincode>\n\t<country>India</country>\n\t<salesRepEmployeeNumber>1702</salesRepEmployeeNumber>\n\t<creditLimit>1451.25</creditLimit>\n    </item>\n</root>";
 
 const sampleCsv =
   "ID,Name,LastName,FirstName,phone,Address1,Address2,city,state,pincode,country,salesRepEmployeeNumber,creditLimit\n1,Minal,Deshpande,Minal,40.32.2555,Pune,,Pune,,411007,India,1702,1451.25";
@@ -53,11 +63,7 @@ export const sample: Template = {
       serviceName: "getStatusCodeGlobal",
       description:
         "get status code from global variables and content-type text/plain",
-      output: JSON.stringify({ Customer: customers[0] }, null, 0)
-        .replace("Name", "customerName")
-        .replace("Id", "customerNumber")
-        .replace("City", "city")
-        .replace("Country", "country"),
+      output: JSON.stringify({ Customer: customer }, null, 0),
       endpointInfo: {
         basepath: "getStatusCodeGlobal",
       },
@@ -91,7 +97,7 @@ export const sample: Template = {
     {
       serviceName: "getFirstObject",
       description: "Get first record from array using CN",
-      output: JSON.stringify(customers[0], null, 2),
+      output: JSON.stringify(customer, null, 2),
       endpointInfo: {
         basepath: "getFirstObject",
       },
@@ -159,7 +165,10 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> application/xml use CN with request_payload",
       input: JSON.stringify(sampleJson, null, 2),
-      output: sampleXml,
+      output: [
+        "<?xml version='1.1' encoding='UTF-8'?>\n",
+        sampleXml.replace(/Customer/g, "root"),
+      ],
       endpointInfo: {
         cls: "success",
         method: "POST",
@@ -219,7 +228,10 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> application/xml use CN with request_payload",
       input: sampleXml,
-      output: sampleXml,
+      output: [
+        "<?xml version='1.1' encoding='UTF-8'?>\n",
+        sampleXml.replace(/Customer/g, "root"),
+      ],
       endpointInfo: {
         cls: "success",
         method: "POST",
@@ -243,7 +255,7 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> text/plain use CN with request_payload",
       input: sampleXml,
-      output: sampleCsv,
+      output: sampleXml,
       endpointInfo: {
         cls: "success",
         method: "POST",
@@ -255,7 +267,7 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> application/json use CN with request_payload",
       input: sampleCsv,
-      output: JSON.stringify(sampleJson, null, 2),
+      output: JSON.stringify([sampleJson], null, 2),
       endpointInfo: {
         cls: "success",
         method: "POST",
@@ -267,7 +279,7 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> application/xml use CN with request_payload",
       input: sampleCsv,
-      output: sampleXml,
+      output: ["<?xml version='1.1' encoding='UTF-8'?>\n", customerXml],
       endpointInfo: {
         cls: "success",
         method: "POST",
@@ -315,7 +327,7 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> application/xml use CN with request_payload",
       input: sampleCsv,
-      output: sampleXml,
+      output: ["<?xml version='1.1' encoding='UTF-8'?>\n", customerXml],
       endpointInfo: {
         cls: "success",
         method: "POST",

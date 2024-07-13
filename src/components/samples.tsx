@@ -2,6 +2,7 @@ import { type Service, Template } from "@site/src/types";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import CodeBlock from "@theme/CodeBlock";
+import { Badge } from "@site/src/components/custom";
 
 function linkify(s: string) {
   const urlRegex = /(\bhttps?:\/\/[^\s]+)/g;
@@ -60,9 +61,7 @@ function TemplateRow({
               {output && <CodeBlock className="templateIO">{output}</CodeBlock>}
             </TabItem>
             <TabItem value="Path" label="Path">
-              <span className={`badge badge--${cls} margin-bottom--sm`}>
-                {method}
-              </span>
+              <Badge cls={cls} method={method} />
               <CodeBlock className="templateIO">/{basepath}</CodeBlock>
             </TabItem>
           </Tabs>

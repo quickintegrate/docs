@@ -63,8 +63,8 @@ export const sample: Template = {
       },
     },
     {
-      serviceName: "postTransOBJ",
-      description: "mapRecordObj having OBJ mapping",
+      serviceName: "postRecordOBJ",
+      description: "postRecordOBJ having OBJ mapping",
       input: JSON.stringify(customer, null, 2),
       output: JSON.stringify(
         {
@@ -79,7 +79,7 @@ export const sample: Template = {
       endpointInfo: {
         cls: "success",
         method: "POST",
-        basepath: "postTransOBJ",
+        basepath: "postRecordOBJ",
       },
     },
     {

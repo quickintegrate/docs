@@ -35,7 +35,7 @@ You will find all the triggers in drowndown while creating the flow
 #### STEP 6:
 Once service name is provided, canvas will show up with selected Trigger
 
-<img src={useBaseUrl('/img/Core Development/Trigger/Rest_trigger.png')} />;
+<img src={useBaseUrl('/img/Core Development/Rest_trigger.png')} />;
 
 **Gives up through triggers**
 

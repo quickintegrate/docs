@@ -1,4 +1,4 @@
-type EndpointInfo = {
+export type EndpointInfo = {
   cls?: string;
   method?: string;
   basepath?: string;

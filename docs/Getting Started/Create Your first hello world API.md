@@ -45,7 +45,7 @@ Take REST Trigger from the pallet and configure it.
 
 #### Step 6:
 Drag and drop **APIRESPONSE**  Transformer from the pallet.
-<img src={useBaseUrl('/img/hello/addedsteps/apiresponse_Connector.png')} />;
+<img src={useBaseUrl('/img/Core Development/Transformer/APIresponse/element.png')} />;
 
 <img src={useBaseUrl('/img/Core Development/Transformer/drag and drop APIRes.png')} />;
 

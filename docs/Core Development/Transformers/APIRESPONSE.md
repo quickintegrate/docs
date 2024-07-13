@@ -2,125 +2,90 @@
 sidebar_position: 3
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-# APIRESPONSE
+import { Image, Video } from '@site/src/components/custom';
 
 :::note
 - This tranformer can only be used with REST trigger.
 - The flow must contain atleast one APIRESPONSE element in it when REST trigger used. 
 :::
 
-#### Step 1:
-Drag and drop **APIRESPONSE**  Transformer from the pallet.
+## Transformer Configuration
 
+1. Drag and drop **APIRESPONSE**  Transformer from the pallet.
 
-<img src={useBaseUrl('/img/hello/addedsteps/apiresponse_connector.png')} />;
+<Image src="/img/Core Development/Transformer/APIresponse/element.png" alt="APIRESPONSE transformer" />
 
+1. Left click on **APIRESPONSE** Transformer and Configure as given below.
+2. Provide status code.
+3. Click on the Drop down and select Content Type `application/json`.
 
-<img src={useBaseUrl('/img/Core Development/Transformer/drag and drop APIRes.png')} />;
+<Video src="/img/Core Development/Transformer/APIresponse/intro.mp4" type="video/mp4" />
 
-#### Step 2:
-Left click on **APIRESPONSE** Transformer and Configure as given below.
-
-<img src={useBaseUrl('/img/hello/3API_Response.png')} />;
-
-#### Step 3: 
-
-Click on the Drop down and select Content Type application json
-
-<img src={useBaseUrl('/img/hello/addedsteps/ContentType.png')} />;
-
-<img src={useBaseUrl('/img/hello/addedsteps/Contenttype_addbutton.png')} />;
+## Mapping Types
 
 <table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GEN</td>
-<td>Get one field from the Input and mapped in another field of Output</td>
-</tr>
-<tr>
-<td>TRANS</td>
-<td>Transforms the Input value with the help of transformation functions</td>
-</tr>
-<tr>
-<td>CN</td>
-<td>Mapped the Input as it is Output body</td>
-</tr>
-<tr>
-<td>OBJ</td>
-<td>Mapped the Inputs to Object</td>
-</tr>
-<tr>
-<td>AR</td>
-<td>Mapped the Inputs to Array</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GEN</td>
+            <td>Get one field from the input and mapped in another field of output</td>
+        </tr>
+        <tr>
+            <td>TRANS</td>
+            <td>Transforms the input value with the help of inline transformation functions</td>
+        </tr>
+        <tr>
+            <td>CN</td>
+            <td>Mapped the input as it is in output body</td>
+        </tr>
+        <tr>
+            <td>OBJ</td>
+            <td>Creates a object with target name as key</td>
+        </tr>
+        <tr>
+            <td>AR</td>
+            <td>Mapped the input into an array</td>
+        </tr>
+    </tbody>
 </table>
 
-#### Step 4: 
+### 1. TRANS
 
-Click on Add button From Drop down select **TRANS** - Transforms the Input value with the help of transformation functions
+1. From Dropdown select **TRANS** - Transforms the Input value with the help of inline transformation functions.
+2. Click on the add button. You will see Inline functions, click on + icon.
+3. Select `Utils` and `Constant` from dropdown. Add Parameters as *Hello world* and Save.
+4. The configuration of the APIRESPONSE Transformer appears as follows:
 
-<img src={useBaseUrl('/img/hello/addedsteps/trans type.png')} />;
+<Video src="/img/Core Development/Transformer/APIresponse/TRANS.mp4" type="video/mp4" />
 
-<img src={useBaseUrl('/img/hello/addedsteps/transAdd3.png')} />;
+- **Target** - In target write Status and you will find Key as below
+- **Key** - Utils.constant(Hello world)
 
+### 2. CN
 
-#### Step 5: 
+From Dropdown select **CN** - Mapped the input as it is in output body.
 
-Click on the add button You will see Inline functions, click on + icon 
+<Image src="/img/Core Development/Transformer/APIresponse/CN.png" alt="Constant mapping" />
 
-<img src={useBaseUrl('/img/hello/addedsteps/addCondition4.png')} />;
+### 3. AR
 
-#### Step 6: 
+From Dropdown select **AR** - Mapped the input into an array.
 
-Select Utils and Constant from droup down
-Add Parameters as a hello world and Save
+<Image src="/img/Core Development/Transformer/APIresponse/AR.png" alt="Array mapping" />
 
-<img src={useBaseUrl('/img/hello/addedsteps/addParametersand save5.png')} />;
+### 4. GEN
 
-<img src={useBaseUrl('/img/hello/addedsteps/Utils type.png')} />;
+From Dropdown select **GEN** - Get one field from the input and mapped in another field of output.
 
-<img src={useBaseUrl('/img/hello/addedsteps/Constant .png')} />;
+<Image src="/img/Core Development/Transformer/APIresponse/GEN.png" alt="Key & value pair mapping" />
 
-#### Step 7:
+### 5. OBJ
 
-The configuration of the APIRESPONSE Transformer appears as follows:
+From Dropdown select **OBJ** - Creates a object with target name as key. 
 
-<img src={useBaseUrl('/img/hello/addedsteps/save0.6.png')} />;
-
-Target- In target write Status and you will find Key as below
-
-Key- Utils.constant(hello world)
-
-
-#### Step 8: 
-
-Click on Add button From Drop down select **CN** - Mapped the Input as it is Output body
-
-<img src={useBaseUrl('/img/APIresponse New/cn1.png')} />;
-
-<img src={useBaseUrl('/img/APIresponse New/CN.png')} />;
-
-#### Step 9: 
-
-Click on Add button From Drop down select **AR** - Mapped the Inputs to Array
-
-<img src={useBaseUrl('/img/APIresponse New/ar1.png')} />;
-
-<img src={useBaseUrl('/img/APIresponse New/AR.png')} />;
-
-#### Step 10: 
-
-Click on Add button From Drop down select **GEN** - Get one field from the Input and mapped in another field of Output
-
-<img src={useBaseUrl('/img/APIresponse New/gen1.png')} />;
-
-<img src={useBaseUrl('/img/APIresponse New/GEN.png')} />;
+<Image src="/img/Core Development/Transformer/APIresponse/OBJ.png" alt="Object mapping" />

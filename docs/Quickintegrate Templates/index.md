@@ -13,7 +13,9 @@ import DocCardList from '@theme/DocCardList';
 6. Using the QuickIntegrate deployed URL You can Test your API using Postman Collection
 :::
 
-<img src={useBaseUrl('/img/Configure Gateway/deployedApp.png')} />
+<p>
+    <img src={useBaseUrl('/img/Configure Gateway/deployedApp.png')} />
+</p>
 
 <hr/>
 
