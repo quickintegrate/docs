@@ -1,9 +1,13 @@
 ---
 sidebar_position: 2
+slug: "rest-connector"
+sidebar_label: "REST"
 ---
 
 import { Badge } from "@site/src/components/custom";
 import { Image } from '@site/src/components/custom';
+
+# REST Connector
 
 The Exchange backend uses REST Connect to transparently convert a REST API specification to a QuickIntegration connector. 
 Security Scheme Support

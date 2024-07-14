@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
+slug: "db-connector"
+sidebar_label: "DB"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image, Video } from '@site/src/components/custom';
 
 # Database Connector
 
@@ -12,161 +14,172 @@ Various query types are supported, including predefined, dynamically constructed
 
 **To configure the Database connector:**
 
-Define your Database’s location and connection details.
-Configure the operation you wish to perform.
-Include the query to execute on the Database.
+- Define your Database’s location and connection details.
+- Configure the operation you wish to perform.
+- Include the query to execute on the Database.
 
-## Supported Operations:
-The Database connector offers support for the following operations:
+## Supported Commands
+The Database connector offers support for the following commands:
 
-1) Select
+1. Select
+2. Insert
+3. Update
+4. Delete
 
-2) Insert
+## Configuration
+1. Drag and drop the **DB Connector**
+<Image src="/img/Core Development/Connectors/DB/element.png" alt="DB Connector" />
 
-3) Update
+2. Left click on connector, you can define the **DB Connector** configration
 
-4) Delete
+### Quickintegrate Query Generator
+1. Click on the Query Generator icon.
+2. Choose the table name from the dropdown list to specify the source. We can set a limit on the number of records to retrieve.
+3. In the filters section, include conditions for the fields to be used in the query, employing operations such as NULL, NOT NULL, =, !=, etc. Your query will be generated based on these selections.
 
-Drag and drop the **DB Connector**
-
-<img src={useBaseUrl('/img/Core Development/DB/DB_connector.png')} />;
-
-### Configuring Database Connector
-left click on connector, you can define the **DB Connector** configration
-
-## Read DB Operation
-
-Return Row(s) Multiple
-
-<img src={useBaseUrl('/img/Connectors/Read_DB_query4.png')} />;
-
-Return Row(s) Single
-
-<img src={useBaseUrl('/img/Connectors/DB/read single db.png')} />;
+<Video src="/img/Core Development/Connectors/DB/autoQueryGen.mp4" type="video/mp4" />
 
 <table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DB Operation</td>
-<td>Read/Write</td>
-<td>Read</td>
-</tr>
-<tr>
-<td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource JDBC"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
-<td>Classicmodels</td>
-</tr>
-<tr>
-<td>Return Row(s)</td>
-<td>Single/Multiple</td>
-<td>Multiple</td>
-</tr>
-<tr>
-<td>Output Variable</td>
-<td>Stores output of connections operations</td>
-<td>MultiCustomers</td>
-</tr>
-<tr>
-<td>Query</td>
-<td>Data Base Query</td>
-<td>SELECT * FROM customers WHERE city =:city</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table Name</td>
+            <td>DataBase Table Name</td>
+            <td>Customers</td>
+        </tr>
+        <tr>
+            <td>Your Generated Query is</td>
+            <td>DataBase Query</td>
+            <td>SELECT * FROM customers WHERE city =:city</td>
+        </tr>
+        <tr>
+            <td>Filters (Fields)</td>
+            <td>Particular field where DB will Operate</td>
+            <td>city</td>
+        </tr>
+        <tr>
+            <td>Filters (Operation)</td>
+            <td>Operations like NULL, NOT NULL, =, !=, etc</td>
+            <td>=</td>
+        </tr>
+    </tbody>
 </table>
 
-#### Let see how to write the query using quickintegration with few clicks
-Click on the Query Generator icon
+### Read Operation
 
-<img src={useBaseUrl('/img/Connectors/DB/querryIcon.png')} />;
-
-
-Choose the table name from the dropdown list to specify the source. We can set a limit on the number of records to retrieve. In the filters section, include conditions for the fields to be used in the query, employing operations such as NULL, NOT NULL, =, !=, etc. Your query will be generated based on these selections
-
-<img src={useBaseUrl('/img/Connectors/Read_DB_query1.png')} />;
-
-<img src={useBaseUrl('/img/Connectors/Read_DB_query2.png')} />;
+1. Get multiple row(s)
+<Image cls="border mb-2" src="/img/Core Development/Connectors/DB/multipleRows.png" alt="Multiple rows configuration" />
 
 <table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Table Name</td>
-<td>Data Base Table Name</td>
-<td>Customers</td>
-</tr>
-<tr>
-<td>Your Generated Query is</td>
-<td>Data Base Query</td>
-<td>SELECT * FROM customers WHERE city =:city</td>
-</tr>
-<tr>
-<td>Filters(Fields)</td>
-<td>Perticular field where DB will Operate</td>
-<td>city</td>
-</tr>
-<tr>
-<td>Filters(Operation)</td>
-<td>Operations like NULL, NOT NULL, =, !=, etc</td>
-<td>=</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DB Operation</td>
+            <td>Read/Write</td>
+            <td>Read</td>
+        </tr>
+        <tr>
+            <td>Datasource Name</td>
+            <td>Datasource Name which is configured in connections properties.
+                <a href="/Core Development/Property Config/Connection Properties/DataSource JDBC" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>classicmodels</td>
+        </tr>
+        <tr>
+            <td>Return Row(s)</td>
+            <td>Single/Multiple</td>
+            <td>Multiple</td>
+        </tr>
+        <tr>
+            <td>Output Variable</td>
+            <td>Stores output of connections operations</td>
+            <td>MultiCustomers</td>
+        </tr>
+        <tr>
+            <td>Query</td>
+            <td>DataBase Query</td>
+            <td>SELECT * FROM customers WHERE city =:city</td>
+        </tr>
+    </tbody>
 </table>
 
+1. Get single row
+<Image cls="border" src="/img/Core Development/Connectors/DB/singleRow.png" alt="Single row configuration" />
 
-## Write DB Operation
+### Write Operation
 
-<img src={useBaseUrl('/img/Connectors/Write_DB_config.png')} />;
+When we need to modify records in the database, we can choose the **Write** option from the DB Operations menu. 
 
-When we need to modify records in the database, we can choose the **Write** option from the DB Operations menu. Let's explore how to compose a delete query. Choose the query type as **Delete** from the dropdown list, opt for bulk operation to delete multiple records using a single query, and specify the fields for the delete condition. 
+#### 1. Normal Insert
 
+The following shows a insert operation usage without checking:
+- ***skipNull*** - Excludes `NULL` values.
+- ***BULK*** - Performing a large number of data manipulation operations (insert, update, delete) in a single call
+
+<Image cls="border" src="/img/Core Development/Connectors/DB/insertRow.png" />
+
+#### 2. Skip Null
+
+If *skipNull* is checked then it update the query on runtime and remove all the values from query for fields that contain `NULL` values.
+
+:::note
+    This works only in case of normal write operation and not in bulk. 
+:::
+
+#### 3. Bulk Delete
+
+Let's explore how to compose a delete query.
+1. Choose the query type as **Delete** from the dropdown list.
+2. Check the bulk operation to delete multiple records using a single query
+3. Specify the fields for the delete condition. 
+
+<Image cls="border mb-2" src="/img/Core Development/Connectors/DB/bulkDelete.png" />
 
 <table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DB Operation</td>
-<td>Read/Write</td>
-<td>Write</td>
-</tr>
-<tr>
-<td>Datasource Name</td>
-<td>Datasource Name which is configured in connections properties<a href="/Core Development/Property Config/Connection Properties/DataSource JDBC"target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
-<td>classicmodels</td>
-</tr>
-<tr>
-<td>Query Type(s)</td>
-<td>Methods like GET, POST, DELETE, etc</td>
-<td>DELETE</td>
-</tr>
-<tr>
-<td>Parent</td>
-<td>Defined by Using $ key word</td>
-<td>$MultiCustomers</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DB Operation</td>
+            <td>Read/Write</td>
+            <td>Write</td>
+        </tr>
+        <tr>
+            <td>Datasource Name</td>
+            <td>Datasource Name which is configured in connections properties.
+                <a href="/Core Development/Property Config/Connection Properties/DataSource JDBC" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>classicmodels</td>
+        </tr>
+        <tr>
+            <td>Query Type(s)</td>
+            <td>Methods like INSERT, UPDATE, DELETE</td>
+            <td>DELETE</td>
+        </tr>
+        <tr>
+            <td>Output Variable</td>
+            <td>Stores output of connections operations</td>
+            <td>bulkDeleteO</td>
+        </tr>
+        <tr>
+            <td>Parent</td>
+            <td>Defined by Using $ key word</td>
+            <td>$MultiCustomers</td>
+        </tr>
+    </tbody>
 </table>
-
-<img src={useBaseUrl('/img/Connectors/DB/writenobulk.png')} />;
-
-### Description: 
-Keys within the database should always start with the **$** symbol.
-

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+slug: "mq-connector"
+sidebar_label: "MQ"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

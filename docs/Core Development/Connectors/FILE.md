@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+slug: "file-connector"
+sidebar_label: "FILE"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

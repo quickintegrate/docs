@@ -1,5 +1,7 @@
 ---
 sidebar_position: 9
+slug: "mail-connector"
+sidebar_label: "MAIL"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

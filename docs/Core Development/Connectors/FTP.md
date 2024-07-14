@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+slug: "ftp-connector"
+sidebar_label: "FTP"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

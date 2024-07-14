@@ -89,3 +89,14 @@ From Dropdown select **GEN** - Get one field from the input and mapped in anothe
 From Dropdown select **OBJ** - Creates a object with target name as key. 
 
 <Image src="/img/Core Development/Transformer/APIresponse/OBJ.png" alt="Object mapping" />
+
+## Mapping view
+
+View response structure side by side as you create mapping.
+
+:::note
+    - The mapping view only shows `JSON`.
+    - It does not shows the response structure for other types like `XML`.
+:::
+
+<Video src="/img/Core Development/Transformer/APIresponse/jsonView.mp4" type="video/mp4" />

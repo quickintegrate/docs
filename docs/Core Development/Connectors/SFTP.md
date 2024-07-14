@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+slug: "sftp-connector"
+sidebar_label: "SFTP"
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
