@@ -92,8 +92,8 @@ The Database connector offers support for the following commands:
         </tr>
         <tr>
             <td>Datasource Name</td>
-            <td>Datasource Name which is configured in connections properties.
-                <a href="/Core Development/Property Config/Connection Properties/DataSource JDBC" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>Datasource Name which is configured in connection properties.
+                <a href="/Core Development/Property Config/Connection Properties/jdbc-properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
             <td>classicmodels</td>
         </tr>
         <tr>
@@ -110,6 +110,12 @@ The Database connector offers support for the following commands:
             <td>Query</td>
             <td>DataBase Query</td>
             <td>SELECT * FROM customers WHERE city =:city</td>
+        </tr>
+        <tr>
+            <td>Gradle dependencies</td>
+            <td>Database driver dependencies which are configured in connection properties.
+                <a href="/Core Development/Property Config/Connection Properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>com.mysql:mysql-connector-j:9.0.0</td>
         </tr>
     </tbody>
 </table>
@@ -162,8 +168,8 @@ Let's explore how to compose a delete query.
         </tr>
         <tr>
             <td>Datasource Name</td>
-            <td>Datasource Name which is configured in connections properties.
-                <a href="/Core Development/Property Config/Connection Properties/DataSource JDBC" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>Datasource Name which is configured in connection properties.
+                <a href="/Core Development/Property Config/Connection Properties/jdbc-properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
             <td>classicmodels</td>
         </tr>
         <tr>
@@ -180,6 +186,12 @@ Let's explore how to compose a delete query.
             <td>Parent</td>
             <td>Defined by Using $ key word</td>
             <td>$MultiCustomers</td>
+        </tr>
+        <tr>
+            <td>Gradle dependencies</td>
+            <td>Database driver dependencies which are configured in connection properties.
+                <a href="/Core Development/Property Config/Connection Properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>com.mysql:mysql-connector-j:9.0.0</td>
         </tr>
     </tbody>
 </table>
