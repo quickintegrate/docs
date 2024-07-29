@@ -61,7 +61,12 @@ A URL identifies a resource
             <td>Unique identifier used to locate a resource</td>
             <td>https://api.postalpincode.in</td>
         </tr>
+        <tr>
+            <td>Swagger Name</td>
+            <td>Swagger can be used to autofill `Rest` connector configuration and `Payload` input mapping.</td>
+            <td>sfdc-swagger</td>
+        </tr>
     </tbody>
 </table>
 
-**If the Swagger is available for the specific REST API, kindly proceed with the upload.**
+**If the Swagger is available for the specific REST API, kindly proceed with the upload on *Define / Swagger* page.**
