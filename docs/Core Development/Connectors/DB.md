@@ -30,7 +30,7 @@ The Database connector offers support for the following commands:
 1. Drag and drop the **DB Connector**
 <Image src="/img/Core Development/Connectors/DB/element.png" alt="DB Connector" />
 
-2. Left click on connector, you can define the **DB Connector** configration
+2. Left click on connector, you can define the **DB Connector** configuration.
 
 ### Quickintegrate Query Generator
 1. Click on the Query Generator icon.

@@ -45,11 +45,11 @@ It supports the following operations:
 
 ### Autofill using Swagger
 
-1. Upload the swagger on **Define / Swagger** page.
+1. Upload/Create the swagger on **Define / Swagger** page.
 2. Go to **Connection properties** page configure `RESTURL` and select swagger name from dropdown.
-3. Now the swagger mapped to connection can be used to:
-   - Autofill connector configuration (***Rest***).
-   - Input mapping (***Payload***).
+3. Now select the datasource from dropdown in connector configuration and click on swagger button that will appear on right hand side of dropdown.
+4. Hover over the endpoint that you want to hit and copy icon will appear on right hand side.
+5. Click on copy icon to populate rest configurations.
 
 <Video src="/img/Core Development/Connectors/Rest/swaggerAutofill.mp4" type="video/mp4" />
 

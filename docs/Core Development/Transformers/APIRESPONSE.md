@@ -1,23 +1,27 @@
 ---
 sidebar_position: 3
+slug: "apiresponse-transformer"
+sidebar_label: "APIRESPONSE"
 ---
 
 import { Image, Video } from '@site/src/components/custom';
+
+# API Response Transformer
 
 :::note
 - This tranformer can only be used with REST trigger.
 - The flow must contain atleast one APIRESPONSE element in it when REST trigger used. 
 :::
 
-## Transformer Configuration
+## Configuration
 
-1. Drag and drop **APIRESPONSE**  Transformer from the pallet.
+1. Drag and drop **APIRESPONSE** Transformer from the pallet.
 
 <Image src="/img/Core Development/Transformer/APIresponse/element.png" alt="APIRESPONSE transformer" />
 
-1. Left click on **APIRESPONSE** Transformer and Configure as given below.
-2. Provide status code.
-3. Click on the Drop down and select Content Type `application/json`.
+2. Left click on **APIRESPONSE** Transformer and Configure as given below.
+3. Provide status code.
+4. Click on the Drop down and select Content Type `application/json`.
 
 <Video src="/img/Core Development/Transformer/APIresponse/intro.mp4" type="video/mp4" />
 

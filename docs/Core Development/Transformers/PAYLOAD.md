@@ -1,79 +1,110 @@
 ---
 sidebar_position: 4
+slug: "payload-transformer"
+sidebar_label: "PAYLOAD"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image, Video } from '@site/src/components/custom';
 
-# PAYLOAD
+# Payload Transformer
 
 It resembles an API response but includes an output. We generate customized data through data mapping, employing it as input for subsequent nodes.
 
-#### Step 1:
-Drag and drop the **PAYLOAD**Components from the pallatte
+:::info
+When we want to get a variable from the pipeline, we use **$** sign as prefix followed by Variable name in the pipeline. They can be nested which are seperated by "." Ex. **$Payload.key**
 
-<img src={useBaseUrl('/img/Core Development/Transformer/payload.png')} />;
- 
+`Note: The variable Payload should be present in the pipeline before getting it.`
+:::
 
-<img src={useBaseUrl('/img/Core Development/Transformer/drag and drop Payload.png')} />;
+## Configuration
 
+1. Drag and drop **PAYLOAD** Transformer from the pallet.
 
-#### Step 2:
-#### Configuring PAYLOAD
-left click on PAYLOAD Components, you can define the **PAYLOAD** configration as given below:
+<Image src="/img/Core Development/Transformer/Payload/element.png" alt="PAYLOAD transformer" />
 
-<img src={useBaseUrl('/img/Core Development/Transformer/payload config.png')} />;
+2. Left click on transformer, now you can define the **PAYLOAD Transformer** configuration.
+3. Provide the Output variable. **The output variable stores the result of the transformation**.
+
+## Mapping Types
 
 <table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GEN</td>
-<td>Get one field from the Input and mapped in another field of Output</td>
-</tr>
-<tr>
-<td>TRANS</td>
-<td>Transforms the Input value with the help of transformation functions</td>
-</tr>
-<tr>
-<td>CN</td>
-<td>Mapped the Input as it is Output body</td>
-</tr>
-<tr>
-<td>OBJ</td>
-<td>Mapped the Inputs to Object</td>
-</tr>
-<tr>
-<td>AR</td>
-<td>Mapped the Inputs to Array</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GEN</td>
+            <td>Get one field from the input and mapped in another field of output</td>
+        </tr>
+        <tr>
+            <td>TRANS</td>
+            <td>Transforms the input value with the help of inline transformation functions</td>
+        </tr>
+        <tr>
+            <td>OBJ</td>
+            <td>Creates a object with target name as key</td>
+        </tr>
+        <tr>
+            <td>AR</td>
+            <td>Mapped the input into an array</td>
+        </tr>
+    </tbody>
 </table>
 
-#### Step 3:
-Provide the Output Variable 
-**The output variable stores the result of the transformation**
+### 1. TRANS
 
-#### Step 4:
-Click on Add button and do the mapping as shown 
+1. From Dropdown select **TRANS** - Transforms the Input value with the help of inline transformation functions.
+2. Click on the add button. You will see Inline functions, click on + icon.
+3. Select `Utils` and `Constant` from dropdown. Add Parameters as *Active* and Save.
+4. The configuration of the APIRESPONSE Transformer appears as follows:
 
-<img src={useBaseUrl('/img/Core Development/Transformer/Payload add button.png')} />;
+<Video src="/img/Core Development/Transformer/Payload/TRANS.mp4" type="video/mp4" />
 
-<img src={useBaseUrl('/img/Core Development/Transformer/Payload utils.png')} />; 
+- **Target** - In target write Status and you will find Key as below
+- **Key** - Utils.constant(Active)
 
-<img src={useBaseUrl('/img/Core Development/Transformer/Payload constant.png')} />;
+### 2. AR
 
+From Dropdown select **AR** - Mapped the input into an array.
 
-<img src={useBaseUrl('/img/Core Development/Transformer/Payload parameters.png')} />;
+<Image src="/img/Core Development/Transformer/APIresponse/AR.png" alt="Array mapping" />
 
-and Save
+### 3. GEN
 
+From Dropdown select **GEN** - Get one field from the input and mapped in another field of output.
 
-#### Step 5:
-When we want to get a variable, from the pipeline, we use **$** sign as prefix followed by Variable name from in the pipeline. There can be nested get which is seperated by '.' Ex. **$Payload.key**
+<Image src="/img/Core Development/Transformer/APIresponse/GEN.png" alt="Key & value pair mapping" />
 
-`Note:- The variable Payload should be present in the pipeline before the calling`
+### 4. OBJ
+
+From Dropdown select **OBJ** - Creates a object with target name as key. 
+
+<Image src="/img/Core Development/Transformer/APIresponse/OBJ.png" alt="Object mapping" />
+
+## Mapping view
+
+View response structure side by side as you create mapping.
+
+<Video src="/img/Core Development/Transformer/Payload/jsonView.mp4" type="video/mp4" />
+
+## Input Mapping (*Autofill*)
+
+### 1. Swagger
+
+1. Upload/Create the swagger on **Define / Swagger** page.
+2. Select swagger radio button and swagger name from dropdown.
+3. Click on view swagger button that will appear on right hand side of dropdown.
+4. Hover over the endpoint which has `Request Body` and copy icon will appear on right hand side.
+5. Click on copy icon to map input configurations.
+
+<Video src="/img/Core Development/Transformer/Payload/swaggerMapping.mp4" type="video/mp4" />
+
+### 2. Schema
+
+1. Create the schema on **Define / Schema Design** page.
+2. Select schema radio button and schema name from dropdown.
+
+<Video src="/img/Core Development/Transformer/Payload/schemaMapping.mp4" type="video/mp4" />
