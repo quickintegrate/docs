@@ -89,7 +89,7 @@ export const sample: Template = {
       serviceName: "getArrayResponseTxt",
       description:
         "get array in response and content-type text/plain and status-code 202",
-      output: JSON.stringify(customers, null, 2),
+      output: JSON.stringify(customers),
       endpointInfo: {
         basepath: "getArrayResponseTxt",
       },
@@ -107,7 +107,7 @@ export const sample: Template = {
       description:
         "Usage of Transformer where both input and output are JSON in REST POST request (ouput request_payload)  TRansform in Java object. IN APIResponse using CN send data back as with content-type as application/json",
       input: JSON.stringify(sampleJson, null, 2),
-      output: sampleCsv,
+      output: JSON.stringify(sampleJson),
       endpointInfo: {
         cls: "success",
         method: "POST",
@@ -204,7 +204,7 @@ export const sample: Template = {
       description:
         "input  is json APIRESPONSE component Content-Type-> text/plain use CN with request_payload",
       input: JSON.stringify(sampleJson, null, 2),
-      output: sampleCsv,
+      output: JSON.stringify(sampleJson, null, 2),
       endpointInfo: {
         cls: "success",
         method: "POST",
