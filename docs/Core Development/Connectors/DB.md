@@ -114,7 +114,7 @@ The Database connector offers support for the following commands:
         <tr>
             <td>Gradle dependencies</td>
             <td>Database driver dependencies which are configured in connection properties.
-                <a href="/Core Development/Property Config/Connection Properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+                <a href="/Core Development/Property Config/Connection Properties/gradle-dependencies" target="_blank"> Please refer the link for instructions on adding dependencies</a></td>
             <td>com.mysql:mysql-connector-j:9.0.0</td>
         </tr>
     </tbody>
@@ -190,7 +190,7 @@ Let's explore how to compose a delete query.
         <tr>
             <td>Gradle dependencies</td>
             <td>Database driver dependencies which are configured in connection properties.
-                <a href="/Core Development/Property Config/Connection Properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+                <a href="/Core Development/Property Config/Connection Properties/gradle-dependencies" target="_blank"> Please refer the link for instructions on adding dependencies</a></td>
             <td>com.mysql:mysql-connector-j:9.0.0</td>
         </tr>
     </tbody>

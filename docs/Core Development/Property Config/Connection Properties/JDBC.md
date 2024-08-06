@@ -20,7 +20,7 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
 4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
-<Image cls="border mb-2" src="/img/Core Development/Connection properties/jdbc.png" alt="JDBC configuration" />
+<Image cls="border mb-2" src="/img/Core Development/Connection properties/JDBC.png" alt="JDBC configuration" />
 
 <table>
     <thead>

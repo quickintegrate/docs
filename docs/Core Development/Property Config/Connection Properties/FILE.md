@@ -25,7 +25,7 @@ The File DataSource oversees file and folder management within a locally mounted
 4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
-<Image cls="border mb-2" src="/img/Core Development/Connection properties/file.png" alt="FILE configuration" />
+<Image cls="border mb-2" src="/img/Core Development/Connection properties/FILE.png" alt="FILE configuration" />
 
 <table>
     <thead>

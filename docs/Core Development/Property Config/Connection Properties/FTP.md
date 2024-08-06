@@ -26,7 +26,7 @@ The FTP DataSource facilitates access to files and directories hosted on an FTP 
 4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
-<Image cls="border mb-2" src="/img/Core Development/Connection properties/ftp.png" alt="FTP configuration" />
+<Image cls="border mb-2" src="/img/Core Development/Connection properties/FTP.png" alt="FTP configuration" />
 
 <table>
     <thead>

@@ -46,7 +46,7 @@ The publish and subscribe model allows a sender to publish messages to a specifi
 4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
-<Image cls="border mb-2" src="/img/Core Development/Connection properties/jms.png" alt="JMS configuration" />
+<Image cls="border mb-2" src="/img/Core Development/Connection properties/JMS.png" alt="JMS configuration" />
 
 <table>
     <thead>

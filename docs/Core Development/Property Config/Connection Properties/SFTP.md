@@ -26,7 +26,7 @@ The SFTP DataSource grants access to files and directories housed within an SFTP
 4) Click on Submit to save the Credentials
 5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
-<Image cls="border mb-2" src="/img/Core Development/Connection properties/sftp.png" alt="SFTP configuration" />
+<Image cls="border mb-2" src="/img/Core Development/Connection properties/SFTP.png" alt="SFTP configuration" />
 
 <table>
     <thead>

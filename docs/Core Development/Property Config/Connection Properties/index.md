@@ -26,14 +26,4 @@ A properties file improves the maintainability of your applications.
 
 3) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
-### Gradle dependencies
-
-On left hand side in bottom, there is a option to add `gradle dependencies`. 
-
-:::note
-    - By default no database drivers are present in an application.
-:::
-
-<Image cls="border mb-2" src="/img/Core Development/Connection properties/dynamicGradle.png" alt="Gradle dependencies" />
-
 <DocCardList />
