@@ -11,5 +11,9 @@ export const sample: Template = {
       serviceName: "scheduleServiceCallRest",
       description: "Schedule a service which pools Rest API",
     },
+    {
+      serviceName: "cronSchedularService",
+      description: "Scheduling the service by cron job to run after every 5 seconds. Logging the current datetime to show that the service is indeed executing after 5 seconds.",
+    },
   ],
 };

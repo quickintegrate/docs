@@ -4,21 +4,15 @@ import { Image } from '@site/src/components/custom';
 Quickintegrate platform supports **REST API** development using HTTP trigger where configurations can be defined such as host, port, uri/query params etc.
 
 :::note
-
 - The flow must contain atleast one APIRESPONSE element in it when this is used.
 - For method <Badge cls="success" method="POST" /> / <Badge cls="warning" method="PUT" /> / <Badge cls="success" method="PATCH" /> request body is not compulsory.
 :::
 
 1. When we Login to Quick Integration Platform to get started.
-
 2. Click on **Manage** Option >> **Projects** >> **Create** to create the new project
-
 3. Go to **DEVELOP** >> **Functionality** API
-
-4. Select relevant project and create services in that project by cliking **Service** button.
-
+4. Select relevant project and create services in that project by clicking **Service** button.
 5. Select **REST** triggers in drowndown while creating the flow
-
 6. Once service name is provided, canvas will show up with selected DB **REST** Trigger
 
 <Image src="/img/Core Development/Trigger/rest.png" alt="REST trigger" />
