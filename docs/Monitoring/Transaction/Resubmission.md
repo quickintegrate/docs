@@ -19,7 +19,7 @@ It allows to resubmit a rest transaction from the monitoring ui.
   :::
 
 1. Select `Transaction` from sidebar if not selected
-2. Select `Poject name`, `build version` and `environment` from the drop down
+2. Select `Project name`, `build version` and `environment` from the drop down
    1. You can also filter out the transactions by selecting `start date` and `end date`
 3. Select the transaction record from the list which needs to be resubmitted
 4. From the transaction information page click `re-submit` button

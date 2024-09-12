@@ -5,7 +5,7 @@ import DocCardList from '@theme/DocCardList';
 ### Monitor microservice at one place
 
 
-Monitor microservice at one place using monitor UI.
-This platform helps a user to monitor applications that have been deployed using desiner flow UI. Also user can check application transcations.
+Monitor microservice at one place using monitoring UI.
+This platform helps a user to monitor applications that have been deployed using designer flow UI. Also user can check application transactions.
 
 <DocCardList />
