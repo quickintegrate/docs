@@ -2,31 +2,28 @@
 sidebar_position: 1
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image } from '@site/src/components/custom';
+
 
 # URL Validator
 
 URL Validator validates the **request params**,**path params** and **request body** of the incoming request. 
 
-### Configuring URL validator
+## Configuration
 
-### Step 1:
+1. Drag and drop **URL** Transformer from the pallet.
 
-Drag and drop the **URL Validator** and name the component
+<Image src="/img/Core Development/Transformer/URL_validator/element.png" alt="URL Transformer" />
 
-<img src={useBaseUrl('/img/Core Development/Transformer/URL Validator.png')} />
-
-<img src={useBaseUrl('/img/Core Development/Transformer/drag and drop URL.png')} />
-
-### Step 2.a:
-Configuring URL Validator for **Request params**
-
-1) Right click on URL Validator Transformer
-2) Click the plus button on the right to add the fields
-3) Name the appropriate request parameter name and the datatype
-4) Click save
+2. Right click on transformer, now you can define the **URL Transformer** configuration.
    
-<img src={useBaseUrl('/img/Core Development/Transformer/URL_Validator_config_request_param.png')} />
+### For *Request params*
+
+1) Click the plus button on the right to add the fields
+2) Name the appropriate request parameter name and the datatype
+3) Click save
+
+<Image cls="border mb-2" src="/img/Core Development/Transformer/URL_validator/request_param.png" alt="request_param" />
 
 <table>
 <thead>
@@ -60,30 +57,74 @@ Configuring URL Validator for **Request params**
 </tbody>
 </table>
 
-### Step 2.b:
-Configuring URL Validator for **Request Body (JSON)**
+### For *Request Body (JSON)*
 
-1) Right click on URL Validator Transformer
-2) Click the toggle button to validate request body
-3) Select the schema type as JSON
-4) Upload the JSON schema using the upload button
-5) You can check the schema from the view button
-6) Click save
-   
-<img src={useBaseUrl('/img/Core Development/Transformer/URL_Validator_config_request_body_json.png')} />
+1) Click the toggle button to validate request body
+2) Select the schema type as JSON
+3) Upload the JSON schema using the upload button
+4) You can check the schema from the view button
+5) Click save
 
-<img src={useBaseUrl('/img/Core Development/Transformer/URL_Validator_config_request_body_json_schema.png')} />
 
-### Step 2.c:
-Configuring URL Validator for **Request Body (CSV)**
+<Image cls="border" src="/img/Core Development/Transformer/URL_validator/request_body_json.png" alt="request_body_json" />
 
-1) Right click on URL Validator Transformer
-2) Click the toggle button to validate request body
-3) Select the schema type as CSV
-4) Upload the CSV schema using the upload button
-5) You can check the schema from the view button
-6) Click save
-   
-<img src={useBaseUrl('/img/Core Development/Transformer/URL_Validator_config_request_body_csv.png')} />
+**Schema**
+```
+{
+	"title": "Customer",
+	"type": "object",
+    	"description": "",
+    	"required": [
+        	"id",
+	        "name",
+		"city",
+        "country"
+    ],
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "name": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        }
+    }
+}
+```
+### For *Request Body (CSV)*
 
-<img src={useBaseUrl('/img/Core Development/Transformer/URL_Validator_config_request_body_csv_schema.png')} />
+1) Click the toggle button to validate request body
+2) Select the schema type as CSV
+3) Upload the CSV schema using the upload button
+4) You can check the schema from the view button
+5) Click save
+
+<Image cls="border" src="/img/Core Development/Transformer/URL_validator/request_body_csv.png" alt="request_body_csv" />
+
+**Schema**
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row" maxOccurs="unbounded" minOccurs="0">
+		    <xs:complexType>
+		        <xs:sequence>
+			    <xs:element name="name" type="xs:string"/>
+			    <xs:element name="id" type="xs:string"/>
+			    <xs:element name="city" type="xs:string"/>
+			    <xs:element name="country" type="xs:string"/>
+		        </xs:sequence>
+		    </xs:complexType>
+	        </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+```
