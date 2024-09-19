@@ -30,7 +30,7 @@ The Database connector offers support for the following commands:
 1. Drag and drop the **DB Connector**
 <Image src="/img/Core Development/Connectors/DB/element.png" alt="DB Connector" />
 
-2. Left click on connector, you can define the **DB Connector** configuration.
+2. Right click on connector, you can define the **DB Connector** configuration.
 
 ### Quickintegrate Query Generator
 1. Click on the Query Generator icon.
@@ -73,7 +73,7 @@ The Database connector offers support for the following commands:
 
 ### Read Operation
 
-1. Get multiple row(s)
+**1. Get multiple row(s)**
 <Image cls="border mb-2" src="/img/Core Development/Connectors/DB/multipleRows.png" alt="Multiple rows configuration" />
 
 <table>
@@ -87,7 +87,7 @@ The Database connector offers support for the following commands:
     <tbody>
         <tr>
             <td>DB Operation</td>
-            <td>Read/Write</td>
+            <td>Read / Write / Stored Procedure</td>
             <td>Read</td>
         </tr>
         <tr>
@@ -120,7 +120,7 @@ The Database connector offers support for the following commands:
     </tbody>
 </table>
 
-1. Get single row
+**2. Get single row**
 <Image cls="border" src="/img/Core Development/Connectors/DB/singleRow.png" alt="Single row configuration" />
 
 ### Write Operation
@@ -163,7 +163,7 @@ Let's explore how to compose a delete query.
     <tbody>
         <tr>
             <td>DB Operation</td>
-            <td>Read/Write</td>
+            <td>Read / Write / Stored Procedure</td>
             <td>Write</td>
         </tr>
         <tr>
@@ -192,6 +192,66 @@ Let's explore how to compose a delete query.
             <td>Database driver dependencies which are configured in connection properties.
                 <a href="/Core Development/Property Config/Connection Properties/gradle-dependencies" target="_blank"> Please refer the link for instructions on adding dependencies</a></td>
             <td>com.mysql:mysql-connector-j:9.0.0</td>
+        </tr>
+    </tbody>
+</table>
+
+### Stored Procedure Operation
+
+A stored procedure is a precompiled collection of SQL statements and optional control-of-flow statements that you can execute as a single unit to perform a specific task in a database.
+
+<Image cls="border mb-2" src="/img/Core Development/Connectors/DB/storedProcedure.png" />
+
+<table>
+    <thead>
+        <tr>
+            <th>Fields</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DB Operation</td>
+            <td>Read / Write / Stored Procedure</td>
+            <td>Stored Procedure</td>
+        </tr>
+        <tr>
+            <td>Datasource Name</td>
+            <td>Datasource Name which is configured in connection properties.
+                <a href="/Core Development/Property Config/Connection Properties/jdbc-properties" target="_blank"> Please refer the link for instructions on creating the datasource name</a></td>
+            <td>classicmodels</td>
+        </tr>
+        <tr>
+            <td>Output Variable</td>
+            <td>Stores output of connections operations</td>
+            <td>CallDBO</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Procedure name</td>
+            <td>new_procedure</td>
+        </tr>
+        <tr>
+            <td>Gradle dependencies</td>
+            <td>Database driver dependencies which are configured in connection properties.
+                <a href="/Core Development/Property Config/Connection Properties/gradle-dependencies" target="_blank"> Please refer the link for instructions on adding dependencies</a></td>
+            <td>com.mysql:mysql-connector-j:9.0.0</td>
+        </tr>
+        <tr>
+            <td>Target</td>
+            <td>Parameter that is passed to procedure</td>
+            <td>customer_id</td>
+        </tr>
+        <tr>
+            <td>Key</td>
+            <td>Value of target</td>
+            <td>$PATH_PARAMS.id</td>
+        </tr>
+        <tr>
+            <td>DataType</td>
+            <td>Type like String / Number / Double / Boolean</td>
+            <td>Number</td>
         </tr>
     </tbody>
 </table>
