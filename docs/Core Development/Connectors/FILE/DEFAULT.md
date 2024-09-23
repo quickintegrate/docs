@@ -16,24 +16,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 1. Ability to read Files from s3
 2. Writing Files to s3
-3. Copy and move Files in s3
-4. Locking File so that no one can access File when the processing is going on
-5. Listing the File and folders mentioned at directory path
-6. Trigger a flow when the new File created or modified
 
 #### Operation available:
-1. Copy
-2. Create Directory
-3. Delete
-4. List
-5. Move
-6. On New or Updated **File**
-7. Read
-8. Rename
-9. Write
+1. Move file within the S3 bucket
+2. Delete file from the S3 bucket
 
 ### Configuring File Connector
-left click on connector, you can define the **File Connector** configuration
+Reft click on connector, you can define the **File Connector** configuration
 
 Here are different instances demonstrating how to access the information within a file and create a file based on a specific structure. Each illustration includes a quickintegration application utilizing DataWeave for both reading and writing files.
 
@@ -89,7 +78,7 @@ Provide the file name and select operation(MOVE or DELETE) to define further cou
 </tr>
 <tr>
 <td>Destination</td>
-<td>Local destination file path</td>
+<td>Destination with file name, to move the file within the s3 bucket</td>
 <td>/app/Schemas/Customers</td>
 </tr>
 </tbody>
