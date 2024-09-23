@@ -49,8 +49,9 @@ const config: Config = {
       items: [
         {
           href: 'https://github.com/quickintegrate/docs',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
