@@ -14,11 +14,11 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
 
 **Open new Project in QuickIntegration Platform, and then follow these steps to get your flow working**
 
-1) Click On the Connection Properties
-2) Select the DataSource Type from drop down
-3) Provide the Credentials 
-4) Click on Submit to save the Credentials
-5) On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
+1. Click On the Connection Properties
+2. Select the DataSource Type from drop down
+3. Provide the Credentials
+4. Click on Submit to save the Credentials
+5. On the left side of the palette, you'll find the Configured Properties ready to be utilized within your API.
 
 <Image cls="border mb-2" src="/img/Core Development/Connection properties/JDBC.png" alt="JDBC configuration" />
 
@@ -75,6 +75,12 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
             <td>DataBase</td>
             <td>Database driver</td>
             <td>SQL</td>
+        </tr>
+        <tr>
+            <td>DDL schema *(optional)*</td>
+            <td>SQL file that contains table creation statements.
+                <a href="/Requirement Gathering/model-design" target="_blank"> Please refer the link for instructions on uploading DDL schema</a></td>
+            <td>classicmodels</td>
         </tr>
     </tbody>
 </table>

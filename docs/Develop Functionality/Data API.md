@@ -1,118 +1,54 @@
 ---
 sidebar_position: 2
+slug: "data-api"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image, Video } from '@site/src/components/custom';
 
-# Data API
+The **Data APIs** represent the CRUD operations for existing database tables. Developers can retrieve the tables from already uploaded database ddl schema, and generate CRUD APIs instantly with the click of a button within the integration flow interface.
 
-The **Data APIs** represent the CRUD operations for existing database tables. Developers can seamlessly connect to the database, retrieve the tables, and generate CRUD APIs instantly with the click of a button within the integration flow interface
+## Project Creation *(optional)*
 
-#### Step 1: 
+1. Open: **Manage / Projects**
+2. Click on **CREATE** button.
+3. Provide *name* and *description*.
+4. Click on create.
 
-Go to **DEVELOP** >> **Data API** 
+## Initially Configuration
 
-<img src={useBaseUrl('/img/Develop Functionality/develop data.png')} />
+1. Open: **DEVELOP / Data API**
+2. Select project name from dropdown.
+3. Click on **+** button and create new JDBC configuration with DDL schema selected *(mandatory)*.
+4. If DDL schema is not already uploaded. <a href="/Requirement Gathering/model-design" target="_blank"> Please refer the link for instructions on uploading DDL schema</a>
 
-#### Step 2:
+<Image cls="border" src="img/Develop Functionality/DataAPI/jdbcConfig.png" alt="New JDBC Configuration" />
 
-Click on data API and provide 
-Project (refer step 3), 
-Datasource (refer step 4), 
-Database and version.
+## Services creation
 
-<img src={useBaseUrl('/img/Develop Functionality/Data API.png')} />
+1. Select datasource. Entities list will be displayed.
+2. Click on an entity. Entity details will be shown *(table structure)*.
+3. Check the checkbox in action column for the field that you want to generate endpoints with. By default *primary key* is checked.
+4. Feel free to change the ***basepath*** and click on **Show API**.
+5. Now list of endpoints will be generated. You can remove one or more endpoints that are not required.
+6. Click on **Create API**. Services corresponding to the table will be generated.
+7. After service creation you will be redirected to **Functionality API** page and you will have access to a comprehensive list of all the end-to-end services outlined in the data API.
+8. These services are ready to use and can be deployed (if need with some tweaks and changes).
 
+:::note
+    If the endpoint(s) or service(s) already exists in the selected project then text box will appear instead of plain text. This allows you to modify duplicate URLs or service names.
+:::
 
-#### Step 3:
+<Video src="/img/Develop Functionality/DataAPI/genAPI.mp4" type="video/mp4" />
 
-From drop down select the project, 
+### Sample Flow
 
-<img src={useBaseUrl('/img/Develop Functionality/Project name drop down.png')} />
+<Image cls="border" src="/img/Develop Functionality/DataAPI/sampleFlow.png" alt="Sample API Flow" />
 
+#### REST Trigger
+<Image cls="border" src="/img/Develop Functionality/DataAPI/triggerConfig.png" alt="Sample REST trigger configuration" />
 
-#### Step 4:
+#### DB step
+<Image cls="border" src="/img/Develop Functionality/DataAPI/dbConfig.png" alt="Sample DB configuration" />
 
-For datasource please click on add button and provide the configuration as shown below and submit.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api jdbc config.png')} />
-
-
-#### Step 5:
-
-Select entities from drop down to create the services.
-
-<img src={useBaseUrl('/img/Develop Functionality/data Selecty entities .png')} />
-
-
-#### Step 6:
-
-Please select the entity details.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api entities details.png')} />
-
-
-#### Step 7:
-
-Click on show API.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api Show API.png')} />
-
-
-#### Step 8:
-
-Click on Create API, and all services will be created automatically.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api services.png')} />
-
-
-#### Step 9:
-
-Go to DEVELOP >> Functionality API to see the Implemented API.
-
-<img src={useBaseUrl('/img/Develop Functionality/dev fun.png')} />
-
-
-#### Step 10:
-
-Please select the Project to see the list of end to end implemented services.
-
-<img src={useBaseUrl('/img/Develop Functionality/Data api fun service .png')} />
-
-
-#### Step 11:
-
-An implementation example is shown below:
-
-<img src={useBaseUrl('/img/Develop Functionality/data api end to end service.png')} />
- 
-
-#### Step 12:
-
-Please find below the automatically populated configuration for REST Trigger component.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api trigger .png')} />
-
-<img src={useBaseUrl('/img/Develop Functionality/data api rest trigger config.png')} />
-
-
-#### Step 13:
-
-Please find below the automatically populated configuration for DB connector.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api db call connector.png')} />
-
-<img src={useBaseUrl('/img/Develop Functionality/data api db call.png')} />
-
-
-#### Step 14:
-
-Please find below the automatically populated configuration for APIRESPONSE transformer.
-
-<img src={useBaseUrl('/img/Develop Functionality/data api api response.png')} />
-
-  
-<img src={useBaseUrl('/img/Develop Functionality/data api response.png')} />
-
-
-This is how you can create your end to end implemented, ready to use API.
+#### API Response
+<Image cls="border" src="/img/Develop Functionality/DataAPI/resConfig.png" alt="Sample API Response configuration" />
