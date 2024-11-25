@@ -5,6 +5,7 @@ sidebar_label: "DB"
 ---
 
 import { Image, Video } from '@site/src/components/custom';
+import CodeBlock from '@theme/CodeBlock';
 
 # Database Connector
 
@@ -139,18 +140,45 @@ The following shows a insert operation usage without checking:
 
 If *skipNull* is checked then it update the query on runtime and remove all the values from query for fields that contain `NULL` values.
 
+<Image cls="border" src="/img/Core Development/Connectors/DB/skipNullCheck.png"/>
+
+If there are any 'null' values while performing this query, those fields will be removed from the query execution. This helps best while performing update operation, where data loss can be avoided for previous record for important columns.
+
 :::note
     This works only in case of normal write operation and not in bulk. 
 :::
 
-#### 3. Bulk Delete
+#### 3. Bulk Operations
 
 Let's explore how to compose a delete query.
-1. Choose the query type as **Delete** from the dropdown list.
+1. Choose the query type as **Delete** from the dropdown list. `(Note: You can do similar for insert/update)`
 2. Check the bulk operation to delete multiple records using a single query
 3. Specify the fields for the delete condition. 
+4. Check the **Bulk** checkbox below the query textbox. This specifies that we want to execute the query for bulk records.
+5. Now we will see the **Parent** textbox. Here we specify the list from the pipeline. eg. $MultiCustomers, which is the list of customers that we are fetching from the pipeline. `(Note: Needs to be java list object.)` This list will contain map of customer.
+6. Now that we got the list, we will do keys mapping. In the key section we specify the key we will get from the map object of the list metion in the **Parent**.
+7. Finally we will give the output name, which will contain the array of `0's` and `1's`.
+
+
+#### Example of MultiCustomers
+<CodeBlock className="language-json">
+    {JSON.stringify(
+            {
+                MultiCustomers: [
+                    { custNo: 1, custName: "Alice Johnson", custMobile: "1234567890" },
+                    { custNo: 2, custName: "Bob Smith", custMobile: "9876543210" }
+                ]
+            }, 
+            null, 
+            2
+    )}
+</CodeBlock>
+The above done config would like the image below.
 
 <Image cls="border mb-2" src="/img/Core Development/Connectors/DB/bulkDelete.png" />
+
+Here we gave the query for deleting the customer from `customers` table, for customerNumber. This will be bulk delete as we selected the query type **DELETE** and checked the **Bulk**. We also gave the **Parent**, ***$MultiCustomers***, which is list of customers and we got this from the pipeline. After we mapped the `customerNumber` with the `custNo` we get from the each object from the list. We can also set which datatype the value will be.
+This will delete all the customers from the table for the custNo in a single query execution. 
 
 <table>
     <thead>
@@ -179,12 +207,12 @@ Let's explore how to compose a delete query.
         </tr>
         <tr>
             <td>Output Variable</td>
-            <td>Stores output of connections operations</td>
+            <td>Stores output of query operations</td>
             <td>bulkDeleteO</td>
         </tr>
         <tr>
             <td>Parent</td>
-            <td>Defined by Using $ key word</td>
+            <td>Defined by Using $ key word, followed by the varibale name in the pipeline. Contains the list of map objects from the pipeline.</td>
             <td>$MultiCustomers</td>
         </tr>
         <tr>
@@ -193,8 +221,27 @@ Let's explore how to compose a delete query.
                 <a href="/Core Development/Property Config/Connection Properties/gradle-dependencies" target="_blank"> Please refer the link for instructions on adding dependencies</a></td>
             <td>com.mysql:mysql-connector-j:9.0.0</td>
         </tr>
+        <tr>
+            <td>Target</td>
+            <td>The target to be mapped on the query.</td>
+            <td>customerNumber</td>
+        </tr>
+        <tr>
+            <td>Key</td>
+            <td>The key to be retrieved from the map object from the list.</td>
+            <td>custNo</td>
+        </tr>
+        <tr>
+            <td>Data Type</td>
+            <td>The type of value data for the key.</td>
+            <td>Number</td>
+        </tr>
     </tbody>
 </table>
+
+:::note
+    While **Bulk** is checked, we cant use the **skipNull**.
+:::
 
 ### Stored Procedure Operation
 
