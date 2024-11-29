@@ -38,3 +38,9 @@ Drag and drop the **Subflow**
 5. give the output name for the return value of the subflow (for loop as condition).
 
 <img src={useBaseUrl('/img/Core Development/Components/Condition Senario.png')} />;
+
+### Configuration of Loop Sublfow scenario Example
+1) In this we have the input which is a single map object iterated from Loop Condition. We named this as ***customer***. We will then use this input variable within the subflow for any operation. Usage is same as any variable we use from the pipeline. eg. ***$customer.name*** will get the name from customer map if available.
+2) Output of the subflow comes to the output variable confirued here and is put in the output variable of LoopCondtion. So the final output of LoopCondition is list of output of each subflow iteration. This can only work if the subflow's last step has output variable, else blank list will be created as final output.
+<img src={useBaseUrl('/img/Core Development/Components/Loop Subflow.png')} />
+

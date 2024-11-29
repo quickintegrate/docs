@@ -13,5 +13,15 @@ export const sample: Template = {
       description:
         "Read the records from file e.g JSON Orders file . Let the file have 7 valid order and 3 order with no Price. Check with condition block, the price field. if prices is null, then write error for that record, else write success record. At the end done long for trigger executed successfully.",
     },
+    {
+      serviceName: "readFileWriteFile",
+      description:
+        "Read the records from file e.g TXT file . File have some data, and will be considered as payload for the service. Write the payload to another file with file connector. After fitle write trigger is executed sucessfully.",
+    },
+    {
+      serviceName: "CronFileReader",
+      description:
+        "Read file with txt extension on every saturday 7 am. Log after file is read. After logging, trigger is executed sucessfully.",
+    }
   ],
 };

@@ -111,4 +111,16 @@ Operator:
 
 1) In this context, a subflow refers to a sequence that runs based on certain conditions or inputs, which is why a decision box is necessary.
 
-<img src={useBaseUrl('/img/Core Development/Components/Condition Senario.png')} />;
+<img src={useBaseUrl('/img/Core Development/Components/Condition Senario.png')} />
+
+2) In this context, a subflow runs for a loop. As discussed above loop condition is only condition if selected. In loop we give the list we want to loop(For-Each). In this we will have a java list of map objects. Then in subflow each object is sent as input. You can configure the input name by right clicking the subflow and setting the input field. if not configured, the defaul name is ***subflow_map***. This variable scope is subflow only and we can use this object within it.
+
+### Flow Containing Loop Condition
+<img src={useBaseUrl('/img/Core Development/Components/Condition Loop Scenario.png')} />
+
+#### Loop Configuration
+<img src={useBaseUrl('/img/Core Development/Components/Loop Condtion.png')} />
+
+:::note
+    Check subflow configuration of the same in ***Componenets/Sub-flow*** section.
+::: 
