@@ -1,60 +1,60 @@
 ---
 sidebar_position: 1
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl';
+
+import { Image } from '@site/src/components/custom';
 
 # Register Account in quickintegrate tool.
 
-Jumpstart your integrations with quickintegrate tool to create your Service with **Define**, **Develop**, **Manage**, **Execute** your API 
+Jumpstart your integrations with quickintegrate tool to create your Service with **Define**, **Develop**, **Manage**, **Execute**, **Test**, **Monitor** your API
 
-#### Step 1:
+## Open Designer
 
-Go to below link to open login page
-url: http://designer.quickintegrate.io/login
+Click on the link http://designer.quickintegrate.io to open designer in browser.
 
-<img src={useBaseUrl('/img/Register account/login page 1.png')} />;
+<Image cls="border mb-2" src="/img/Register account/login_page.png" alt="Login page" />
 
-#### Step 2: 
+## Signup account
 
-**Signup account:**
+1. Click on **Signup now** to begin.
+2. Provide your email address and username.
+3. Select your organization (or enter a new organization name if not listed).
+4. **Provide a strong password.**
+5. Agree to the Terms & Conditions and click **Create Account**.
 
-1) Create an account by signing up
-2) Fill up the user info accordingly
-3) Please provide your email address, username, organization name
-4) Set the user name and password credentials 
-   
-`Note: password must contain at least 6 characters, 1 uppercase letter, 1 lower case letter , 1 number with no space`
+:::warning NOTE
+Password must contain at least 6 characters, 1 uppercase letter, 1 lower case letter , 1 number with no space
+:::
 
-5) Agree to the Atdservices, and proceed to create your account.
+<Image cls="border mb-2" src="/img/Register account/registration.png" alt="Registration page" />
 
+## Email verification
 
-<img src={useBaseUrl('/img/Register account/Signup 2.png')} />;
+After clicking **Create Account**, you will be automatically redirected to the **Verification Pending** page.
 
-#### Step 3: 
+<Image cls="border mb-2" src="/img/Register account/verification_pending_page.png" alt="Verification pending page" />
 
-You will receive an Verify email, go to the Gmail account
+- **Check your inbox :** Look for an email from support@atdevservices.com.
+- **Verify Email :** Click the "Verify Email" link inside that message to confirm your identity.
 
-<img src={useBaseUrl('/img/Register account/Verify 3.png')} />;
+<Image cls="border mb-2" src="/img/Register account/email_verify.png" alt="Verify email" />
 
-You will receive an email, click on the link to verify email
+- **Confirmation Email :** Once verified, you will receive a confirmation email. Your account will be fully activated by our team within 24 hours.
 
-<img src={useBaseUrl('/img/Register account/email 4.png')} />;
+<Image cls="border mb-2" src="/img/Register account/email_confirmation.png" alt="Confirmation email" />
 
-#### Step 4: 
+- **Final Activation :** Once activated, you will receive a activation email.
 
-You will get a verification successful email and your account will be active within 24 hours
+<Image cls="border mb-2" src="/img/Register account/email_activation.png" alt="Account activation email" />
 
-<img src={useBaseUrl('/img/Register account/verification status 5.png')} />;
-
-#### Step 5: 
+## Login
 
 Once account gets activated, you can login to your account by providing the credentials
 
-<img src={useBaseUrl('/img/Register account/account Credintials 6.png')} />;
+<Image cls="border mb-2" src="/img/Register account/login_page_withCredentials.png" alt="Login page with credentials" />
 
-#### Step 6:
+### Dashboard
 
-After login you’ll see the dashboard where you can use various services like design, develop, build and deploy etc. for your APIs. 
+After login you’ll see the dashboard where you can use various services like design, develop, build and deploy etc. for your APIs.
 
-<img src={useBaseUrl('/img/Register account/dashboard7.png')} />;
-
+<Image cls="border mb-2" src="/img/Register account/dashboard.png" alt="Designer dashboard" />
