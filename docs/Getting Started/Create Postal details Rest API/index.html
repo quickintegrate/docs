@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Postal details Rest API Design Document | Quickintegrate</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://quickintegrate.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://quickintegrate.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://quickintegrate.github.io/Getting Started/Create Postal details Rest API"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Postal details Rest API Design Document | Quickintegrate"><meta data-rh="true" name="description" content="Create a REST API which will accept customer id ID as query parameter."><meta data-rh="true" property="og:description" content="Create a REST API which will accept customer id ID as query parameter."><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://quickintegrate.github.io/Getting Started/Create Postal details Rest API"><link data-rh="true" rel="alternate" href="https://quickintegrate.github.io/Getting Started/Create Postal details Rest API" hreflang="en"><link data-rh="true" rel="alternate" href="https://quickintegrate.github.io/Getting Started/Create Postal details Rest API" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.10969a5d.css">
-<script src="/assets/js/runtime~main.5f57ae63.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.0cdcc851.js" defer="defer"></script>
 <script src="/assets/js/main.83c60a87.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -42,7 +42,7 @@ Fill the <strong>Service Name</strong> and select the <strong>REST</strong> as <
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-connection-properties">Configure connection properties<a href="#configure-connection-properties" class="hash-link" aria-label="Direct link to Configure connection properties" title="Direct link to Configure connection properties">​</a></h3>
 <p>Configure connection properties for <strong>DB</strong> and <strong>REST</strong> call before adding the steps for the API</p>
 <p>a. Click on 3rd icon to open connection properties page</p>
-<img src="/img/DB_Rest_API/connection_properties_panel.png">
+<img src="/img/DB_Rest_API/connection_properties_logo.png">
 <p>b. Select <strong>JDBC</strong> datasource type from the dropdown</p>
 <img src="/img/DB_Rest_API/jdbc_datasource_type.png">
 <p>c. Configure the database datasource as below and click on <strong>Submit</strong> button</p>
@@ -55,8 +55,8 @@ d. Select <strong>REST URL</strong> datasource type from the dropdown</p>
 <img src="/img/DB_Rest_API/resturl_datasource_configure.png">
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="define-global-variables">Define Global variables<a href="#define-global-variables" class="hash-link" aria-label="Direct link to Define Global variables" title="Direct link to Define Global variables">​</a></h3>
 <p>Define Global variables to be used in the service:</p>
-<p>a. Click on 4th icon to open connection properties page</p>
-<img src="/img/DB_Rest_API/connection_properties_panel.png">
+<p>a. Click on 4th icon to open global variable page</p>
+<img src="/img/DB_Rest_API/global_variable_logo.png">
 <img src="/img/DB_Rest_API/GlobalVariable1.png">
 <img src="/img/DB_Rest_API/GlobalVariable2.png">
 <img src="/img/DB_Rest_API/GlobalVariable3.png">
@@ -65,7 +65,7 @@ d. Select <strong>REST URL</strong> datasource type from the dropdown</p>
 <img src="/img/DB_Rest_API/rest_trigger.png">
 <table><thead><tr><th>Fields</th><th>Description</th><th>Examples</th></tr></thead><tbody><tr><td>type</td><td>Methods can be GET, POST, PUT, PATCH and DELETE</td><td>GET</td></tr><tr><td>uri</td><td>URI to trigger the API service</td><td>/getPostalinfo</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-start-logger">Configure start logger<a href="#configure-start-logger" class="hash-link" aria-label="Direct link to Configure start logger" title="Direct link to Configure start logger">​</a></h3>
-<p>Select the <strong>Transformers</strong> from the left control panel</p>
+<p>Select the <strong>Transformers</strong> from the left components panel</p>
 <img src="/img/DB_Rest_API/utilities_transformer.png">
 <p>Drag and drop the <strong>Utilities</strong> transformer to the canvas using <code>left click</code> to add <strong>start logger</strong> for your service.</p>
 <p>Enter the <strong>Step name</strong> and click submit</p>
@@ -80,7 +80,7 @@ d. Select <strong>REST URL</strong> datasource type from the dropdown</p>
 <p><strong>Log Value</strong>:</p>
 <p>Start Log - Start_level_log_info  with ID: $REQUEST_PARAMS.ID</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-url-validator">Configure URL validator<a href="#configure-url-validator" class="hash-link" aria-label="Direct link to Configure URL validator" title="Direct link to Configure URL validator">​</a></h3>
-<p>Select the <strong>Transformers</strong> from the left control panel</p>
+<p>Select the <strong>Transformers</strong> from the left components panel</p>
 <img src="/img/DB_Rest_API/urlvalidator_transformer.png">
 <p>Drag and drop <strong>URL</strong> transformer to the canvas using <code>left click</code> to validate the URL.
 Enter the <strong>Step name</strong> and click submit</p>
@@ -90,7 +90,7 @@ Enter the <strong>Step name</strong> and click submit</p>
 <img src="/img/DB_Rest_API/configure_urlvalidator.png">
 <img src="/img/DB_Rest_API/urlvalidator_step.png">
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-database-step">Configure database step<a href="#configure-database-step" class="hash-link" aria-label="Direct link to Configure database step" title="Direct link to Configure database step">​</a></h3>
-<p>Select the <strong>Connectors</strong> from the left control panel</p>
+<p>Select the <strong>Connectors</strong> from the left components panel</p>
 <img src="/img/DB_Rest_API/db_connector.png">
 <p>Drag and drop <strong>DB</strong> Connector to the canvas using <code>left click</code> to make <strong>Database</strong> call in the service.
 Enter the <strong>Step name</strong> and click submit</p>
@@ -114,7 +114,7 @@ Enter the <strong>Step name</strong> and click submit</p>
 <img src="/img/DB_Rest_API/select_column.png">
 <table><thead><tr><th>Fields</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>Table Name</td><td>Data Base Table Name</td><td>crm_customers</td></tr><tr><td>Your Generated Query is</td><td>Data Base Query</td><td>SELECT pin FROM crm_customers WHERE id<!-- -->:id</td></tr><tr><td>Filters(Fields)</td><td>Perticular field where DB will Operate</td><td>id</td></tr><tr><td>Filters(Operation)</td><td>Operations like NULL, NOT NULL, =, !=, etc</td><td>=</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-postal-api-step">Configure Postal API step<a href="#configure-postal-api-step" class="hash-link" aria-label="Direct link to Configure Postal API step" title="Direct link to Configure Postal API step">​</a></h3>
-<p>Select the <strong>Connectors</strong> from the left control panel</p>
+<p>Select the <strong>Connectors</strong> from the left components panel</p>
 <img src="/img/DB_Rest_API/rest_connector.png">
 <p>Drag <strong>REST</strong> connector to make India Post <strong>REST</strong> API call to get postal details based on PIN code.</p>
 <img src="/img/DB_Rest_API/create_rest_connector.png">
@@ -124,7 +124,7 @@ Enter the <strong>Step name</strong> and click submit</p>
 <table><thead><tr><th>Fields</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>Datasource Name</td><td>Rest datasource configured in connection properties</td><td>dburl</td></tr><tr><td>Method</td><td>Http method like GET, POST, DELETE, etc</td><td>GET</td></tr><tr><td>Base Path</td><td>Resource Path</td><td>/pincode/<!-- -->:pincode</td></tr><tr><td>Security</td><td>To be Defined in the propertioes like Basic Authentication, OAuth token, Authorization Code, etc </td><td></td></tr><tr><td>Output Variable</td><td>Stores output of connections operations</td><td>callPostalAPIO</td></tr></tbody></table>
 <table><thead><tr><th>Type</th><th>Description</th><th>Key</th><th>Value</th></tr></thead><tbody><tr><td>pathparams</td><td>Path parmeter for REST call</td><td>pincode</td><td>$Data.postalCode</td></tr><tr><td>header</td><td>Header for REST call</td><td>Content-Type</td><td>application/json</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-response-step">Configure Response step<a href="#configure-response-step" class="hash-link" aria-label="Direct link to Configure Response step" title="Direct link to Configure Response step">​</a></h3>
-<p>Select the <strong>Transformer</strong> from the left control panel</p>
+<p>Select the <strong>Transformer</strong> from the left components panel</p>
 <img src="/img/DB_Rest_API/apiresponse_transformer.png">
 <p>Drag <strong>APIRes</strong> transformer to return the response back to the client</p>
 <img src="/img/DB_Rest_API/create_apiresponse.png">
@@ -140,7 +140,7 @@ Enter the <strong>Step name</strong> and click submit</p>
 <table><thead><tr><th>Fields</th><th>Description</th></tr></thead><tbody><tr><td>GEN</td><td>Map a single key to a value</td></tr><tr><td>TRANS</td><td>Transforms the Input value with the help of inline functions</td></tr><tr><td>CN</td><td>Map the Input variable directly to output</td></tr><tr><td>OBJ</td><td>Mapped the Inputs to Object</td></tr><tr><td>AR</td><td>Mapped the Inputs to Array</td></tr></tbody></table>
 <a href="/Core Development/Transformers/APIRESPONSE" target="_blank">Click here to check how to configure APIRESPONSE</a>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configure-end-logger">Configure end logger<a href="#configure-end-logger" class="hash-link" aria-label="Direct link to Configure end logger" title="Direct link to Configure end logger">​</a></h3>
-<p>Select the <strong>Transformers</strong> from the left control panel</p>
+<p>Select the <strong>Transformers</strong> from the left components panel</p>
 <img src="/img/DB_Rest_API/utilities_transformer.png">
 <p>Drag and drop the <strong>Utilities</strong> transformer to the canvas using <code>left click</code> to add <strong>End logger</strong> for your service.</p>
 <img src="/img/DB_Rest_API/create_end_logger.png">
