@@ -100,7 +100,7 @@ After the service is created, a **canvas** will show up to build the quickintegr
 Configure connection properties for **DB** and **REST** call before adding the steps for the API
 
 a. Click on 3rd icon to open connection properties page
-<img src={useBaseUrl('/img/DB_Rest_API/connection_properties_panel.png')} />
+<img src={useBaseUrl('/img/DB_Rest_API/connection_properties_logo.png')} />
 b. Select **JDBC** datasource type from the dropdown
 <img src={useBaseUrl('/img/DB_Rest_API/jdbc_datasource_type.png')} />
 c. Configure the database datasource as below and click on **Submit** button
@@ -116,8 +116,8 @@ e. Configure the rest datasource as below and click on **Submit** button
 
 Define Global variables to be used in the service:
 
-a. Click on 4th icon to open connection properties page
-<img src={useBaseUrl('/img/DB_Rest_API/connection_properties_panel.png')} />
+a. Click on 4th icon to open global variable page
+<img src={useBaseUrl('/img/DB_Rest_API/global_variable_logo.png')} />
 
 <img src={useBaseUrl('/img/DB_Rest_API/GlobalVariable1.png')} />
 
@@ -156,7 +156,7 @@ Right click on **REST Trigger** to Configure as given below.
 
 ### Configure start logger
 
-Select the **Transformers** from the left control panel
+Select the **Transformers** from the left components panel
 <img src={useBaseUrl('/img/DB_Rest_API/utilities_transformer.png')} />
 
 Drag and drop the **Utilities** transformer to the canvas using `left click` to add **start logger** for your service.
@@ -186,7 +186,7 @@ Start Log - Start_level_log_info  with ID: $REQUEST_PARAMS.ID
 
 ### Configure URL validator
 
-Select the **Transformers** from the left control panel
+Select the **Transformers** from the left components panel
 <img src={useBaseUrl('/img/DB_Rest_API/urlvalidator_transformer.png')} />
 
 Drag and drop **URL** transformer to the canvas using `left click` to validate the URL.
@@ -205,7 +205,7 @@ Right click on **URL** transformer and configure as given below.
 
 ### Configure database step
 
-Select the **Connectors** from the left control panel
+Select the **Connectors** from the left components panel
 <img src={useBaseUrl('/img/DB_Rest_API/db_connector.png')} />
 
 Drag and drop **DB** Connector to the canvas using `left click` to make **Database** call in the service.
@@ -311,7 +311,7 @@ Your Query will be generated!.
 
 ### Configure Postal API step
 
-Select the **Connectors** from the left control panel
+Select the **Connectors** from the left components panel
 <img src={useBaseUrl('/img/DB_Rest_API/rest_connector.png')} />
 
 Drag **REST** connector to make India Post **REST** API call to get postal details based on PIN code.
@@ -390,7 +390,7 @@ Right click on **REST** connector and configure as given below.
 
 ### Configure Response step
 
-Select the **Transformer** from the left control panel
+Select the **Transformer** from the left components panel
 <img src={useBaseUrl('/img/DB_Rest_API/apiresponse_transformer.png')} />
 Drag **APIRes** transformer to return the response back to the client
 <img src={useBaseUrl('/img/DB_Rest_API/create_apiresponse.png')} />
@@ -449,7 +449,7 @@ When we want to get a variable from the pipeline, we use **$** sign as prefix fo
 
 ### Configure end logger
 
-Select the **Transformers** from the left control panel
+Select the **Transformers** from the left components panel
 <img src={useBaseUrl('/img/DB_Rest_API/utilities_transformer.png')} />
 
 Drag and drop the **Utilities** transformer to the canvas using `left click` to add **End logger** for your service.
