@@ -1,8 +1,12 @@
+---
+sidebar_position: 1
+---
+
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 #### QuickIntegrate Define is a platform which provides services such API development, build, deployment and management.	
 
-<img src={useBaseUrl('/img/overwiew/Define.png')} />;
+<img src={useBaseUrl('/img/overwiew/Define.png')} />
 
 
 #### Functionality

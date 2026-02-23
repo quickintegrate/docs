@@ -4,9 +4,9 @@ sidebar_position: 1
 
 import { Image } from '@site/src/components/custom';
 
-# Register Account in quickintegrate tool.
+# Register Account in quickintegrate
 
-Jumpstart your integrations with quickintegrate tool to create your Service with **Define**, **Develop**, **Manage**, **Execute**, **Test**, **Monitor** your API
+Jumpstart your integrations with quickintegrate to create your Service with **Define**, **Develop**, **Manage**, **Execute**, **Test**, **Monitor** your API
 
 ## Open Designer
 
