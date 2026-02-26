@@ -18,122 +18,122 @@ Develop a **Hello World** REST API on quick integration platform which will acce
 Login to Quick Integration Platform to get started.
 
 
-<img src={useBaseUrl('/img/DB_Rest_API/1.png')} />;
+<img src={useBaseUrl('/img/hello/login.png')} />;
 
 #### STEP 2:
-Click on **Manage** Option >> **Projects** >> **Create** to create the new project
+Click on **Manage** Option >> **Projects** >> Click the **+** to create a new project.
 
-<img src={useBaseUrl('/img/DB_Rest_API/2.png')} />;
-<img src={useBaseUrl('/img/DB_Rest_API/3.png')} />;
+<img src={useBaseUrl('/img/hello/manage_projects.png')} />;
+
+Give Proper name and desrciption to the project. Project Name should be unique.
+<img src={useBaseUrl('/img/hello/create_project.png')} />;
 
 #### STEP 3:
-Go to **DEVELOP** >> **Functionality** API
+Go to **DEVELOP** >> **INTEGRATION** >> **Studio**.
+Select the created project name from the drop down.
 
-<img src={useBaseUrl('/img/DB_Rest_API/5.png')} />;
+<img src={useBaseUrl('/img/hello/development.png')} />;
 
 #### STEP 4:
-Select the created project name
+Create a service **greetings** in your project, by cliicking the **+** button on the righ-hand side. Give a proper name to service and select the trigger of choice. Here we are creating rest trigger service.
 
-Create a service **hello world** In your project
+<img src={useBaseUrl('/img/hello/create_service.png')} />;
 
-<img src={useBaseUrl('/img/hello/1service%20.png')} />;
+By clicking submit, it will direct you to the service development page. Here you can develop the flow of you service.
+
+<img src={useBaseUrl('/img/hello/service_develop.png')} />;
 
 #### Step 5:  
-Take REST Trigger from the pallet and configure it.
+Let's start by configuring the first node of the flow, **TRIGGER**. Left-Click the Rest Trigger node on the canvas and you will see a panel like this-
 
-<img src={useBaseUrl('/img/hello/2trigger path.png')} />;
+<img src={useBaseUrl('/img/hello/trigger.png')} />;
+
+Configure the trigger with desired values. In the example, we have selected the rest trigger type as **GET**, so this will be a get rest api. We next set the uri to **/greet**, which will be the endpoint to the api.
 
 #### Step 6:
-Drag and drop **APIRESPONSE**  Transformer from the pallet.
-<img src={useBaseUrl('/img/Core Development/Transformer/APIresponse/element.png')} />;
+Drag and drop **APIRESPONSE**  Transformer from the pallet. Give a good name to the node. Node names are unique in a service.
 
-<img src={useBaseUrl('/img/Core Development/Transformer/drag and drop APIRes.png')} />;
+<img src={useBaseUrl('/img/hello/response1.png')} />;
+
+Place it between the rest trigger and X node. Connect the flow by first clicking on triger, then clicking response node and finally the X. Simply click the node single time, then next node to connect the 2 nodes.
+
+<img src={useBaseUrl('/img/hello/response2.png')} />;
 
 #### Step 7:
 Left click on **APIRESPONSE** Transformer and Configure as given below.
 
-<img src={useBaseUrl('/img/hello/3API_Response.png')} />;
+<img src={useBaseUrl('/img/hello/response3.png')} />;
 
 #### Step 8: 
 
-Click on the Drop down and select Content Type application json
+Click on the Drop down and select Content Type application json.
 
 <img src={useBaseUrl('/img/hello/addedsteps/ContentType.png')} />;
 
 <img src={useBaseUrl('/img/hello/addedsteps/Contenttype_addbutton.png')} />;
 
-#### Step 9: 
+#### Step 9:
 
-Click on Add button From Drop down select TRANS
+Set the value of Status Code to 200 for success response of the rest api. You can set anyvalid http status code here.
 
-<img src={useBaseUrl('/img/hello/addedsteps/transAdd3.png')} />;
-
-<img src={useBaseUrl('/img/hello/addedsteps/trans type.png')} />;
+<img src={useBaseUrl('/img/hello/response5.png')} />;
 
 #### Step 10: 
 
-Click on the add button You will see Inline functions, click on + icon 
+Click on Add button From Drop down select GEN
 
-<img src={useBaseUrl('/img/hello/addedsteps/addCondition4.png')} />;
-
-#### Step 11: 
-
-Select Utils and Constant from droup down
-Add Parameters as a hello world and Save
-
-<img src={useBaseUrl('/img/hello/addedsteps/addParametersand save5.png')} />;
-
-<img src={useBaseUrl('/img/hello/addedsteps/Utils type.png')} />;
-
-<img src={useBaseUrl('/img/hello/addedsteps/Constant .png')} />;
-
-#### Step 12:
+<img src={useBaseUrl('/img/hello/response4.png')} />;
+  
+Set the value of the Target feild to **status** and next feild of value to **hello world**.
 
 The configuration of the APIRESPONSE Transformer appears as follows:
 
-<img src={useBaseUrl('/img/hello/addedsteps/save0.6.png')} />;
+<img src={useBaseUrl('/img/hello/response6.png')} />;
 
-Target- In target write Status and you will find Key as below
+#### Step 11: 
+Save the service by clicking the button highlighted in yellow. And validate it once by clicking the button highlighted in green, to ensure all the properties manadatory are saved.
 
-Key- Utils.constant(hello world)
+<img src={useBaseUrl('/img/hello/save.png')} />;
 
-
-#### Step 13: 
-Save the application.
-
-<img src={useBaseUrl('/img/hello/4save.png')} />;
-
-#### Step 14:
+#### Step 12:
 
 Go to **EXECUTE** >> **BUILD** 
 to Build the application.
 
-<img src={useBaseUrl('/img/hello/5build api.png')} />;
+<img src={useBaseUrl('/img/hello/build.png')} />;
 
-#### Step 15:
-Deploy the application after build. Select the Application Name From Drop down, and pass the security key in Properties. Click on deploy application.
+<img src={useBaseUrl('/img/hello/build_success.png')} />;
 
-<img src={useBaseUrl('/img/hello/6deploy application .png')} />;
+#### Step 13:
+Deploy the application after build. Go to **Execute** >> **Deploy** >> **Deploy Application** tab. Select the your hello_world application from drop down, the build version you given while build. Select CPU and Memory. 
+<img src={useBaseUrl('/img/hello/deploy.png')} />;
 
-#### Step 16: 
+Then in properties tab give a secret key to your application. Then finally click deploy.
+<img src={useBaseUrl('/img/hello/deploy_props.png')} />;
+
+Wait a few secs and you will see the app deployed.
+<img src={useBaseUrl('/img/hello/deploy_success.png')} />;
+
+#### Step 14: 
 Go to application and Bring **UP** the application by clicking on project.
 
-<img src={useBaseUrl('/img/hello/7application .png')} />;
+<img src={useBaseUrl('/img/hello/run1.png')} />;
 
-#### Step 17:
+#### Step 15:
 Provide the security key and start the API.
 
-<img src={useBaseUrl('/img/hello/8start application.png')} />;
+<img src={useBaseUrl('/img/hello/run2.png')} />;
 
-### Step 18:
-Once you Successfully started your API, you will find Development URL in Details Coloumn
+### Step 16:
+Once you Successfully started your API, you will find Development URL in Details Coloumn.
 
-<img src={useBaseUrl('/img/hello/addedsteps/details.png')} />;
+<img src={useBaseUrl('/img/hello/run3.png')} />;
+<img src={useBaseUrl('/img/hello/run4.png')} />;
 
-#### Step 19:
+#### Step 17:
 Using the QuickIntegrate deployed URL You can Test your API using Postman Collection
 
-<img src={useBaseUrl('/img/hello/9output response.png')} />;
+<img src={useBaseUrl('/img/hello/output.png')} />;
 
 Final Postman request and response for the hello world API.
 
