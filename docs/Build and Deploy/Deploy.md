@@ -18,16 +18,25 @@ Understanding the process of Deploying an API within the Quickintegration platfo
 
 <Image cls="border mb-2" src="/img/Execute/Deploy/applications.png" alt="Deployed Application List" />
 
-3. Select the environment from dropdown to  view / deploy application(s) to specific environment.
-4. Click on Deploy Application tab.
-5. Select project name and build version from dropdown.
-6. By default the **Runtime** values like CPU is set to **0.25 %** and Memory to **512 MB**. This can be increase according to application requirement.
+3. Select the type of projects:
+   - Integration (Default)
+   - MCP
+   - Agentic
+4. Select the environment from dropdown to  view / deploy application(s) to specific environment.
+5. Click on Deploy Application tab.
+6. Select project name and build version from dropdown.
+7. By default the **Runtime** values like CPU is set to **0.25 core** and Memory to **512 MB**. This can be increase according to application requirement.
    Options:
    - *CPU* - 0.25 / 0.5 / 1 / 2 core
    - *Memory* - 512 MB / 1 GB / 2 GB
-7. Now go to **Properties** tab and provide security key to encrypt crendentials like passwords, api-key, etc. configured in connection properties.
-8. You can edit properties like change server credentials, enable/disable service monitoring.
-9. Once you have set all configurations, you can now click on deploy application to configure your deployment.
+8. Now go to **Properties** tab and provide security key to encrypt crendentials like passwords, api-key, etc. configured in connection properties.
+9. You can edit properties like change server credentials, enable/disable service monitoring.
+10. In the **Logging** tab
+   - Select the logging level of the application as per requirement
+   - In the **Masking patterns**, you can provide multple regex pattern to mask any strings, you can add multiple patterns using the **+** sign
+   - In the **Masking keys** add any keys that you want to mask, you can add multiple keys using the **+** sign
+   - The masked values will be replaced with the asterisk symbol(*)
+11. Once you have set all configurations, you can now click on deploy application to configure your deployment.
 
 ## Start app
 
