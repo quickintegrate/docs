@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Application Deployment | Quickintegrate</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://quickintegrate.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://quickintegrate.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://quickintegrate.github.io/Build and Deploy/deploy"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Application Deployment | Quickintegrate"><meta data-rh="true" name="description" content="Now that you have Build your application, let’s deploy from within Quickintegration to CloudHub,"><meta data-rh="true" property="og:description" content="Now that you have Build your application, let’s deploy from within Quickintegration to CloudHub,"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://quickintegrate.github.io/Build and Deploy/deploy"><link data-rh="true" rel="alternate" href="https://quickintegrate.github.io/Build and Deploy/deploy" hreflang="en"><link data-rh="true" rel="alternate" href="https://quickintegrate.github.io/Build and Deploy/deploy" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.10969a5d.css">
-<script src="/assets/js/runtime~main.807d9d21.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9af20293.js" defer="defer"></script>
 <script src="/assets/js/main.05e20cb0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,10 +18,17 @@ Understanding the process of Deploying an API within the Quickintegration platfo
 </ol>
 <div class="default-container"><img class="border mb-2" src="/img/Execute/Deploy/applications.png" alt="Deployed Application List"></div>
 <ol start="3">
+<li>Select the type of projects:<!-- -->
+<ul>
+<li>Integration (Default)</li>
+<li>MCP</li>
+<li>Agentic</li>
+</ul>
+</li>
 <li>Select the environment from dropdown to  view / deploy application(s) to specific environment.</li>
 <li>Click on Deploy Application tab.</li>
 <li>Select project name and build version from dropdown.</li>
-<li>By default the <strong>Runtime</strong> values like CPU is set to <strong>0.25 %</strong> and Memory to <strong>512 MB</strong>. This can be increase according to application requirement.
+<li>By default the <strong>Runtime</strong> values like CPU is set to <strong>0.25 core</strong> and Memory to <strong>512 MB</strong>. This can be increase according to application requirement.
 Options:<!-- -->
 <ul>
 <li><em>CPU</em> - 0.25 / 0.5 / 1 / 2 core</li>
@@ -30,6 +37,15 @@ Options:<!-- -->
 </li>
 <li>Now go to <strong>Properties</strong> tab and provide security key to encrypt crendentials like passwords, api-key, etc. configured in connection properties.</li>
 <li>You can edit properties like change server credentials, enable/disable service monitoring.</li>
+<li>In the <strong>Logging</strong> tab</li>
+</ol>
+<ul>
+<li>Select the logging level of the application as per requirement</li>
+<li>In the <strong>Masking patterns</strong>, you can provide multple regex pattern to mask any strings, you can add multiple patterns using the <strong>+</strong> sign</li>
+<li>In the <strong>Masking keys</strong> add any keys that you want to mask, you can add multiple keys using the <strong>+</strong> sign</li>
+<li>The masked values will be replaced with the asterisk symbol(*)</li>
+</ul>
+<ol start="11">
 <li>Once you have set all configurations, you can now click on deploy application to configure your deployment.</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="start-app">Start app<a href="#start-app" class="hash-link" aria-label="Direct link to Start app" title="Direct link to Start app">​</a></h2>
