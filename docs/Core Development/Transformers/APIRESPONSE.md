@@ -314,12 +314,12 @@ The final result for skipNull check true is following: <br />
 
 ### Json Editor
 Json Editor outputs the same as Form Editor we have used above, where we define mapping in a form format. But Json Editor lets you map the elements like you are mapping a json, so you have a clear idea as what the output would look like. <br />
-You just have to click the check box 'formEditor' and a json editor pannel will open up.
+You just have to click the check box 'jsonEditor' and a json editor pannel will open up.
 Here you can edit what you want as an output. Add elements, remove, append, etc. You can add object, array or string, by selecting the dropdown.<br />
 
 The only difference here is how you access the dynamic values. In Form Editor you give a single '$' to get the pipeline data. In Json Editor, you have to give double dollar sign to access it, '$$'.
 <br />
 
-#### The video shows how to use the form editor.
+#### The video shows how to use the json editor.
 
 <Video src="/img/Core Development/Transformer/APIresponse/json_editor.mp4" type="video/mp4" />
