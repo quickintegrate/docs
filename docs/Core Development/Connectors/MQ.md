@@ -104,3 +104,12 @@ To perform read operation on MQ, provide queue name and output payload. Please s
 </table>
 
 <img src={useBaseUrl('/img/Connectors/JMS/JMS_properties.png')} />;
+
+### Retry
+Retry is flag passed on connector nodes, like MQ, to allow the step to be retryable if any exception occurs. It has 2 configurable properties.<br/>
+1. maxRetryAttempts: The max number of retries if any exception occurs. max attempts are 3.
+2. retryIntervalMillis: The max interval between retries. Max range is 6000ms.
+
+Enable retry by cliking on the **Enable Retry** radio button at the top of the configuration pannel.
+
+<Image src="/img/Connectors/retry.png" alt="PAYLOAD transformer" />
