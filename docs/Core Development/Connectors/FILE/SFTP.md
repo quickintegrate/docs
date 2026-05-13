@@ -4,7 +4,7 @@ slug: "sftp-connector"
 sidebar_label: "SFTP"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image } from '@site/src/components/custom';
 
 # SFTP Connector 
 
@@ -24,14 +24,14 @@ The same set of operations is available on these Connectors, and they behave sim
 
 Drag and drop the **SFTP Connector**
 
-<img src={useBaseUrl('/img/Connectors/SFTP_connector.png')} />;
+<Image src="/img/Connectors/SFTP_connector.png" alt="SFTP Connector" />
 
 ### Configuring SFTP Connector
 left click on connector, you can define the **SFTP Connector** configration
 
 ## Read SFTP Connector
 
-<img src={useBaseUrl('/img/Connectors/sftp_read.png')} />;
+<Image src="/img/Connectors/sftp_read.png" alt="Read SFTP Connector" />
 
 <table>
 <thead>
@@ -80,9 +80,9 @@ left click on connector, you can define the **SFTP Connector** configration
 </tbody>
 </table>
 
-## Write FTP Connector
+## Write SFTP Connector
 
-<img src={useBaseUrl('/img/Connectors/sftp_write.png')} />;
+<Image src="/img/Connectors/sftp_write.png" alt="Write FTP Connector" />
 
 
 <table>

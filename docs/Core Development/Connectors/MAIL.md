@@ -4,20 +4,20 @@ slug: "mail-connector"
 sidebar_label: "MAIL"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image } from '@site/src/components/custom';
 
 # Mail Connector 
 The Email Connector provides a connection to your email server
 
 Drag and drop the **Mail Connector**
 
-<img src={useBaseUrl('/img/Connectors/MAIL_connector.png')} />;
+<Image src="/img/Connectors/MAIL_connector.png" alt="Mail Connector" />
 
 
 ### Configuring Mail Connector
 left click on connector, you can define the **Mail Connector** configration
 
-<img src={useBaseUrl('/img/Connectors/mail config.png')} />;
+<Image src="/img/Connectors/mail config.png" alt="Mail Connector configration" />
 
 <table>
 <thead>

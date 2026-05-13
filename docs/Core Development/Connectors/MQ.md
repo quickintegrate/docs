@@ -4,7 +4,7 @@ slug: "mq-connector"
 sidebar_label: "MQ"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image } from '@site/src/components/custom';
 
 # MQ Connector
 
@@ -18,7 +18,7 @@ Publish and consume pattern support on any given destination, with a fixed or te
 
 Drag and drop the **MQ Connector**
 
-<img src={useBaseUrl('/img/Connectors/JMS_connector.png')} />;
+<Image src="/img/Connectors/JMS_connector.png" alt="MQ Connector" />
 
 ### Configuring MQ Connector
 left click on connector, you can define the **MQ Connector** configration
@@ -26,7 +26,7 @@ left click on connector, you can define the **MQ Connector** configration
 ## Write MQ Operation
 To perform write operation on MQ, provide queue name and input payload.
 
-<img src={useBaseUrl('/img/Connectors/JMS/JMS_config.png')} />;
+<Image src="/img/Connectors/JMS/JMS_config.png" alt="Write MQ Operation" />
 
 <table>
 <thead>
@@ -64,7 +64,7 @@ To perform write operation on MQ, provide queue name and input payload.
 ## Read MQ Operation
 To perform read operation on MQ, provide queue name and output payload. Please select operation(MOVE or DELETE) to define further course of action for the message read from the queue.
 
-<img src={useBaseUrl('/img/Connectors/MQ_Read_config.png')} />;
+<Image src="/img/Connectors/MQ_Read_config.png" alt="Read MQ Operation" />
 
 <table>
 <thead>
@@ -103,7 +103,7 @@ To perform read operation on MQ, provide queue name and output payload. Please s
 </tbody>
 </table>
 
-<img src={useBaseUrl('/img/Connectors/JMS/JMS_properties.png')} />;
+<Image src="/img/Connectors/JMS/JMS_properties.png" alt="JMS Properties" />
 
 ### Retry
 Retry is flag passed on connector nodes, like MQ, to allow the step to be retryable if any exception occurs. It has 2 configurable properties.<br/>

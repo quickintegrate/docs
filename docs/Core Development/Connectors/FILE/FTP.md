@@ -4,7 +4,7 @@ slug: "ftp-connector"
 sidebar_label: "FTP"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image } from '@site/src/components/custom';
 
 # FTP Connector
 
@@ -29,14 +29,14 @@ Follow these steps to set up and test a connection to your **FTP**  by creating 
 
 Drag and drop the **FTP Connector**
 
-<img src={useBaseUrl('/img/Connectors/FTP_connector.png')} />;
+<Image src="/img/Connectors/FTP_connector.png" alt="FTP Connector" />
 
 ### Configuring FTP Connector
 left click on connector, you can define the **FTP Connector** configration
 
 ## Read FTP Connector
 
-<img src={useBaseUrl('/img/Connectors/ftp_read.png')} />;
+<Image src="/img/Connectors/ftp_read.png" alt="Read FTP Connector" />
 
 <table>
 <thead>
@@ -87,7 +87,7 @@ left click on connector, you can define the **FTP Connector** configration
 
 ## Write FTP Connector
 
-<img src={useBaseUrl('/img/Connectors/ftp_write.png')} />;
+<Image src="/img/Connectors/ftp_write.png" alt="Write FTP Connector" />
 
 
 <table>

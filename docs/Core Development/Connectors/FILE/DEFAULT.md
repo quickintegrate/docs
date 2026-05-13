@@ -4,13 +4,13 @@ slug: "file-connector"
 sidebar_label: "DEFAULT"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image } from '@site/src/components/custom';
 
 # Default file Connector
 
 **Default file** Connector is used to handle **File**s in **AWS S3**
 
-<img src={useBaseUrl('/img/Connectors/FILE_Connector.png')} />
+<Image src="/img/Connectors/FILE_Connector.png" alt="File Connector" />
 
 #### Default file-Connector features:
 
@@ -30,7 +30,7 @@ Here are different instances demonstrating how to access the information within 
 Select the Default radio button and define configuration for file connector to read a file by selecting operation as Read. Add destination in properties to poll the file.
 Provide the file name and select operation(MOVE or DELETE) to define further course of action for the file read from the destination. 
 
-<img src={useBaseUrl('/img/Connectors/Read_File_config.png')} />
+<Image src="/img/Connectors/Read_File_config.png" alt="Read File Operation" />
 
 <table>
 <thead>
@@ -89,7 +89,7 @@ Define configuration for file connector to write a file by selecting operation a
 Provide the file name and file type(XML, JSON etc.). Please select Append to continue write operation in the same file or select OverWrite to overwrite the file every time operation is performed.
 
 
-<img src={useBaseUrl('/img/Connectors/Write_file_config2.png')} />
+<Image src="/img/Connectors/Write_file_config2.png" alt="Write File Operation" />
 
 <table>
 <thead>
