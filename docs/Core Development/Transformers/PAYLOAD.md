@@ -86,13 +86,14 @@ From Dropdown select **OBJ** - Creates a object with target name as key.
 ## Mapping view
 
 View response structure side by side as you create mapping.
+Right click on the payload node to open up the configuration pannel. Click the eye icon, to view the mapping view display.
 
 :::note
     - The mapping view only shows `JSON`.
     - It does not shows the response structure for other types like `XML`.
 :::
 
-<Video src="/img/Core Development/Transformer/APIresponse/jsonView.mp4" type="video/mp4" />
+<Video src="/img/Core Development/Transformer/Payload/mapping_view.mp4" type="video/mp4" />
 
 ### Mapping Functions
 
@@ -285,17 +286,23 @@ Following is the list of available functions and their definitions:
 ### 1. Swagger
 
 1. Upload/Create the swagger on **Define / Swagger** page.
-2. Select swagger radio button and swagger name from dropdown.
-3. Click on view swagger button that will appear on right hand side of dropdown.
-4. Hover over the endpoint which has `Request Body` and copy icon will appear on right hand side.
-5. Click on copy icon to map input configurations.
+2. Right-Click on the payload node to open up the configuration page.
+3. Select swagger radio button and swagger name from dropdown.
+4. Click on view swagger button that will appear on right hand side of dropdown.
+5. Hover over the endpoint which has `Request Body` and copy icon will appear on right hand side.
+6. Click on copy icon to map input configurations.
+
+<Image src="/img/Core Development/Transformer/Payload/element.png" alt="PAYLOAD transformer" />
 
 <Video src="/img/Core Development/Transformer/Payload/swaggerMapping.mp4" type="video/mp4" />
 
 ### 2. Schema
 
 1. Create the schema on **Define / Schema Design** page.
-2. Select schema radio button and schema name from dropdown.
+2. Right-Click on the payload node to open up the configuration page.
+3. Select schema radio button and schema name from dropdown.
+
+<Image src="/img/Core Development/Transformer/Payload/element.png" alt="PAYLOAD transformer" />
 
 <Video src="/img/Core Development/Transformer/Payload/schemaMapping.mp4" type="video/mp4" />
 
@@ -326,9 +333,9 @@ Json Editor outputs the same as Form Editor we have used above, where we define 
 You just have to click the check box 'formEditor' and a json editor pannel will open up.
 Here you can edit what you want as an output. Add elements, remove, append, etc. You can add object, array or string, by selecting the dropdown.<br />
 
-The only difference here is how you access the dynamic values. In Form Editor you give a single '$' to get the pipeline data. In Form Editor, you have to give double dollar sign to access it, '$$'.
+The only difference here is how you access the dynamic values. In Form Editor you give a single '$' to get the pipeline data. In Json Editor, you have to give double dollar sign to access it, '$$'.
 <br />
 
 #### The video shows how to use the form editor.
 
-<Video src="/img/Core Development/Transformer/APIresponse/formEditor.mp4" type="video/mp4" />
+<Video src="/img/Core Development/Transformer/Payload/json_editor.mp4" type="video/mp4" />

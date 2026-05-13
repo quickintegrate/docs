@@ -102,7 +102,7 @@ View response structure side by side as you create mapping.
     - It does not shows the response structure for other types like `XML`.
 :::
 
-<Video src="/img/Core Development/Transformer/APIresponse/jsonView.mp4" type="video/mp4" />
+<Video src="/img/Core Development/Transformer/APIresponse/mapping_view.mp4" type="video/mp4" />
 
 ### Mapping Functions
 
@@ -317,9 +317,9 @@ Json Editor outputs the same as Form Editor we have used above, where we define 
 You just have to click the check box 'formEditor' and a json editor pannel will open up.
 Here you can edit what you want as an output. Add elements, remove, append, etc. You can add object, array or string, by selecting the dropdown.<br />
 
-The only difference here is how you access the dynamic values. In Form Editor you give a single '$' to get the pipeline data. In Form Editor, you have to give double dollar sign to access it, '$$'.
+The only difference here is how you access the dynamic values. In Form Editor you give a single '$' to get the pipeline data. In Json Editor, you have to give double dollar sign to access it, '$$'.
 <br />
 
 #### The video shows how to use the form editor.
 
-<Video src="/img/Core Development/Transformer/APIresponse/formEditor.mp4" type="video/mp4" />
+<Video src="/img/Core Development/Transformer/APIresponse/json_editor.mp4" type="video/mp4" />
