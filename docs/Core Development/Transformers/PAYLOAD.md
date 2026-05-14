@@ -110,7 +110,7 @@ Example:
 - $REQUEST_PARAMS.name.##lowerCase()
 
 
-<Video src="/img/Core Development/Transformer/APIresponse/functions.mp4" type="video/mp4" />
+<Video src="/img/Core Development/Transformer/Payload/functions.mp4" type="video/mp4" />
 
 Following is the list of available functions and their definitions:
 
