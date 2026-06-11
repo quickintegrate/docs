@@ -61,3 +61,10 @@ This parameter specifies which internal service to invoke. The dropdown list wil
         </tr>
     </tbody>
 </table>
+
+
+## Video Guide: Internal Component Configuration
+
+This video demonstrates the end-to-end configuration of the Internal Component. It illustrates how to identify an internal trigger service (e.g., `internalFlow`) on the services page, and then integrate it into another service (e.g., `callInternal rest trigger service`). The video specifically highlights the steps to drag the Internal Component from the component tab, right-click to configure its synchronous implementation, and select the desired `internalFlow` service from the dropdown menu.
+
+<Video src="/img/Core Development/Components/InternalComponent/configuration.mp4" alt="Internal Component Configuration" />
