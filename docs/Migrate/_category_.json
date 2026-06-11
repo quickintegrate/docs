@@ -1,0 +1,8 @@
+{
+  "label": "Migrate",
+  "position": 10,
+  "link": {
+    "type": "doc",
+    "id": "Migrate/index"
+  }
+}

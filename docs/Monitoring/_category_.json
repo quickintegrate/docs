@@ -1,8 +1,8 @@
 {
-    "label": "Monitor UI",
-    "position": 8,
-    "link": {
-      "type": "doc",
-      "id": "Monitoring/index"
-    }
+  "label": "Monitor",
+  "position": 9,
+  "link": {
+    "type": "doc",
+    "id": "Monitoring/index"
+  }
 }

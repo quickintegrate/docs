@@ -1,0 +1,8 @@
+{
+  "label": "Manage",
+  "position": 8,
+  "link": {
+    "type": "doc",
+    "id": "Manage/index"
+  }
+}

@@ -64,7 +64,7 @@ A URL identifies a resource
         <tr>
             <td>Swagger Name *(optional)*</td>
             <td>Swagger can be used to autofill `Rest` connector configuration and `Payload` input mapping.
-                <a href="/Requirement Gathering/Swagger" target="_blank"> Please refer the link for instructions on uploading/creating swagger</a></td>
+                <a href="/Define/Swagger" target="_blank"> Please refer the link for instructions on uploading/creating swagger</a></td>
             <td>sfdc-swagger</td>
         </tr>
     </tbody>
