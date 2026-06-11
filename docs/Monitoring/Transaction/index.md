@@ -1,5 +1,4 @@
 import { Image } from '@site/src/components/custom';
-import DocCardList from '@theme/DocCardList';
 
 # Transaction
 
@@ -39,9 +38,4 @@ A user can easily check the flow information and its performance and resubmit an
     </tbody>
 </table>
 
-
-
-
 <Image src="/img/Monitoring/Transaction/transaction-page.png" alt="Transaction_page" />
-
-<!-- <DocCardList /> -->

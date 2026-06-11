@@ -1,0 +1,66 @@
+---
+sidebar_position: 1
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Studio
+
+Utilize the drag-and-drop **functionality** to incorporate Core Integration development Components that efficiently manage a wide range of integration scenarios. These components cover triggers, transformers, connectors, processors, and data mappings, enabling flow invocation through REST, Events, Messages, Databases, Schedulers, Files, and Streams.
+
+
+#### Step 1: 
+
+Go to **DEVELOP** >> **Integration** >> **Studio**
+
+<img src={useBaseUrl('/img/Develop Functionality/dev fun.png')} />;
+
+#### Step 2: 
+
+In Studio You can create the service and upload the swagger
+
+<img src={useBaseUrl('/img/Develop Functionality/Functionality API.png')} />;
+
+#### Step 3: 
+
+### Service
+
+Select a project from the dropdown menu column to generate a **Service** within it
+
+<img src={useBaseUrl('/img/Develop Functionality/Fun Drop down.png')} />
+
+#### Step 4:
+
+Click on the **Service** button, then proceed to create the service within. Specify the service name and select the trigger from the dropdown menu provided below.
+
+<img src={useBaseUrl('/img/Develop Functionality/Service Test.png')} />
+
+#### Step 5:
+
+Once the service is created, you'll have the able to implement your API.
+
+<img src={useBaseUrl('/img/Develop Functionality/fun imple.png')} />
+
+### Swagger
+
+#### Step 1:
+
+<img src={useBaseUrl('/img/Develop Functionality/Swagger .png')} />
+
+
+#### Step 2:
+
+<img src={useBaseUrl('/img/Develop Functionality/Swagger import.png')} />
+
+
+#### Step 3:
+
+<img src={useBaseUrl('/img/Develop Functionality/Swagger upload.png')} />
+
+#### Step 4:
+
+<img src={useBaseUrl('/img/Develop Functionality/Swagger pop up.png')} />
+
+
+
+

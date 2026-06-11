@@ -105,7 +105,7 @@ b. Select **JDBC** datasource type from the dropdown
 <img src={useBaseUrl('/img/DB_Rest_API/jdbc_datasource_type.png')} />
 c. Configure the database datasource as below and click on **Submit** button
 <img src={useBaseUrl('/img/DB_Rest_API/jdbc_datasource_configure.png')} /> <br />
-<a href="../Requirement Gathering/model-design">Check Model Design to add database schema</a> <br /><br />
+<a href="/Define/model-design">Check Model Design to add database schema</a> <br /><br />
 d. Select **REST URL** datasource type from the dropdown
 <img src={useBaseUrl('/img/DB_Rest_API/rest_datasource_type.png')} />
 e. Configure the rest datasource as below and click on **Submit** button
@@ -445,7 +445,7 @@ When we want to get a variable from the pipeline, we use **$** sign as prefix fo
 </table>
 
 
- <a href="/Core Development/Transformers/APIRESPONSE"target="_blank">Click here to check how to configure APIRESPONSE</a>
+ <a href="/Core Development/Transformers/apiresponse-transformer"target="_blank">Click here to check how to configure APIRESPONSE</a>
 
 ### Configure end logger
 
@@ -627,7 +627,7 @@ At the end the final canvas should look like this
 ### Steps to build and deploy the API service
 Step to Test the API Deployed on QuickIntegration.
 
-<a href="../Build and Deploy">Check how to build and deploy the above service</a> <br /><br />
+<a href="/Execute">Check how to build and deploy the above service</a> <br /><br />
 
 1) Save the application.
 2) Go to **EXECUTE** >> **BUILD**

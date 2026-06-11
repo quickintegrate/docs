@@ -79,7 +79,7 @@ JDBC, short for Java Database Connectivity, is an API that empowers users to exe
         <tr>
             <td>DDL schema *(optional)*</td>
             <td>SQL file that contains table creation statements.
-                <a href="/Requirement Gathering/model-design" target="_blank"> Please refer the link for instructions on uploading DDL schema</a></td>
+                <a href="/Define/model-design" target="_blank"> Please refer the link for instructions on uploading DDL schema</a></td>
             <td>classicmodels</td>
         </tr>
     </tbody>
