@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.0.0">
 <title data-rh="true">Studio | Quickintegrate</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://quickintegrate.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://quickintegrate.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://quickintegrate.github.io/Develop/MCP/Studio"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Studio | Quickintegrate"><meta data-rh="true" name="description" content="MCP studio provides drag and drop functionality to create complex MCP tools easily. There are multiple connectors, components, transformers and AI tools that will help users create powerful MCP tools that can be utilized by AI agents and MCP clients."><meta data-rh="true" property="og:description" content="MCP studio provides drag and drop functionality to create complex MCP tools easily. There are multiple connectors, components, transformers and AI tools that will help users create powerful MCP tools that can be utilized by AI agents and MCP clients."><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://quickintegrate.github.io/Develop/MCP/Studio"><link data-rh="true" rel="alternate" href="https://quickintegrate.github.io/Develop/MCP/Studio" hreflang="en"><link data-rh="true" rel="alternate" href="https://quickintegrate.github.io/Develop/MCP/Studio" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.10969a5d.css">
-<script src="/assets/js/runtime~main.49ddb813.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ffc81117.js" defer="defer"></script>
 <script src="/assets/js/main.f8f208ac.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,8 +29,13 @@
 <img src="/img/Develop/mcp/studio/mcp-prompt-creation.png">
 <ol start="3">
 <li>The tool will be automatically created (it will take a few minutes to generate).</li>
-<li>After the tool is created, click on the tool to open it in canvas, edit accordingly, and save the tool.</li>
+<li>After the tool is created, click on the name of the tool to open it in canvas. You can</li>
 </ol>
+<ul>
+<li>Edit the nodes</li>
+<li>Add connection properties</li>
+<li>Validate the tool</li>
+</ul>
 <img src="/img/Develop/mcp/studio/mcp-prompt-canvas.png">
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="tool-creation-manually">Tool creation manually<a href="#tool-creation-manually" class="hash-link" aria-label="Direct link to Tool creation manually" title="Direct link to Tool creation manually">​</a></h3>
 <ol>
@@ -41,7 +46,7 @@
 <ol start="3">
 <li>After the tool is created, click on it to open it in canvas, edit accordingly, and save the tool.</li>
 <li>Once the tool service is created, implement the tool logic using the connectors and components on the left panel by dragging and dropping them onto the canvas.</li>
-<li>Once the desired tool is created, save the service.</li>
+<li>You can add the nodes, configure connection properties, validate the tool service using the canvas properties. Once the desired tool is created, save the service.</li>
 </ol>
 <img src="/img/Develop/mcp/studio/mcp-manual-canvas.png">
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="tool-creation-by-uploading-swagger-file">Tool creation by uploading swagger file<a href="#tool-creation-by-uploading-swagger-file" class="hash-link" aria-label="Direct link to Tool creation by uploading swagger file" title="Direct link to Tool creation by uploading swagger file">​</a></h3>
@@ -53,6 +58,7 @@
 <ol start="3">
 <li>Once the file is uploaded, the tools will be listed in the current project.</li>
 </ol>
+<img src="/img/Develop/mcp/studio/mcp-swagger-tool-list.png">
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="duplicate-tool-service">Duplicate Tool Service<a href="#duplicate-tool-service" class="hash-link" aria-label="Direct link to Duplicate Tool Service" title="Direct link to Duplicate Tool Service">​</a></h3>
 <p>The <strong>Duplicate Tool</strong> feature allows you to replicate an existing MCP tool service along with its graphical flow (and underlying service JSON) into a target project. When you need the same tool logic in another project, duplicating saves time and avoids rebuilding the flow from scratch.</p>
