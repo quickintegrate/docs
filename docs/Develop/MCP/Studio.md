@@ -31,7 +31,10 @@ In Studio you can create the tool using:
 2. Click on the first button on the top right, write the description of the tool, and click generate service.
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-prompt-creation.png')} />
 3. The tool will be automatically created (it will take a few minutes to generate).
-4. After the tool is created, click on the tool to open it in canvas, edit accordingly, and save the tool.
+4. After the tool is created, click on the name of the tool to open it in canvas. You can
+  - Edit the nodes
+  - Add connection properties
+  - Validate the tool
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-prompt-canvas.png')} />
 
 
@@ -42,9 +45,8 @@ In Studio you can create the tool using:
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-manual-creation.png')} />
 3. After the tool is created, click on it to open it in canvas, edit accordingly, and save the tool.
 4. Once the tool service is created, implement the tool logic using the connectors and components on the left panel by dragging and dropping them onto the canvas.
-5. Once the desired tool is created, save the service.
+5. You can add the nodes, configure connection properties, validate the tool service using the canvas properties. Once the desired tool is created, save the service.
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-manual-canvas.png')} />
-
 
 ### Tool creation by uploading swagger file
 
@@ -52,6 +54,7 @@ In Studio you can create the tool using:
 2. Click on the **upload** button on the top right, browse and select the swagger file, and click upload.
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-swagger-creation.png')} />
 3. Once the file is uploaded, the tools will be listed in the current project.
+<img src={useBaseUrl('img/Develop/mcp/studio/mcp-swagger-tool-list.png')} />
 
 ---
 
