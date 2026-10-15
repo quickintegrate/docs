@@ -1,29 +1,49 @@
 ---
 sidebar_position: 1
+slug: "build"
+sidebar_label: "Build"
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Image, Video } from '@site/src/components/custom';
 
-# Build
-Understanding the process of Building an API within the Quickintegration platform holds significant importance.
+# Build an Application
 
-Go to **Execute** >> **Build** API
+Learn how to configure and trigger an application build in the Quickintegration platform.
 
-<img src={useBaseUrl('/img/Build&Deploy/Execute-Build.png')} />;
+## Prerequisites
 
+- An active Quickintegration project with configured endpoints or workflows.
 
-When you navigate to the page,you'll encounter the successfully constructed Application. Click **Build Application** to begin the application-building process.
+## Build Steps
 
-<img src={useBaseUrl('/img/Core Development/Execute API/Build application.png')} />;
+1. Navigate to **Execute** > **Build**.
+2. Under the **Applications** tab, choose your project type:
+   - **Integration** (_Default_)
+   - **MCP**
+   - **Agentic**
 
-Please access the dropdown menu and choose the appropriate project.
+<Image cls="border mb-2" src="/img/Execute/Build/applications.png" alt="Build Application List" />
 
-<img src={useBaseUrl('/img/Core Development/Execute API/drop down build.png')} />;
+3. Select the **Build Application** tab.
+4. From the **Project Name** dropdown, select the target application.
+5. Configure the build parameters:
+   - **Version:** Enter a semantic version (default: `1.0.0`).
+   - **Comment** (_Optional_): Add release notes or a description for this build.
+   - **Maintainer** (_Optional_): Specify the author or owner responsible for the build.
+6. Click **Build Application** to initiate the build process.
 
+<Video src="/img/Execute/Build/build.mp4" type="video/mp4" />
 
-Within the properties section, you'll find the version and comment columns. Next, proceed by clicking the "Build Application" button to generate your API.
+:::note
+The application build process may take a few minutes to complete depending on project size and dependencies.
+:::
 
+## Next Steps
 
-Once the application building process is finished, a popup will confirm the successful creation of your API.
+Once the build completes successfully:
 
-<img src={useBaseUrl('/img/Core Development/Execute API/succesfully build.png')} />;
+- To view **Readme**:
+  - Return to the **Applications** tab.
+  - Locate your target application in the table.
+  - Click the **File** button in that application's row to review build documentation.
+- Proceed to deployment via the **Deploy** panel.
