@@ -43,7 +43,8 @@ export const sample: Template = {
       ),
       output: JSON.stringify(
         {
-          result: "Msg sent",
+          "status": "Failed",
+          "message": "channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'notexits' in vhost '/', class-id=60, method-id=20)"
         },
         null,
         2
