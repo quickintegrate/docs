@@ -44,8 +44,8 @@ In Studio you can create the tool using:
 2. Click on the **plus** button on the top right, specify the MCP tool name, and select the trigger **Private Flow** from the dropdown menu provided.
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-manual-creation.png')} />
 3. After the tool is created, click on it to open it in canvas, edit accordingly, and save the tool.
-4. Once the tool service is created, implement the tool logic using the connectors and components on the left panel by dragging and dropping them onto the canvas.
-5. You can add the nodes, configure connection properties, validate the tool service using the canvas properties. Once the desired tool is created, save the service.
+  - Implement the tool logic using the connectors and components on the left panel by dragging and dropping them onto the canvas.
+  -  You can add the nodes, configure connection properties, validate the tool service using the canvas properties. Once the desired tool is created, save the service.
 <img src={useBaseUrl('img/Develop/mcp/studio/mcp-manual-canvas.png')} />
 
 ### Tool creation by uploading swagger file
