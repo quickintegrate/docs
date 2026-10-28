@@ -4,60 +4,83 @@ sidebar_position: 3
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Step error
+# Step Error
 
-**Step error** component is used to catch and handle errors specific to a connector/step in the API.		
+The **Step Error** component handles errors raised by a specific connector or step in an API flow. Use it when you want to define a dedicated error-handling flow for a particular step, such as a database operation that might fail because of a query, data, or connection issue.
 
-error handling is no longer limited to a Java exception handling process that requires you to check the source code or force an error in order
-understand what happened. Errors mostly occur at runtime that's they belong to an unchecked type.
+A Step Error container must be linked to exactly one step. It must also contain at least one node. Linking the container alone does not register the exception handler: configure and save the container and its handling flow.
 
-We catch the error at the flow level in the step error component
+## Add and name the Step Error container
 
-so after which step does the user need to catch the error, just copy and paste the step error component below that step and connect both components with the help of the connector line. and drag-drop any component in that step error for error message. but keep remembering when you need to drag a component in the error step, first, you need to select that error step component then drag another component in that step error then only your component will work
+Drag the **Step Error** container into the API flow, then give it a clear, descriptive name.
 
-**Step Exception handling in the service:**
+<img
+  src={useBaseUrl('/img/Core Development/Components/Step Error container.png')}
+  alt="Adding a Step Error container to the API flow"
+/>
+<br/>
+<br/>
+<img
+  src={useBaseUrl('/img/Core Development/Components/Name Step Error.png')}
+  alt="Naming the Step Error container"
+/>
 
-Step error is specifically for particular connector error.
-Drag and drop the **Step Error** and configure it for the DB 
+## Link it to a step
 
-<img src={useBaseUrl('/img/Core Development/Components/Step Error.png')} />;
+Select the connector or step whose errors you want to handle, then select the Step Error container to create the link. A Step Error container can be linked to one step only.
 
-<img src={useBaseUrl('/img/Core Development/Components/Step error drag and drop.png')} />;
+<img
+  src={useBaseUrl('/img/Core Development/Components/Link Step Error to step.png')}
+  alt="Linking a Step Error container to a specific step"
+/>
 
-Drag and drop **Utility** Connector Inside the Step Error Component and refer the configration shown below
+## Configure the Step Error container
 
-<img src={useBaseUrl('/img/DB_Rest_API/15.1.1.png')} />; 
+Right-click the Step Error container to open its configuration panel. Choose one of the available options:
 
-<img src={useBaseUrl('/img/DB_Rest_API/15.png')} />; 
+- **Propagate** (the default): stop the main flow at this point rather than continuing it.
+- **Continue**: after the error-handling flow runs, continue the main flow.
 
-<table>
-<thead>
-<tr>
-<th>Fields</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Method</td>
-<td>This is the utility function to throw the error in the flow</td>
-<td>throw error</td>
-</tr>
-<tr>
-<td>Error Type</td>
-<td>Type of Exception thrown in the flow such as INTBuinessException and INTRetryException </td>
-<td>INTBuinessException</td>
-</tr>
-<tr>
-<td>Exception message</td>
-<td>The custom message while throwing the custom Exception</td>
-<td>$VARIABLES.nocustomer</td>
-</tr>
-<tr>
-<td>Exception code</td>
-<td>The code while throwing the Execption</td>
-<td>$VARIABLES.nocustomercode</td>
-</tr>
-</tbody>
-</table>
+Select an option and save the configuration. The setting is presented in the interface as radio buttons.
+
+<img
+  src={useBaseUrl('/img/Core Development/Components/Configure Step Error.png')}
+  alt="Step Error configuration panel with Propagate and Continue options"
+/>
+
+## Validate the configuration
+
+Use the flow's validation control to check that the Step Error container is registered correctly. Resolve any reported validation errors; a successful validation indicates that the configuration is valid.<br/>
+*Failed*
+<img
+  src={useBaseUrl('/img/Core Development/Components/Step Error validation error.png')}
+  alt="Validation error for a Step Error configuration"
+/>
+<br/><br/>
+*Success*
+<img
+  src={useBaseUrl('/img/Core Development/Components/Step Error validation success.png')}
+  alt="Successful validation of a Step Error configuration"
+/>
+
+## Build the error-handling flow
+
+Add at least one node inside the Step Error container to handle the error. For example, add a **Utility** node configured as a logger. Select the Step Error container before dragging another component into it so that the new component is added to the error-handling flow.
+
+<img
+  src={useBaseUrl('/img/Core Development/Components/Add logger to Step Error.png')}
+  alt="Adding a Utility logger node inside the Step Error container"
+/>
+
+Configure the logger or other handler node as needed, then save it.
+
+<img
+  src={useBaseUrl('/img/Core Development/Components/Configure logger in Step Error.png')}
+  alt="Configuring the logger inside the Step Error flow"
+/>
+
+## Read or rethrow the error
+
+The error object is available as `$ERROR`. For example, use `$ERROR.message` to access the error message in a logger or another handler.
+
+If the flow needs to raise the exception again, configure a Utility node to throw it. A rethrown error, or an error that is not handled by a Step Error flow, is handled by the **Global Exception** component if one is configured. Otherwise, the application returns its default error response.
